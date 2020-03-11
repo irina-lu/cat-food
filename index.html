@@ -1,14 +1,16 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <title>Cat Energy</title>
 </head>
+
 <body>
   <header class="page-header">
     <a class="page-header__logo">
-      <img class="page-header__logo-image" src="#" width="#" height="#" alt="Cat Energy"/>
-      <img class="page-header__logo-title" src="#" width="#" height="#" alt="Cat Energy"/>
+      <img class="page-header__logo-image" src="#" width="#" height="#" alt="Cat Energy" />
+      <img class="page-header__logo-title logo-title" src="#" width="#" height="#" alt="Cat Energy" />
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -25,9 +27,44 @@
           </li>
         </ul>
       </div>
-
     </nav>
   </header>
 
+  <main class="page-main">
+    <section class="first-screen">
+      <h1 class="page-main__title">Функциональное питание для котов</h1>
+      <p class="page-main_phrase">Занялся собой? Займись котом!</p>
+      <img class="page-main__image" src="#" alt="Питание для котов" />
+      <a href="form.html">Подобрать программу</a>
+    </section>
+
+    <section class="catigories">
+      <h2 class="visually-hidden">Категории программ питания</h2>
+      <ul class="catigories__list">
+        <li class="catigories__item">
+          <h3 class="catigories__title">Похудение</h3>
+          <p class="catigories__description">Ваш кот весит больше собаки и почти
+            утратил способность лазить по деревьям? Пора на диету!
+            Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
+          </p>
+          <a class="catigories__link catigories__link--slim" href="#">Каталог slim
+            <span class="catigories__arrow">→</span>
+          </a>
+        </li>
+        <li class="catigories__item">
+          <h3 class="catigories__title">Набор массы</h3>
+          <p class="catigories__description">Заработать авторитет среди дворовых
+            котов и даже собак? Серия Cat Energy Pro поможет вашему коту
+            нарастить необходимые мышцы!
+          </p>
+          <a class="catigories__link catigories__link--pro" href="#">Каталог pro
+            <span class="catigories__arrow">→</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
 </body>
+
 </html>
