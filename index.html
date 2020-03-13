@@ -9,21 +9,22 @@
 <body>
   <header class="page-header">
     <a class="page-header__logo">
+      <!--TODO: вставить значения ширины и высоты во все теги img -->
       <img class="page-header__logo-image" src="#" width="#" height="#" alt="Cat Energy" />
-      <img class="page-header__logo-title logo-title" src="#" width="#" height="#" alt="Cat Energy" />
     </a>
+    <img class="page-header__logo-title logo-title" src="#" width="#" height="#" alt="Cat Energy" />
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="#">Главная</a>
+          <li class="site-list__item site-list__item--active">
+            <a class="button" href="#">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html">Каталог продукции</a>
+            <a class="button" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">Подбор программы</a>
+            <a class="button" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -31,11 +32,11 @@
   </header>
 
   <main class="page-main">
-    <section class="first-screen">
-      <h1 class="page-main__title">Функциональное питание для котов</h1>
-      <p class="page-main_phrase">Занялся собой? Займись котом!</p>
-      <img class="page-main__image" src="#" width="" height=" " alt="Питание для котов" />
-      <a href="form.html">Подобрать программу</a>
+    <section class="main-screen">
+      <h1 class="main-screen__title">Функциональное питание для котов</h1>
+      <p class="main-screen_phrase">Занялся собой? Займись котом!</p>
+      <img class="main-screen__image" src="#" width="" height=" " alt="Питание для котов" />
+      <a class="main-screen__link button" href="form.html">Подобрать программу</a>
     </section>
 
     <section class="catigories">
@@ -47,9 +48,7 @@
             утратил способность лазить по деревьям? Пора на диету!
             Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
           </p>
-          <a class="catigories__link catigories__link--slim" href="#">Каталог slim
-            <span class="catigories__arrow">→</span>
-          </a>
+          <a class="catigories__link button" href="#">Каталог slim</a>
         </li>
         <li class="catigories__item">
           <h3 class="catigories__title">Набор массы</h3>
@@ -57,9 +56,7 @@
             котов и даже собак? Серия Cat Energy Pro поможет вашему коту
             нарастить необходимые мышцы!
           </p>
-          <a class="catigories__link catigories__link--pro" href="#">Каталог pro
-            <span class="catigories__arrow">→</span>
-          </a>
+          <a class="catigories__link button" href="#">Каталог pro</a>
         </li>
       </ul>
     </section>
@@ -94,24 +91,24 @@
       </ul>
     </section>
 
-    <section class="before/after">
-      <h2 class="before/after__title">Живой пример</h2>
-      <p class="before/after__phrase">Борис сбросил 5 кг за 2 месяца, просто
+    <section class="before-after">
+      <h2 class="before-after__title">Живой пример</h2>
+      <p class="before-after__phrase">Борис сбросил 5 кг за 2 месяца, просто
         заменив свой обычный корм на Cat Energy Slim. Отличный результат без
         изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему
         спит по 16 часов в день.
       </p>
-      <b class="before/after__weight">5кг</b>
-      <span class="before/after__weight-phrase">снижение веса</span>
-      <b class="before/after__days">60 дней</b>
-      <span class="before/after__days-phrase">затрачено дней</span>
-      <p class="before/after__cost">Затраты на питание: 15 000 руб.</p>
-      <img class="before/after__fat-cat" src="#" width="" height="" alt="Толстый Борис" />
-      <img class="before/after__slim-cat" src="#" width="" height="" alt="Худой Борис" />
-      <div class="before/after__toggle-wrapper">
-        <button class="before/after__toggle-left">Было</button>
-        <span class="before/after__range-toggle"></span>
-        <button class="before/after__toggle-right">Стало</button>
+      <b class="before-after__weight">5кг</b>
+      <span class="before-after__weight-phrase">снижение веса</span>
+      <b class="before-after__days">60 дней</b>
+      <span class="before-after__days-phrase">затрачено дней</span>
+      <p class="before-after__cost">Затраты на питание: 15 000 руб.</p>
+      <img class="before-after__fat-cat" src="#" width="" height="" alt="Толстый Борис" />
+      <img class="before-after__slim-cat" src="#" width="" height="" alt="Худой Борис" />
+      <div class="before-after__toggle-wrapper">
+        <button class="before-after__toggle-left">Было</button>
+        <span class="before-after__range-toggle"></span>
+        <button class="before-after__toggle-right">Стало</button>
       </div>
     </section>
   </main>
@@ -119,30 +116,29 @@
   <footer class="page-footer">
     <b class="page-footer__invitation">Приглашаем к сотрудничеству дилеров!</b>
     <p class="page-footer__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-    <div style="position:relative;overflow:hidden;">
-      <iframe class="page-footer__map" src="https://yandex.ru/map-widget/v1/-/CKe3UKkE" width="320" height="362"></iframe>
-      <img class="page-footer__logo-title logo-title" src="#" width="#" height="#" alt="Cat Energy" />
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social_link social_link--vkontakte" href="https://vk.com/htmlacademy">
-              Мы в Вконтакте</a>
-          </li>
-          <li class="social__item">
-            <a class="social_link social_link--instagram" href="https://www.instagram.com/htmlacademy">
-              Мы в Инстаграме</a>
-          </li>
-          <li class="social__item">
-            <a class="social_link social_link--facebook" href="https://www.facebook.com/htmlacademy">
-              Мы в Фейсбуке</a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru">HTML Academy</a>
-        <a class="copyright__link-image" href="https://htmlacademy.ru">
-          <img src="#" alt="HTML Academy" width="" height="" />
-      </div>
+    <iframe class="page-footer__map" src="https://yandex.ru/map-widget/v1/-/CKe3UKkE" width="320" height="362"></iframe>
+    <img class="page-footer__logo-title logo-title" src="#" width="#" height="#" alt="Cat Energy" />
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social_link social_link--vkontakte" href="https://vk.com/htmlacademy">
+            Мы в Вконтакте</a>
+        </li>
+        <li class="social__item">
+          <a class="social_link social_link--instagram" href="https://www.instagram.com/htmlacademy">
+            Мы в Инстаграме</a>
+        </li>
+        <li class="social__item">
+          <a class="social_link social_link--facebook" href="https://www.facebook.com/htmlacademy">
+            Мы в Фейсбуке</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <a class="copyright__link" href="https://htmlacademy.ru">HTML Academy</a>
+      <a class="copyright__link-image" href="https://htmlacademy.ru">
+        <img src="#" alt="HTML Academy" width="" height="" />
+    </div>
   </footer>
 
 </body>
