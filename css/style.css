@@ -1,0 +1,8 @@
+*, *::before, *::after {
+  box-sizing: inherit; }
+
+body {
+  min-width: 330px;
+  background: gold; }
+
+/*# sourceMappingURL=style.css.map */

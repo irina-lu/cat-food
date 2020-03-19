@@ -1,13 +1,34 @@
+// module.exports = function(grunt) {
+//   grunt.loadNpmTasks("grunt-sass");
+//
+//   grunt.initConfig({
+//     sass: {
+//       style: {
+//         files: {
+//           "css/style.css": "sass/style.scss"
+//         }
+//       }
+//     }
+//   });
+// };
 module.exports = function(grunt) {
-  grunt.loadNpmTasks("grunt-sass");
+const sass = require('node-sass');
 
-  grunt.initConfig({
+require('load-grunt-tasks')(grunt);
+
+grunt.initConfig({
     sass: {
-      style: {
-        files: {
-          "css/style.css": "sass/style.scss"
-        }
-      }
+        options: {
+            implementation: sass,
+            sourceMap: true
+        },
+        dist: {
+            files: {
+                'css/style.css': 'sass/style.scss'
+            }
+        },
     }
-  });
+});
+
+grunt.registerTask('default', ['sass']);
 };
