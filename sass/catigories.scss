@@ -1,0 +1,21 @@
+.catigories__list {
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.catigories__item {
+  & a {
+    text-decoration: none;
+    color: #111111;
+  }
+}
+
+.catigories__title {
+  color: #111111;
+  text-transform: uppercase;
+  font-size: 37px;
+  line-height: 24px;
+
+}

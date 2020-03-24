@@ -1,5 +1,20 @@
 .site-list {
+  background-color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+  text-transform: uppercase;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.site-list__item {
+  border-top: 1px solid #e6e6e6;
+  padding: 22px 0;
+  text-align: center;
+  & a {
+    color: #000000;
+    text-decoration: none;
+  }
 }
