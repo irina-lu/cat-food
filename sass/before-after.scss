@@ -7,16 +7,14 @@
 }
 
 .before-after__title {
+  @include zeroing();
   @include font(36px, 60px);
-  margin: 0;
-  padding: 0;
   margin-bottom: 12px;
 }
 
 .before-after__phrase {
+  @include zeroing();
   @include font();
-  margin: 0;
-  padding: 0;
   font-family: "Arial";
   color: $font-gray;
   margin-bottom: 20px;

@@ -9,18 +9,16 @@
   }
 
 .main-screen__title {
+  @include zeroing();
   @include font(36px, 36px, 500);
-  margin: 0;
-  padding: 0;
   padding-top: 25px;
   padding-bottom: 20px;
   text-align: center;
 }
 
 .main-screen__phrase {
+  @include zeroing();
   @include font(14px, 14px);
-  margin: 0;
-  padding: 0;
   margin-bottom: 35px;
   text-transform: uppercase;
   text-align: center;

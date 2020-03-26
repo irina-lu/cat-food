@@ -1,36 +1,33 @@
-@import"color";
-@import"mixin";
+@import "color";
+@import "mixin";
 
 .advantages {
   background-color: $white;
   margin-bottom: 42px;
-  }
+}
 
-  .advantages__title {
-    @include font(36px, 60px);
-    color: $font-black;
-    padding: 0;
-    margin: 0;
-    margin-bottom: 30px;
-  }
+.advantages__title {
+  @include font(36px, 60px);
+  @include zeroing();
+  color: $font-black;
+  margin-bottom: 30px;
+}
 
-  .advantages__list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
+.advantages__list {
+  @include zeroing();
+  list-style: none;
+}
 
-  .advantages__image {
-    display: block;
-    background-color: $green;
-    width: 60px;
-    height: 60px;
-  }
+.advantages__image {
+  display: block;
+  background-color: $green;
+  width: 60px;
+  height: 60px;
+}
 
-  .advantages__phrase {
-    @include font();
-    margin: 0;
-    padding: 0;
-    font-family: "Arial";
-    color: $font-gray;
-  }
+.advantages__phrase {
+  @include font();
+  @include zeroing();
+  font-family: "Arial";
+  color: $font-gray;
+}

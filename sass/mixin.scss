@@ -3,3 +3,8 @@
   line-height: $height;
   font-weight: $weight;
 }
+
+@mixin zeroing() {
+  margin: 0;
+  padding: 0;
+}

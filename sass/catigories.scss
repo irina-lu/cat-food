@@ -6,9 +6,8 @@
 }
 
 .catigories__list {
+  @include zeroing();
   background-color: $white;
-  margin: 0;
-  padding: 0;
   list-style: none;
 }
 
@@ -42,19 +41,17 @@
 }
 
 .catigories__title {
+  @include zeroing();
   @include font(24px, 37px);
-  margin: 0;
-  padding: 0;
   color: $font-black;
   text-transform: uppercase;
   }
 
 .catigories__description {
+  @include zeroing();
   @include font();
   font-family: "Arial";
   color: $font-gray;
-  margin: 0;
-  padding: 0;
   padding-bottom: 20px;
   margin-bottom: 17px;
   border-bottom: 1px solid $border-list;

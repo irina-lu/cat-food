@@ -7,16 +7,14 @@
   }
 
 .contacts__invitation {
+  @include zeroing();
   @include font(16px, 20px);
-  margin: 0;
-  padding: 0;
   text-transform: uppercase;
 }
 
 .contacts__adress {
+  @include zeroing();
   @include font(14px, 20px);
-  margin: 0;
-  padding: 0;
   font-family: "Arial";
   color: $font-gray;
 }
