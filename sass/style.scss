@@ -8,6 +8,7 @@ src: url(../fonts/Oswald-VariableFont_wght.ttf); /* Путь к файлу со 
 }
 
 @import"color";
+@import"mixin";
 @import"page-wrapper";
 @import"site-list";
 @import"main-screen";

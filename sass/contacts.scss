@@ -1,4 +1,5 @@
 @import"color";
+@import"mixin";
 
 .contacts {
   background-color: $white;
@@ -6,19 +7,16 @@
   }
 
 .contacts__invitation {
+  @include font(16px, 20px);
   margin: 0;
   padding: 0;
-  font-size: 16px;
-  line-height: 20px;
   text-transform: uppercase;
-  font-weight: 400;
 }
 
 .contacts__adress {
+  @include font(14px, 20px);
   margin: 0;
   padding: 0;
   font-family: "Arial";
-  font-size: 14px;
-  line-height: 20px;
   color: $font-gray;
 }

@@ -1,4 +1,5 @@
 @import"color";
+@import"mixin";
 
 .main-screen {
   color: $white;
@@ -8,22 +9,19 @@
   }
 
 .main-screen__title {
+  @include font(36px, 36px, 500);
   margin: 0;
   padding: 0;
   padding-top: 25px;
   padding-bottom: 20px;
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: 500;
   text-align: center;
 }
 
 .main-screen__phrase {
+  @include font(14px, 14px);
   margin: 0;
   padding: 0;
   margin-bottom: 35px;
-  font-size: 14px;
-  line-height: 14px;
   text-transform: uppercase;
   text-align: center;
 }

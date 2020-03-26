@@ -12,10 +12,10 @@
   max-width: 100%; }
 
 .site-list {
-  background-color: #ffffff;
   font-size: 20px;
-  font-weight: 600;
   line-height: 20px;
+  font-weight: 600;
+  background-color: #ffffff;
   text-transform: uppercase;
   margin: 0;
   padding: 0;
@@ -36,21 +36,22 @@
   background-repeat: no-repeat; }
 
 .main-screen__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 500;
   margin: 0;
   padding: 0;
   padding-top: 25px;
   padding-bottom: 20px;
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: 500;
   text-align: center; }
 
 .main-screen__phrase {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
   margin: 0;
   padding: 0;
   margin-bottom: 35px;
-  font-size: 14px;
-  line-height: 14px;
   text-transform: uppercase;
   text-align: center; }
 
@@ -92,28 +93,30 @@
   margin-right: 20px; }
 
 .catigories__title {
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
   margin: 0;
   padding: 0;
   color: #111111;
-  text-transform: uppercase;
-  font-size: 24px;
-  line-height: 37px;
-  font-weight: 400; }
+  text-transform: uppercase; }
 
 .catigories__description {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  font-family: "Arial";
+  color: #444444;
   margin: 0;
   padding: 0;
   padding-bottom: 20px;
   margin-bottom: 17px;
-  font-family: "Arial";
-  font-size: 14px;
-  line-height: 18px;
-  color: #444444;
   border-bottom: 1px solid #d9d9d9; }
 
 .catigories__link {
   font-size: 16px;
-  line-height: 16px; }
+  line-height: 16px;
+  font-weight: 400; }
 
 .advantages {
   background-color: #ffffff;
@@ -140,11 +143,12 @@
   height: 60px; }
 
 .advantages__phrase {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
   margin: 0;
   padding: 0;
   font-family: "Arial";
-  font-size: 14px;
-  line-height: 18px;
   color: #444444; }
 
 .before-after {
@@ -160,11 +164,12 @@
   margin-bottom: 12px; }
 
 .before-after__phrase {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
   margin: 0;
   padding: 0;
   font-family: "Arial";
-  font-size: 14px;
-  line-height: 18px;
   color: #444444;
   margin-bottom: 20px; }
 
@@ -180,18 +185,21 @@
 .before-after__days {
   font-size: 24px;
   line-height: 24px;
+  font-weight: 400;
   text-transform: uppercase; }
 
 .before-after__days-phrase,
 .before-after__weight-phrase {
-  font-family: "Arial";
   font-size: 12px;
   line-height: 12px;
+  font-weight: 400;
+  font-family: "Arial";
   color: #444444; }
 
 .before-after__cost {
   font-size: 14px;
   line-height: 20px;
+  font-weight: 400;
   text-transform: uppercase; }
 
 .contacts {
@@ -199,19 +207,20 @@
   color: #111111; }
 
 .contacts__invitation {
-  margin: 0;
-  padding: 0;
   font-size: 16px;
   line-height: 20px;
-  text-transform: uppercase;
-  font-weight: 400; }
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase; }
 
 .contacts__adress {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
   margin: 0;
   padding: 0;
   font-family: "Arial";
-  font-size: 14px;
-  line-height: 20px;
   color: #444444; }
 
 .page-footer {
@@ -242,9 +251,10 @@
   padding: 22px 0; }
 
 .copyright__link {
-  font-family: "Arial";
   font-size: 16px;
   line-height: 16px;
+  font-weight: 400;
+  font-family: "Arial";
   text-decoration: none;
   color: #444444; }
 

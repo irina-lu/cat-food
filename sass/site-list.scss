@@ -1,10 +1,9 @@
 @import"color";
+@import"mixin";
 
 .site-list {
+  @include font(20px, 20px, 600);
   background-color: $white;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 20px;
   text-transform: uppercase;
   margin: 0;
   padding: 0;
