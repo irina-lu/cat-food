@@ -2,9 +2,7 @@
 @import"mixin";
 
 .copyright {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex(space-between, center);
   padding: 22px 0;
 }
 

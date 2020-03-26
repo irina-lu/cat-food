@@ -25,11 +25,8 @@
 }
 
 .catigories__title-wrapper {
+  @include flex(flex-start, center);
   margin-bottom: 26px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
 }
 
 .catigories__round {
