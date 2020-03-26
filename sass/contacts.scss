@@ -1,6 +1,8 @@
+@import"color";
+
 .contacts {
-  background-color: #ffffff;
-  color: #111111;
+  background-color: $white;
+  color: $font-black;
   }
 
 .contacts__invitation {
@@ -18,5 +20,5 @@
   font-family: "Arial";
   font-size: 14px;
   line-height: 20px;
-  color: #444444;
+  color: $font-gray;
 }

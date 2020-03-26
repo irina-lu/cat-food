@@ -1,6 +1,8 @@
+@import"color";
+
 .main-screen {
-  color: #ffffff;
-  background-color: #63a73a;
+  color: $white;
+  background-color: $green;
   background-image: url(../img/index-background.jpg);
   background-repeat: no-repeat;
   }

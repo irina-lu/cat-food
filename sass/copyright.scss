@@ -1,3 +1,5 @@
+@import"color";
+
 .copyright {
   display: flex;
   justify-content: space-between;
@@ -10,6 +12,5 @@
   font-size: 16px;
   line-height: 16px;
   text-decoration: none;
-  color: #444444;
-
+  color: $font-gray;
 }

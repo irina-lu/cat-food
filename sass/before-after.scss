@@ -1,6 +1,8 @@
+@import"color";
+
 .before-after {
-  background-color: #f2f2f2;
-  color: #111111;
+  background-color: $background-gray;
+  color: $font-black;
 }
 
 .before-after__title {
@@ -18,14 +20,14 @@
   font-family: "Arial";
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
+  color: $font-gray;
   margin-bottom: 20px;
 }
 
 .before-after__border-gray {
  display: inline-block;
  width: 124px;
- border: 1px solid  #cdcdcd;
+ border: 1px solid  $border;
  border-radius: 5px;
  text-align: center;
  padding: 13px 0;
@@ -43,7 +45,7 @@
   font-family: "Arial";
   font-size: 12px;
   line-height: 12px;
-  color: #444444;
+  color: $font-gray;
 }
 
 .before-after__cost {

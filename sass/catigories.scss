@@ -1,21 +1,23 @@
+@import"color";
+
 .catigories {
   margin-bottom: 28px;
 }
 
 .catigories__list {
-  background-color: #ffffff;
+  background-color: $white;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .catigories__item {
-  background-color: #f2f2f2;
+  background-color: $background-gray;
   padding-bottom: 17px;
   & a {
     text-decoration: none;
     text-transform: uppercase;
-    color: #111111;
+    color: $font-black;
   }
   &:first-child {
     margin-bottom: 20px;
@@ -31,7 +33,7 @@
 }
 
 .catigories__round {
-  background-color: #68b738;
+  background-color: $green;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -42,7 +44,7 @@
 .catigories__title {
   margin: 0;
   padding: 0;
-  color: #111111;
+  color: $font-black;
   text-transform: uppercase;
   font-size: 24px;
   line-height: 37px;
@@ -57,9 +59,8 @@
   font-family: "Arial";
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
-  border-bottom: 1px solid #d9d9d9;
-
+  color: $font-gray;
+  border-bottom: 1px solid $border-list;
 }
 
 .catigories__link {

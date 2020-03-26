@@ -1,5 +1,7 @@
+@import"color";
+
 .site-list {
-  background-color: #ffffff;
+  background-color: $white;
   font-size: 20px;
   font-weight: 600;
   line-height: 20px;
@@ -10,11 +12,11 @@
 }
 
 .site-list__item {
-  border-top: 1px solid #e6e6e6;
+  border-top: 1px solid $border-list;
   padding: 22px 0;
   text-align: center;
   & a {
-    color: #000000;
+    color: $font-black;
     text-decoration: none;
   }
 }
