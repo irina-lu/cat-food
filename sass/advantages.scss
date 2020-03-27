@@ -1,0 +1,33 @@
+@import "color";
+@import "mixin";
+
+.advantages {
+  background-color: $white;
+  margin-bottom: 42px;
+}
+
+.advantages__title {
+  @include font(36px, 60px);
+  @include zeroing();
+  color: $font-black;
+  margin-bottom: 30px;
+}
+
+.advantages__list {
+  @include zeroing();
+  list-style: none;
+}
+
+.advantages__image {
+  display: block;
+  background-color: $green;
+  width: 60px;
+  height: 60px;
+}
+
+.advantages__phrase {
+  @include font();
+  @include zeroing();
+  font-family: "Arial";
+  color: $font-gray;
+}

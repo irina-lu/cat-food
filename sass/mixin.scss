@@ -1,0 +1,16 @@
+@mixin font($size: 14px, $height: 18px, $weight: 400) {
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+}
+
+@mixin zeroing() {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin flex($justify-content, $align-items) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}

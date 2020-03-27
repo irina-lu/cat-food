@@ -1,0 +1,20 @@
+@import"color";
+@import"mixin";
+
+.site-list {
+  @include zeroing();
+  @include font(20px, 20px, 600);
+  background-color: $white;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.site-list__item {
+  border-top: 1px solid $border-list;
+  padding: 22px 0;
+  text-align: center;
+  & a {
+    color: $font-black;
+    text-decoration: none;
+  }
+}

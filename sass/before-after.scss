@@ -1,0 +1,48 @@
+@import"color";
+@import"mixin";
+
+.before-after {
+  background-color: $background-gray;
+  color: $font-black;
+}
+
+.before-after__title {
+  @include zeroing();
+  @include font(36px, 60px);
+  margin-bottom: 12px;
+}
+
+.before-after__phrase {
+  @include zeroing();
+  @include font();
+  font-family: "Arial";
+  color: $font-gray;
+  margin-bottom: 20px;
+}
+
+.before-after__border-gray {
+ display: inline-block;
+ width: 124px;
+ border: 1px solid  $border;
+ border-radius: 5px;
+ text-align: center;
+ padding: 13px 0;
+ }
+
+.before-after__weight,
+.before-after__days {
+  @include font(24px, 24px);
+  text-transform: uppercase;
+}
+
+.before-after__days-phrase,
+.before-after__weight-phrase {
+  @include font(12px, 12px);
+  font-family: "Arial";
+  color: $font-gray;
+}
+
+.before-after__cost {
+  @include font(14px, 20px);
+  text-transform: uppercase;
+}

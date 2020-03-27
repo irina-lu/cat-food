@@ -1,0 +1,59 @@
+@import"color";
+@import"mixin";
+
+.catigories {
+  margin-bottom: 28px;
+}
+
+.catigories__list {
+  @include zeroing();
+  background-color: $white;
+  list-style: none;
+}
+
+.catigories__item {
+  background-color: $background-gray;
+  padding-bottom: 17px;
+  & a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $font-black;
+  }
+  &:first-child {
+    margin-bottom: 20px;
+  }
+}
+
+.catigories__title-wrapper {
+  @include flex(flex-start, center);
+  margin-bottom: 26px;
+}
+
+.catigories__round {
+  background-color: $green;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.catigories__title {
+  @include zeroing();
+  @include font(24px, 37px);
+  color: $font-black;
+  text-transform: uppercase;
+  }
+
+.catigories__description {
+  @include zeroing();
+  @include font();
+  font-family: "Arial";
+  color: $font-gray;
+  padding-bottom: 20px;
+  margin-bottom: 17px;
+  border-bottom: 1px solid $border-list;
+}
+
+.catigories__link {
+  @include font(16px, 16px);
+}

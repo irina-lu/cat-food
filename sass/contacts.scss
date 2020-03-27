@@ -1,0 +1,20 @@
+@import"color";
+@import"mixin";
+
+.contacts {
+  background-color: $white;
+  color: $font-black;
+  }
+
+.contacts__invitation {
+  @include zeroing();
+  @include font(16px, 20px);
+  text-transform: uppercase;
+}
+
+.contacts__adress {
+  @include zeroing();
+  @include font(14px, 20px);
+  font-family: "Arial";
+  color: $font-gray;
+}

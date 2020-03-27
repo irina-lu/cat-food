@@ -1,0 +1,14 @@
+@import"color";
+@import"mixin";
+
+.copyright {
+  @include flex(space-between, center);
+  padding: 22px 0;
+}
+
+.copyright__link {
+  @include font(16px, 16px);
+  font-family: "Arial";
+  text-decoration: none;
+  color: $font-gray;
+}

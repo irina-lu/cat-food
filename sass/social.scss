@@ -1,0 +1,15 @@
+@import"color";
+@import"mixin";
+
+.social__list {
+  @include zeroing();
+  @include flex(center, center);
+  list-style: none;
+  border-top: 1px solid $border-list;
+  border-bottom: 1px solid $border-list;
+  padding: 24px 0;
+}
+
+.social__item {
+  margin-right: 38px;
+}

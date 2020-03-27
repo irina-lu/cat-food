@@ -1,0 +1,30 @@
+@import"color";
+@import"mixin";
+
+.main-screen {
+  color: $white;
+  background-color: $green;
+  background-image: url(../img/index-background.jpg);
+  background-repeat: no-repeat;
+  }
+
+.main-screen__title {
+  @include zeroing();
+  @include font(36px, 36px, 500);
+  padding-top: 25px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.main-screen__phrase {
+  @include zeroing();
+  @include font(14px, 14px);
+  margin-bottom: 35px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.main-screen__image {
+  display: block;
+  margin: 0 auto;
+}
