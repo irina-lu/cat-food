@@ -1,0 +1,48 @@
+@import"color";
+@import"mixin";
+
+.catalog {
+
+}
+
+.catalog__title {
+  @include zeroing();
+  @include  font(36px, 60px);
+  color: $font-black;
+  padding: 22px 0;
+}
+
+.catalog__list {
+  @include zeroing();
+  list-style: none;
+}
+
+.catalog__item {
+  @include zeroing();
+  padding: 24px 0;
+  border-top: 1px solid $catalog-border;
+  &:last-child {
+    border-bottom: 1px solid $catalog-border;
+  }
+}
+
+.catalog__link-image {
+  text-decoration: none;
+}
+
+.catalog__link-title {
+  @include font(16px, 20px);
+  color: $font-black;
+  text-decoration: none;
+}
+
+.catalog__table {
+  @include font(12px, 16px);
+  font-family: "Arial";
+  color: $font-gray;
+  width: 50%;
+}
+
+.catalog__table-item:last-child {
+  text-align: right;
+}

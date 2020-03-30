@@ -28,6 +28,8 @@
   .site-list__item a {
     color: #111111;
     text-decoration: none; }
+  .site-list__item:last-child {
+    border-bottom: 1px solid #d9d9d9; }
 
 .main-screen {
   color: #ffffff;
@@ -257,5 +259,66 @@
   font-family: "Arial";
   text-decoration: none;
   color: #444444; }
+
+.catalog__title {
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+  color: #111111;
+  padding: 22px 0; }
+
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.catalog__item {
+  margin: 0;
+  padding: 0;
+  padding: 24px 0;
+  border-top: 1px solid #ededed; }
+  .catalog__item:last-child {
+    border-bottom: 1px solid #ededed; }
+
+.catalog__link-image {
+  text-decoration: none; }
+
+.catalog__link-title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #111111;
+  text-decoration: none; }
+
+.catalog__table {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  font-family: "Arial";
+  color: #444444;
+  width: 50%; }
+
+.catalog__table-item:last-child {
+  text-align: right; }
+
+.show-more__title {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #111111; }
+
+.show-more__phrase {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  font-family: "Arial";
+  color: #444444;
+  margin-bottom: 18px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -17,4 +17,7 @@
     color: $font-black;
     text-decoration: none;
   }
+  &:last-child  {
+    border-bottom: 1px solid $border-list;
+  }
 }
