@@ -1,4 +1,4 @@
-*, *::before, *::after {
+ *, *::before, *::after {
   box-sizing: border-box;
 }
 
@@ -7,20 +7,20 @@ font-family: "Oswald";
 src: url(../fonts/Oswald-VariableFont_wght.ttf); /* Путь к файлу со шрифтом */
 }
 
-@import"color";
-@import"mixin";
-@import"page-wrapper";
-@import"site-list";
-@import"main-screen";
-@import"button";
-@import"catigories";
-@import"advantages";
-@import"before-after";
-@import"contacts";
-@import"page-footer";
-@import"social";
-@import"copyright";
-@import"catalog";
-@import"show-more";
-@import"extra";
-@import"gift";
+@import "color";
+@import "mixin";
+@import "page-wrapper";
+@import "site-list";
+@import "main-screen";
+@import "button";
+@import "catigories";
+@import "advantages";
+@import "before-after";
+@import "contacts";
+@import "page-footer";
+@import "social";
+@import "copyright";
+@import "catalog";
+@import "show-more";
+@import "extra";
+@import "gift";

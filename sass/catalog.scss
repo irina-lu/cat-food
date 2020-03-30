@@ -1,9 +1,5 @@
-@import"color";
-@import"mixin";
-
-.catalog {
-
-}
+@import "color";
+@import "mixin";
 
 .catalog__title {
   @include zeroing();
