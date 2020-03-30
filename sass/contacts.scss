@@ -1,10 +1,14 @@
-@import"color";
-@import"mixin";
+@import "color";
+@import "mixin";
 
 .contacts {
   background-color: $white;
   color: $font-black;
+
+  &--gray {
+    background-color: $background-gray;
   }
+}
 
 .contacts__invitation {
   @include zeroing();

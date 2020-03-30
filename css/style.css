@@ -206,6 +206,8 @@
 .contacts {
   background-color: #ffffff;
   color: #111111; }
+  .contacts--gray {
+    background-color: #f2f2f2; }
 
 .contacts__invitation {
   margin: 0;
@@ -320,5 +322,70 @@
   font-family: "Arial";
   color: #444444;
   margin-bottom: 18px; }
+
+.extra__title {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #111111;
+  padding-top: 28px;
+  padding-bottom: 33px; }
+
+.extra__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 40px; }
+
+.extra__item {
+  border-top: 1px solid #cdcdcd;
+  padding-top: 14px;
+  padding-bottom: 17px; }
+  .extra__item:last-child {
+    border-bottom: 1px solid #cdcdcd; }
+
+.extra__item-title {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #222222;
+  margin-bottom: 15px; }
+
+.extra__table {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  font-family: "Arial";
+  color: #444444;
+  width: 100%;
+  margin-bottom: 14px; }
+
+.extra__table-item:last-child {
+  text-align: right; }
+
+.gift {
+  min-width: 280px;
+  min-height: 290px;
+  background-color: #68b738;
+  background-image: url("../img/gift-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.gift__phrase {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: "Arial";
+  color: #ffffff;
+  text-align: center;
+  width: 170px;
+  margin: 0 auto;
+  padding-top: 185px; }
 
 /*# sourceMappingURL=style.css.map */
