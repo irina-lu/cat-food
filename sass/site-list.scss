@@ -1,5 +1,5 @@
-@import"color";
-@import"mixin";
+@import "color";
+@import "mixin";
 
 .site-list {
   @include zeroing();
@@ -16,5 +16,8 @@
   & a {
     color: $font-black;
     text-decoration: none;
+  }
+  &:last-child  {
+    border-bottom: 1px solid $border-list;
   }
 }

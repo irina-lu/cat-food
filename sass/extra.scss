@@ -1,0 +1,44 @@
+@import "color";
+@import "mixin";
+
+.extra__title {
+  @include zeroing();
+  @include font(24px, 24px);
+  color: $font-black;
+  padding-top: 28px;
+  padding-bottom: 33px;
+}
+
+.extra__list {
+  @include zeroing();
+  list-style: none;
+  margin-bottom: 40px;
+}
+
+.extra__item {
+  border-top: 1px solid $border;
+  padding-top: 14px;
+  padding-bottom: 17px;
+  &:last-child {
+    border-bottom: 1px solid $border;
+  }
+}
+
+.extra__item-title {
+  @include zeroing();
+  @include font(16px, 16px);
+  color: $font-light-black;
+  margin-bottom: 15px;
+}
+
+.extra__table {
+  @include font(14px, 14px);
+  font-family: "Arial";
+  color: $font-gray;
+  width: 100%;
+  margin-bottom: 14px;
+}
+
+.extra__table-item:last-child {
+  text-align: right;
+}
