@@ -1,0 +1,23 @@
+@import "color";
+@import "mixin";
+
+.comment {
+  padding: 26px 0;
+}
+
+.comment__title {
+  @include zeroing();
+  @include font(24px, 24px);
+  color: $font-black;
+  margin-bottom: 25px;
+}
+
+.comment__area {
+  resize: none;
+  font-family: inherit;
+  @include font(16px, 18px);
+  color: $font-light-black;
+  text-transform: uppercase;
+  padding: 13px 16px;
+  border: 1px solid $border;
+}

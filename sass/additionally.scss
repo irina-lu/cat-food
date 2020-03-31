@@ -1,0 +1,33 @@
+@import "color";
+@import "mixin";
+
+.additionally {
+  @include zeroing();
+  border: 0;
+}
+
+.additionally__title {
+  @include zeroing();
+  @include font(24px, 24px);
+  color: $font-black;
+  margin-bottom: 28px;
+}
+
+.additionally__input-wrapper {
+  @include zeroing();
+  margin-bottom: 13px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.additionally__checkbox {
+  @include zeroing();
+  margin-right: 16px;
+}
+
+.additionally__label {
+  @include font(16px, 18px);
+  color: $font-light-black;
+  text-transform: uppercase;
+}

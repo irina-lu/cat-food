@@ -1,0 +1,28 @@
+@import "color";
+@import "mixin";
+
+.programm {
+  @include zeroing();
+  border: 0;
+  padding: 22px 0;
+  border-bottom: 1px solid $block-border;
+}
+
+.programm__input-wrapper {
+  @include zeroing ();
+  margin-bottom: 13px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.programm__radio {
+  @include zeroing ();
+}
+
+.programm__label {
+  @include font(16px, 18px);
+  color: $font-light-black;
+  text-transform: uppercase;
+  margin-right: 15px;
+}
