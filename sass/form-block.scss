@@ -1,0 +1,28 @@
+@import "color";
+@import "mixin";
+
+.form-block {
+  padding: 31px 0;
+}
+
+.form-block__title {
+  @include zeroing();
+  @include font(36px, 60px);
+  color: $font-black;
+  margin-bottom: 20px;
+}
+
+.form-block__appeal {
+  @include zeroing();
+  @include font(15px, 18px);
+  color: $font-black;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+
+.form-block__legend {
+  @include zeroing();
+  @include font(14px, 16px);
+  font-family: "Arial";
+  color: $font-gray;
+}

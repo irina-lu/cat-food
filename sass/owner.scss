@@ -1,0 +1,38 @@
+@import "color";
+@import "mixin";
+
+.owner {
+  @include zeroing();
+  border: 0;
+}
+
+.owner__title {
+  @include zeroing();
+  @include font(24px, 24px);
+  color: $font-black;
+  padding: 25px 0;
+}
+
+.owner__input-wrapper {
+  @include zeroing();
+  margin-bottom: 14px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.owner__label {
+  @include font(16px, 18px);
+  color: $font-light-black;
+  text-transform: uppercase;
+  margin-right: 11px;
+}
+
+.owner__input {
+  @include font(16px, 18px);
+  font-family: inherit;
+  color: $font-gray;
+  text-transform: uppercase;
+  border: 1px solid $border;
+  padding: 12px 16px;
+}
