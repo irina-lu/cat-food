@@ -3,7 +3,8 @@
 
 .copyright {
   @include flex(space-between, center);
-  padding: 22px 0;
+  width: 100%;
+  padding: 22px 20px;
 }
 
 .copyright__link {
