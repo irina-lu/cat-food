@@ -7,6 +7,15 @@
   src: url(../fonts/Oswald-VariableFont_wght.ttf);
   /* Путь к файлу со шрифтом */ }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
 .page-wrapper {
   font-family: "Oswald", 'Arial', sans-serif;
   width: 100%; }
@@ -41,9 +50,10 @@
 
 .main-screen {
   color: #ffffff;
-  background-color: #68b738;
-  background-image: url(../img/index-background.jpg);
-  background-repeat: no-repeat; }
+  background: linear-gradient(to bottom, #68b738 25%, #ffffff 55%);
+  background-image: url(../img/index-background-mobile.jpg);
+  background-repeat: no-repeat;
+  margin-bottom: 22px; }
 
 .main-screen__title {
   margin: 0;
