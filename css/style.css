@@ -80,7 +80,9 @@
   margin: 0 auto; }
 
 .catigories {
-  margin-bottom: 28px; }
+  width: 100%;
+  padding: 0 20px;
+  margin-bottom: 20px; }
 
 .catigories__list {
   margin: 0;
@@ -139,7 +141,9 @@
 
 .advantages {
   background-color: #ffffff;
-  margin-bottom: 42px; }
+  width: 100%;
+  padding: 0 20px;
+  padding-bottom: 42px; }
 
 .advantages__title {
   font-size: 36px;
@@ -155,11 +159,20 @@
   padding: 0;
   list-style: none; }
 
+.advantages__item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px; }
+  .advantages__item:last-child {
+    margin-bottom: 0px; }
+
 .advantages__image {
-  display: block;
+  flex-shrink: 0;
   background-color: #68b738;
   width: 60px;
-  height: 60px; }
+  height: 60px;
+  margin-right: 20px; }
 
 .advantages__phrase {
   font-size: 14px;
@@ -173,6 +186,16 @@
 .before-after {
   background-color: #f2f2f2;
   color: #111111; }
+
+.before-after__wrapper {
+  width: 100%;
+  padding: 0 20px; }
+
+.before-after__flex-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px; }
 
 .before-after__title {
   margin: 0;
@@ -198,7 +221,8 @@
   border: 1px solid #cdcdcd;
   border-radius: 5px;
   text-align: center;
-  padding: 13px 0; }
+  padding: 13px 0;
+  max-height: 56px; }
 
 .before-after__weight,
 .before-after__days {
@@ -212,14 +236,21 @@
   font-size: 12px;
   line-height: 12px;
   font-weight: 400;
+  display: inline-block;
   font-family: "Arial";
-  color: #444444; }
+  color: #444444;
+  background-color: #f2f2f2;
+  padding: 6px 10px 0;
+  max-width: 87px; }
 
 .before-after__cost {
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-align: center; }
 
 .contacts {
   background-color: #ffffff;

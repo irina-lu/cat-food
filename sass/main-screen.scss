@@ -3,9 +3,10 @@
 
 .main-screen {
   color: $white;
-  background-color: $green;
-  background-image: url(../img/index-background.jpg);
+  background: linear-gradient(to bottom, $green 25%, $white 55%);
+  background-image: url(../img/index-background-mobile.jpg);
   background-repeat: no-repeat;
+  margin-bottom: 22px;
   }
 
 .main-screen__title {
