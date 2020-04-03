@@ -11,6 +11,7 @@
 .page-header__logo-tablet {
   display: none;
 }
+
 @media (min-width: 768px) {
   .page-header__logo-tablet {
     display: inline;
@@ -29,5 +30,20 @@
 
   .page-header__wrapper {
     padding: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+
+  .page-header {
+    padding-top: 55px;
+  }
+
+  .page-header__logo-desktop {
+    display: inline;
+  }
+
+  .page-header__logo-tablet {
+    display: none;
   }
 }

@@ -25,6 +25,11 @@
     width: 100%;
     padding: 0 30px; } }
 
+@media (min-width: 1440px) {
+  .page-wrapper {
+    width: 100%;
+    padding: 0 110px; } }
+
 .page-header__wrapper {
   display: flex;
   justify-content: space-between;
@@ -50,6 +55,14 @@
     align-items: center; }
   .page-header__wrapper {
     padding: 0; } }
+
+@media (min-width: 1440px) {
+  .page-header {
+    padding-top: 55px; }
+  .page-header__logo-desktop {
+    display: inline; }
+  .page-header__logo-tablet {
+    display: none; } }
 
 .site-list {
   margin: 0;
