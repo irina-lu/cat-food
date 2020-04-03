@@ -31,6 +31,14 @@
 .page-header__logo-desktop {
   display: none; }
 
+@media (min-width: 768px) {
+  .page-header__logo-tablet {
+    display: inline; }
+  .page-header__logo,
+  .page-header__logo-desktop,
+  .page-header__toggle {
+    display: none; } }
+
 .site-list {
   margin: 0;
   padding: 0;
@@ -168,7 +176,7 @@
   align-items: center;
   margin-bottom: 20px; }
   .advantages__item:last-child {
-    margin-bottom: 0px; }
+    margin-bottom: 0; }
 
 .advantages__image {
   flex-shrink: 0;

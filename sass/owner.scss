@@ -16,9 +16,7 @@
 .owner__input-wrapper {
   @include zeroing();
   margin-bottom: 14px;
-  &:last-child {
-    margin-bottom: 0;
-  }
+  @include undo-last-item-margin();
 }
 
 .owner__label {
