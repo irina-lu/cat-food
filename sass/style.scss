@@ -1,5 +1,5 @@
- *, *::before, *::after {
-  box-sizing: border-box;
+*, *::before, *::after {
+ box-sizing: border-box;
 }
 
 @font-face {
@@ -9,7 +9,9 @@ src: url(../fonts/Oswald-VariableFont_wght.ttf); /* Путь к файлу со 
 
 @import "color";
 @import "mixin";
+@import "visually-hidden";
 @import "page-wrapper";
+@import "page-header";
 @import "site-list";
 @import "main-screen";
 @import "button";
@@ -31,3 +33,13 @@ src: url(../fonts/Oswald-VariableFont_wght.ttf); /* Путь к файлу со 
 @import "comment";
 @import "additionally";
 @import "form";
+
+body {
+ @include zeroing();
+ min-width: 320px;
+}
+
+img {
+ max-width: 100%;
+ height: auto;
+}

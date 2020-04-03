@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Подбор программы</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -10,15 +11,17 @@
 <body>
   <div class="page-wrapper">
     <header class="page-header">
-      <a class="page-header__logo page-header__logo--img">
-        <!--TODO: вставить значения ширины и высоты во все теги img -->
-        <img class="page-header__logo-image" src="img/icon/logo.svg" width="#" height="#" alt="Cat Energy" />
-      </a>
-      <a class="page-header__logo page-header__logo--title">
-        <img class="page-header__logo-title logo-title" src="img/icon/logo-text.svg" width="#" height="#" alt="Cat Energy" />
-      </a>
+      <div class="page-header__wrapper">
+        <a class="page-header__logo page-header__logo--img">
+          <!--TODO: вставить значения ширины и высоты во все теги img -->
+          <img class="page-header__logo-image" src="img/icon/logo.svg" width="#" height="#" alt="Cat Energy" />
+        </a>
+        <a class="page-header__logo page-header__logo--title">
+          <img class="page-header__logo-title logo-title" src="img/icon/logo-text.svg" width="#" height="#" alt="Cat Energy" />
+        </a>
+        <button class="page-header__toggle" type="button">x</button>
+      </div>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">

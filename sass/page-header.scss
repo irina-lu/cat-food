@@ -1,0 +1,13 @@
+@import "color";
+@import "mixin";
+
+.page-header__wrapper {
+  @include flex(space-between, center);
+  max-width: 100%;
+  padding: 11px 20px;
+}
+
+.page-header__logo-tablet,
+.page-header__logo-desktop {
+  display: none;
+}

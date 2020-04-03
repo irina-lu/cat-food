@@ -1,6 +1,11 @@
 @import "color";
 @import "mixin";
 
+.social {
+  width: 100%;
+  padding: 0 20px;  
+}
+
 .social__list {
   @include zeroing();
   @include flex(center, center);
