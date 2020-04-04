@@ -6,6 +6,8 @@
   background: linear-gradient(to bottom, $green 25%, $white 55%);
   background-image: url(../img/index-background-mobile.jpg);
   background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top right;
   margin-bottom: 22px;
   }
 
@@ -28,4 +30,63 @@
 .main-screen__image {
   display: block;
   margin: 0 auto;
+}
+
+.main-screen__image--tablet,
+.main-screen__image--desktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+
+  .main-screen {
+    background: none;
+  }
+
+  .main-screen__image--tablet {
+    display: block;
+  }
+
+  .main-screen__image--mobile {
+    display: none;
+  }
+
+  .main-screen__title {
+    @include font(60px, 60px, 500);
+    color: $font-black;
+    text-align: left;
+    margin-left: 90px;
+    width: 425px;
+  }
+
+  .main-screen__phrase {
+    @include font(20px, 20px);
+    color: $font-black;
+    text-align: left;
+    margin-left: 90px;
+  }
+}
+
+@media (min-width: 1440px) {
+
+  .main-screen {
+    min-height: 696px;
+    position: relative;
+  }
+
+  .main-screen__image--desktop {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 217px;
+  }
+
+  .main-screen__image--tablet {
+    display: none;
+  }
+
+  .main-screen__title {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
 }

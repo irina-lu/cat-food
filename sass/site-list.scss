@@ -4,7 +4,6 @@
 .site-list {
   @include zeroing();
   @include font(20px, 20px, 600);
-  background-color: $white;
   text-transform: uppercase;
   list-style: none;
 }
@@ -31,11 +30,12 @@
   }
 
   .site-list__item {
-    color: $font-light-black;
+    & a {
+      color: $font-light-black;
+    }
     border: 0;
     border-bottom: 2px solid transparent;
-    padding: 0;
-    padding-bottom: 9px;
+    padding: 0 0 9px;
     margin-right: 35px;
 
     &:last-child {
@@ -48,6 +48,21 @@
         border-color: $green;
       }
       border-color: $green;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .site-list__item--main {
+    & a {
+      color: $white;
+    }
+
+    &--active {
+      &:last-child {
+        border-color: $white;
+      }
+      border-color: $white;
     }
   }
 }

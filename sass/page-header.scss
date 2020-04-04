@@ -25,6 +25,7 @@
 
   .page-header {
     padding-top: 25px;
+    margin-bottom: 25px;
     @include flex(space-between, center);
   }
 

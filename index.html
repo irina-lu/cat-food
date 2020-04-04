@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <div class="page-wrapper">
+  <div class="page-wrapper page-wrapper--main">
     <header class="page-header">
       <div class="page-header__wrapper">
         <a class="page-header__logo page-header__logo--img">
@@ -30,14 +30,14 @@
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a class="button" href="#">Главная</a>
+            <li class="site-list__item site-list__item--active site-list__item--main site-list__item--main--active">
+              <a href="#">Главная</a>
             </li>
-            <li class="site-list__item">
-              <a class="button" href="catalog.html">Каталог продукции</a>
+            <li class="site-list__item site-list__item--main">
+              <a href="catalog.html">Каталог продукции</a>
             </li>
-            <li class="site-list__item">
-              <a class="button" href="form.html">Подбор программы</a>
+            <li class="site-list__item site-list__item--main">
+              <a href="form.html">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -48,7 +48,9 @@
       <section class="main-screen">
         <h1 class="main-screen__title">Функциональное питание для котов</h1>
         <p class="main-screen__phrase">Занялся собой? Займись котом!</p>
-        <img class="main-screen__image" src="img/index-food.png" width="" height=" " alt="Питание для котов" />
+        <img class="main-screen__image main-screen__image--mobile" src="img/index-food-mobile.png" width="" height=" " alt="Питание для котов" />
+        <img class="main-screen__image main-screen__image--tablet" src="img/index-food-tablet.png" width="" height=" " alt="Питание для котов" />
+        <img class="main-screen__image main-screen__image--desktop" src="img/index-food-desktop.png" width="" height=" " alt="Питание для котов" />
         <a class="main-screen__link button" href="form.html">Подобрать программу</a>
       </section>
 
@@ -64,7 +66,7 @@
               утратил способность лазить по деревьям? Пора на диету!
               Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
             </p>
-            <a class="catigories__link button" href="#">Каталог slim</a>
+            <a class="catigories__link" href="#">Каталог slim</a>
           </li>
           <li class="catigories__item">
             <div class="catigories__title-wrapper">
@@ -75,7 +77,7 @@
               котов и даже собак? Серия Cat Energy Pro поможет вашему коту
               нарастить необходимые мышцы!
             </p>
-            <a class="catigories__link button" href="#">Каталог pro</a>
+            <a class="catigories__link" href="#">Каталог pro</a>
           </li>
         </ul>
       </section>
