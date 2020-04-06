@@ -9,6 +9,7 @@
   background-size: contain;
   background-position: top right;
   margin-bottom: 22px;
+  padding: 0 20px;
   }
 
 .main-screen__title {
@@ -40,7 +41,9 @@
 @media (min-width: 768px) {
 
   .main-screen {
+    position: relative;
     background: none;
+    padding: 0;
   }
 
   .main-screen__image--tablet {
@@ -65,6 +68,14 @@
     text-align: left;
     margin-left: 90px;
   }
+
+  .main-screen__link {
+    width: 245px;
+    padding: 16px 0;
+    position: absolute;
+    top: 245px;
+    left: 90px;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -88,5 +99,14 @@
   .main-screen__title {
     padding-top: 80px;
     padding-bottom: 40px;
+  }
+
+  .main-screen__phrase {
+    margin-bottom: 50px;
+  }
+
+  .main-screen__link {
+    position: static;
+    margin-left: 90px;
   }
 }

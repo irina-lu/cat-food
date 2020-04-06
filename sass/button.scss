@@ -1,2 +1,20 @@
 @import "color";
 @import "mixin";
+
+.button {
+  @include font();
+  display: inline-block;
+  background-color: $green;
+  color: $white;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 11px 0;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .button {
+    @include font(20px, 20px);
+  }
+}
