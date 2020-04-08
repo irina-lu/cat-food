@@ -44,6 +44,7 @@
     position: relative;
     background: none;
     padding: 0;
+    margin-bottom: 0;
   }
 
   .main-screen__image--tablet {
@@ -81,8 +82,9 @@
 @media (min-width: 1440px) {
 
   .main-screen {
-    min-height: 696px;
+    min-height: 552px;
     position: relative;
+    margin-bottom: 80px;
   }
 
   .main-screen__image--desktop {

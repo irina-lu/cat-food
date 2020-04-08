@@ -181,7 +181,8 @@
   .main-screen {
     position: relative;
     background: none;
-    padding: 0; }
+    padding: 0;
+    margin-bottom: 0; }
   .main-screen__image--tablet {
     display: block; }
   .main-screen__image--mobile {
@@ -210,8 +211,9 @@
 
 @media (min-width: 1440px) {
   .main-screen {
-    min-height: 696px;
-    position: relative; }
+    min-height: 552px;
+    position: relative;
+    margin-bottom: 80px; }
   .main-screen__image--desktop {
     display: block;
     position: absolute;
@@ -334,18 +336,12 @@
       content: "";
       width: 140px;
       height: 194px;
-      position: absolute;
-      background-image: url("../img/icon/logo-slim.svg");
-      background-size: cover;
       left: 30px;
       bottom: 18px; }
     .catigories__round--pro::after {
       content: "";
       width: 268px;
       height: 112px;
-      position: absolute;
-      background-image: url("../img/icon/logo-pro.svg");
-      background-size: cover;
       left: -36px;
       bottom: 44px; }
   .catigories__title {
@@ -362,6 +358,64 @@
     padding-bottom: 0;
     margin-bottom: 55px;
     width: 375px; }
+  .catigories__link {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400; }
+    .catigories__link::after {
+      content: "";
+      width: 24px;
+      height: 11px;
+      right: -49px;
+      bottom: 9px; } }
+
+@media (min-width: 1440px) {
+  .catigories {
+    margin-bottom: 56px; }
+  .catigories__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .catigories__item {
+    width: 570px;
+    padding-top: 47px;
+    padding-left: 52px;
+    padding-right: 35px;
+    margin-bottom: 0; }
+    .catigories__item:last-child .catigories__description {
+      width: 100%; }
+  .catigories__round {
+    width: 100px;
+    height: 100px;
+    margin-top: 0;
+    margin-right: 54px;
+    float: left; }
+    .catigories__round--slim::after {
+      content: "";
+      width: 70px;
+      height: 97px;
+      left: 14px;
+      bottom: 9px; }
+    .catigories__round--pro::after {
+      content: "";
+      width: 134px;
+      height: 56px;
+      left: -18px;
+      bottom: 22px; }
+  .catigories__title {
+    font-size: 36px;
+    line-height: 37px;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-bottom: 75px; }
+  .catigories__description {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    border: 0;
+    padding-bottom: 0;
+    margin-bottom: 30px;
+    width: 100%; }
   .catigories__link {
     font-size: 20px;
     line-height: 20px;
