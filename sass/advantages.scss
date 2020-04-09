@@ -42,7 +42,10 @@
 
 @media(min-width: 768px) {
   .advantages {
-    padding: 45px 0 55px;
+    width: 110%;
+    margin-left: -30px;
+    padding: 45px 40px 55px 30px;
+    border-bottom: 1px solid $block-border;
   }
 
   .advantages__title {
