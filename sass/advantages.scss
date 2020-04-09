@@ -43,6 +43,7 @@
 @media(min-width: 768px) {
   .advantages {
     padding: 45px 0 55px;
+    border-bottom: 1px solid $block-border;
   }
 
   .advantages__title {
@@ -119,4 +120,39 @@
     z-index: 1;
   }
 
+}
+
+@media(min-width: 1440px) {
+  .advantages {
+    padding-bottom: 80px;
+    padding-top: 15px;
+    border: none;
+  }
+
+  .advantages__item {
+    width: 245px;
+  }
+
+  .advantages__item {
+    margin-bottom: 0;
+    &--leaf::after {
+      top: -40px;
+      right: 16px;
+    }
+
+    &--water::after {
+      top: -38px;
+      right: 0;
+    }
+
+    &--cutlery::after {
+      top: -38px;
+      right: 3px;
+    }
+
+    &--clock::after {
+      top: -40px;
+      right: -5px;
+    }
+  }
 }
