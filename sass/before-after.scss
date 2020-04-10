@@ -112,3 +112,62 @@
   background-color: transparent;
   display: inline-block;
 }
+
+@media(min-width: 768px) {
+  .before-after {
+    padding: 45px 0 65px;
+    background-color: transparent;
+  }
+
+  .before-after__wrapper {
+    width: 100%;
+    padding: 0;
+  }
+
+  .before-after__title {
+    @include font(60px, 60px);
+    margin-bottom: 63px;
+  }
+
+  .before-after__phrase {
+    @include font(16px, 24px);
+    margin-bottom: 50px;
+  }
+
+  .before-after__cost-wrapper {
+    @include flex(space-between, center);
+    margin-bottom: 86px;
+  }
+
+  .before-after__flex-wrapper {
+    margin: 0;
+    min-width: 366px;
+  }
+
+  .before-after__border-gray {
+    width: 162px;
+    padding: 15px 0;
+    max-height: 72px;
+   }
+
+   .before-after__weight,
+   .before-after__days {
+     @include font(30px, 37px);
+   }
+
+   .before-after__days-phrase,
+   .before-after__weight-phrase {
+     @include font(14px, 14px);
+     background-color: $white;
+     padding: 11px 10px 0;
+     max-width: 147px;
+   }
+
+  .before-after__cost {
+    @include font(20px, 20px);
+    margin: 0;
+    width: 190px;
+    text-align: end;
+  }
+
+}

@@ -27,8 +27,9 @@
 
 @media (min-width: 1440px) {
   .page-wrapper {
-    width: 100%;
-    padding: 0 110px; }
+    width: 1440px;
+    padding: 0 110px;
+    margin: 0 auto; }
   .page-wrapper--main {
     background-image: url("../img/index-background.jpg");
     background-position: right top;
@@ -682,6 +683,56 @@
   border: none;
   background-color: transparent;
   display: inline-block; }
+
+@media (min-width: 768px) {
+  .before-after {
+    padding: 45px 0 65px;
+    background-color: transparent; }
+  .before-after__wrapper {
+    width: 100%;
+    padding: 0; }
+  .before-after__title {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+    margin-bottom: 63px; }
+  .before-after__phrase {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 50px; }
+  .before-after__cost-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 86px; }
+  .before-after__flex-wrapper {
+    margin: 0;
+    min-width: 366px; }
+  .before-after__border-gray {
+    width: 162px;
+    padding: 15px 0;
+    max-height: 72px; }
+  .before-after__weight,
+  .before-after__days {
+    font-size: 30px;
+    line-height: 37px;
+    font-weight: 400; }
+  .before-after__days-phrase,
+  .before-after__weight-phrase {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    background-color: #ffffff;
+    padding: 11px 10px 0;
+    max-width: 147px; }
+  .before-after__cost {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    margin: 0;
+    width: 190px;
+    text-align: end; } }
 
 .contacts {
   background-color: #ffffff;
