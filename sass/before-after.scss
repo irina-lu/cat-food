@@ -115,8 +115,12 @@
 
 @media(min-width: 768px) {
   .before-after {
-    padding: 45px 0 65px;
+    padding: 45px 30px 65px;
     background-color: transparent;
+    background-image: url(../img/background-f2.jpg),
+                      url(../img/background-ea.jpg);
+    background-repeat: no-repeat;
+    background-position: left bottom, right bottom;
   }
 
   .before-after__wrapper {

@@ -22,8 +22,7 @@
 
 @media (min-width: 768px) {
   .page-wrapper {
-    width: 100%;
-    padding: 0 30px; } }
+    width: 100%; } }
 
 @media (min-width: 1440px) {
   .page-wrapper {
@@ -54,6 +53,7 @@
   .page-header__toggle {
     display: none; }
   .page-header {
+    padding: 0 30px;
     padding-top: 25px;
     margin-bottom: 25px;
     display: flex;
@@ -182,7 +182,7 @@
   .main-screen {
     position: relative;
     background: none;
-    padding: 0;
+    padding: 0 30px;
     margin-bottom: 0; }
   .main-screen__image--tablet {
     display: block; }
@@ -319,7 +319,7 @@
 
 @media (min-width: 768px) {
   .catigories {
-    padding: 0; }
+    padding: 0 30px; }
   .catigories__item {
     min-height: 372px;
     margin-bottom: 30px;
@@ -473,9 +473,7 @@
 @media (min-width: 768px) {
   .advantages {
     padding: 45px 30px 55px;
-    margin-left: -30px;
-    border-bottom: 1px solid #ededed;
-    min-width: 768px; }
+    border-bottom: 1px solid #ededed; }
   .advantages__title {
     font-size: 60px;
     line-height: 60px;
@@ -686,8 +684,11 @@
 
 @media (min-width: 768px) {
   .before-after {
-    padding: 45px 0 65px;
-    background-color: transparent; }
+    padding: 45px 30px 65px;
+    background-color: transparent;
+    background-image: url(../img/background-f2.jpg), url(../img/background-ea.jpg);
+    background-repeat: no-repeat;
+    background-position: left bottom, right bottom; }
   .before-after__wrapper {
     width: 100%;
     padding: 0; }
