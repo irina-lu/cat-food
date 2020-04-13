@@ -117,10 +117,10 @@
   .before-after {
     padding: 45px 30px 65px;
     background-color: transparent;
-    background-image: url(../img/background-f2.jpg),
-                      url(../img/background-ea.jpg);
-    background-repeat: no-repeat;
-    background-position: left bottom, right bottom;
+    background-image: url(../img/background-ea.jpg),
+                      url(../img/background-f2.jpg);
+    background-repeat: no-repeat, repeat-x;
+    background-position: right bottom, left bottom;
   }
 
   .before-after__wrapper {
@@ -216,5 +216,11 @@
       left: 213px;
       border-radius: 50%;
     }
+  }
+}
+
+@media(min-width: 1440px) {
+  .before-after {
+    padding: 0 110px;
   }
 }

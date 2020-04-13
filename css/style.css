@@ -27,7 +27,6 @@
 @media (min-width: 1440px) {
   .page-wrapper {
     width: 1440px;
-    padding: 0 110px;
     margin: 0 auto; }
   .page-wrapper--main {
     background-image: url("../img/index-background.jpg");
@@ -64,6 +63,7 @@
 
 @media (min-width: 1440px) {
   .page-header {
+    padding: 0 110px;
     padding-top: 55px; }
   .page-header__logo-desktop {
     display: inline; }
@@ -212,6 +212,7 @@
 
 @media (min-width: 1440px) {
   .main-screen {
+    padding: 0 110px;
     min-height: 552px;
     position: relative;
     margin-bottom: 80px; }
@@ -371,6 +372,7 @@
 
 @media (min-width: 1440px) {
   .catigories {
+    padding: 0 110px;
     margin-bottom: 56px; }
   .catigories__list {
     display: flex;
@@ -547,7 +549,7 @@
 
 @media (min-width: 1440px) {
   .advantages {
-    padding: 15px 0 80px;
+    padding: 15px 110px 80px;
     margin: 0;
     border: none; }
   .advantages__item {
@@ -686,9 +688,9 @@
   .before-after {
     padding: 45px 30px 65px;
     background-color: transparent;
-    background-image: url(../img/background-f2.jpg), url(../img/background-ea.jpg);
-    background-repeat: no-repeat;
-    background-position: left bottom, right bottom; }
+    background-image: url(../img/background-ea.jpg), url(../img/background-f2.jpg);
+    background-repeat: no-repeat, repeat-x;
+    background-position: right bottom, left bottom; }
   .before-after__wrapper {
     width: 100%;
     padding: 0; }
@@ -773,6 +775,10 @@
       top: 0px;
       left: 213px;
       border-radius: 50%; } }
+
+@media (min-width: 1440px) {
+  .before-after {
+    padding: 0 110px; } }
 
 .contacts {
   background-color: #ffffff;
