@@ -174,4 +174,47 @@
     text-align: end;
   }
 
+  .before-after__image {
+    margin-bottom: 13px;
+  }
+
+  .before-after__toggle-wrapper {
+    @include flex(center, center);
+  }
+
+  .before-after__toggle-left,
+  .before-after__toggle-right {
+    @include font(20px, 20px);
+    color: $font-black;
+    padding-bottom: 7px;
+    border-bottom: 1px dashed $border;
+  }
+  .before-after__range-toggle {
+    width: 428px;
+    height: 6px;
+    background-color: $background-range;
+    border: none;
+    border-radius: 3px;
+    margin: 0 22px;
+    &::before {
+      top: -13px;
+      left: 200px;
+      width: 34px;
+      height: 34px;
+      background-color: $white;
+      border: 1px solid $border;
+      border-radius: 50%;
+      box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background-color: $green;
+      top: 0px;
+      left: 213px;
+      border-radius: 50%;
+    }
+  }
 }
