@@ -549,7 +549,7 @@
 
 @media (min-width: 1440px) {
   .advantages {
-    padding: 15px 110px 80px;
+    padding: 15px 110px 27px;
     margin: 0;
     border: none; }
   .advantages__item {
@@ -572,11 +572,8 @@
 .before-after {
   background-color: #f2f2f2;
   color: #111111;
-  padding: 20px 0 35px; }
-
-.before-after__wrapper {
-  width: 100%;
-  padding: 0 20px; }
+  padding: 20px 20px 35px;
+  width: 100%; }
 
 .before-after__flex-wrapper {
   display: flex;
@@ -612,8 +609,8 @@
   padding: 13px 0;
   max-height: 56px; }
 
-.before-after__weight,
-.before-after__days {
+.before-after__days,
+.before-after__weight {
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
@@ -688,12 +685,9 @@
   .before-after {
     padding: 45px 30px 65px;
     background-color: transparent;
-    background-image: url(../img/background-ea.jpg), url(../img/background-f2.jpg);
+    background-image: url(../img/background-ea.jpg), url("../img/background-f2.jpg");
     background-repeat: no-repeat, repeat-x;
     background-position: right bottom, left bottom; }
-  .before-after__wrapper {
-    width: 100%;
-    padding: 0; }
   .before-after__title {
     font-size: 60px;
     line-height: 60px;
@@ -716,8 +710,8 @@
     width: 162px;
     padding: 15px 0;
     max-height: 72px; }
-  .before-after__weight,
-  .before-after__days {
+  .before-after__days,
+  .before-after__weight {
     font-size: 30px;
     line-height: 37px;
     font-weight: 400; }
@@ -765,20 +759,51 @@
       background-color: #ffffff;
       border: 1px solid #cdcdcd;
       border-radius: 50%;
-      box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15); }
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15); }
     .before-after__range-toggle::after {
       content: "";
       position: absolute;
       width: 8px;
       height: 8px;
       background-color: #68b738;
-      top: 0px;
+      top: 0;
       left: 213px;
       border-radius: 50%; } }
 
 @media (min-width: 1440px) {
   .before-after {
-    padding: 0 110px; } }
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-size: 395px;
+    padding: 0 110px 68px; }
+  .before-after__title {
+    padding-top: 55px;
+    margin-bottom: 145px; }
+  .before-after__phrase {
+    width: 450px;
+    margin-bottom: 68px; }
+  .before-after__cost-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0;
+    width: 366px; }
+  .before-after__flex-wrapper {
+    margin-bottom: 60px; }
+  .before-after__days-phrase,
+  .before-after__weight-phrase {
+    background-color: #f2f2f2; }
+  .before-after__cost {
+    text-align: start;
+    width: 366px; }
+  .before-after__margin-left {
+    margin-left: 64px; }
+  .before-after__image {
+    margin-bottom: 43px; }
+  .before-after__toggle-wrapper {
+    justify-content: flex-end; } }
 
 .contacts {
   background-color: #ffffff;
