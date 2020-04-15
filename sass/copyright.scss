@@ -5,6 +5,7 @@
   @include flex(space-between, center);
   width: 100%;
   padding: 22px 20px;
+  flex-shrink: 0;
 }
 
 .copyright__link {
@@ -12,4 +13,16 @@
   font-family: "Arial";
   text-decoration: none;
   color: $font-gray;
+}
+
+.copyright__link-image {
+  min-width: 27px;
+  height: 34px;
+}
+
+@media(min-width: 768px) {
+  .copyright {
+    padding: 0;
+    width: 162px;
+  }
 }

@@ -2,6 +2,17 @@
  box-sizing: border-box;
 }
 
+body {
+ padding: 0;
+ margin: 0;
+ min-width: 320px;
+}
+
+img {
+ max-width: 100%;
+ height: auto;
+}
+
 @font-face {
 font-family: "Oswald";
 src: url(../fonts/Oswald-VariableFont_wght.ttf); /* Путь к файлу со шрифтом */
@@ -33,13 +44,3 @@ src: url(../fonts/Oswald-VariableFont_wght.ttf); /* Путь к файлу со 
 @import "comment";
 @import "additionally";
 @import "form";
-
-body {
- @include zeroing();
- min-width: 320px;
-}
-
-img {
- max-width: 100%;
- height: auto;
-}
