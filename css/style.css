@@ -37,7 +37,7 @@ img {
   .page-wrapper {
     width: 1440px;
     margin: 0 auto; }
-  .page-wrapper--main {
+  .page-wrapper--image-adding {
     background-image: url("../img/index-background.jpg");
     background-position: right top;
     background-repeat: no-repeat; } }
@@ -125,10 +125,8 @@ img {
 @media (min-width: 1440px) {
   .site-list__item--main a {
     color: #ffffff; }
-  .site-list__item--main--active {
-    border-color: #ffffff; }
-    .site-list__item--main--active:last-child {
-      border-color: #ffffff; } }
+  .site-list__item--border-white {
+    border-color: #ffffff; } }
 
 .button {
   font-size: 14px;
@@ -389,9 +387,7 @@ img {
     align-items: center; }
   .catigories__item {
     width: 570px;
-    padding-top: 47px;
-    padding-left: 52px;
-    padding-right: 35px;
+    padding: 47px 35px 20px 52px;
     margin-bottom: 0; }
     .catigories__item:last-child .catigories__description {
       width: 100%; }

@@ -51,18 +51,14 @@
     }
   }
 }
-
 @media (min-width: 1440px) {
   .site-list__item--main {
     & a {
       color: $white;
     }
+  }
 
-    &--active {
-      &:last-child {
-        border-color: $white;
-      }
-      border-color: $white;
-    }
+  .site-list__item--border-white {
+    border-color: $white;
   }
 }

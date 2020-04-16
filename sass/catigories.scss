@@ -165,9 +165,7 @@
 
   .catigories__item {
     width: 570px;
-    padding-top: 47px;
-    padding-left: 52px;
-    padding-right: 35px;
+    padding: 47px 35px 20px 52px;
     margin-bottom: 0;
     &:last-child .catigories__description {
       width: 100%;
