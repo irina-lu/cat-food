@@ -4,8 +4,7 @@
 .advantages {
   background-color: $white;
   width: 100%;
-  padding: 0 20px;
-  padding-bottom: 42px;
+  padding: 20px 20px 42px;
 }
 
 .advantages__title {
@@ -23,9 +22,7 @@
 .advantages__item {
   @include flex(flex-start, center);
   margin-bottom: 20px;
-  &:last-child {
-    margin-bottom: 0px;
-  }
+  @include undo-last-item-margin();
 }
 
 .advantages__image {
@@ -41,4 +38,121 @@
   @include zeroing();
   font-family: "Arial";
   color: $font-gray;
+}
+
+@media(min-width: 768px) {
+  .advantages {
+    padding: 45px 30px 55px;
+    border-bottom: 1px solid $block-border;
+  }
+
+  .advantages__title {
+    @include font(60px, 60px);
+    margin-bottom: 70px;
+  }
+
+  .advantages__list {
+    @include flex(space-between, center);
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+
+  .advantages__item {
+    @include flex(flex-start, flex-start);
+    flex-direction: column;
+    width: 322px;
+    min-height: 228px;
+    margin-bottom: 89px;
+    @include undo-last-item-margin();
+    position: relative;
+
+    &--leaf::after {
+      content: "1";
+      @include font(281px, 281px);
+      color: $background-gray;
+      position: absolute;
+      top: -40px;
+      right: 93px;
+    }
+
+    &--water::after {
+      content: "2";
+      @include font(281px, 281px);
+      color: $background-gray;
+      position: absolute;
+      top: -38px;
+      right: 77px;
+    }
+
+    &--cutlery::after {
+      content: "3";
+      @include font(281px, 281px);
+      color: $background-gray;
+      position: absolute;
+      top: -38px;
+      right: 80px;
+    }
+
+    &--clock::after {
+      content: "4";
+      @include font(281px, 281px);
+      color: $background-gray;
+      position: absolute;
+      top: -40px;
+      right: 74px;
+  }
+
+    &--cutlery {
+      margin-bottom: 0;
+    }
+
+  }
+
+  .advantages__image {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 33px;
+  }
+
+  .advantages__phrase {
+    @include font(16px, 24px);
+    width: 245px;
+    z-index: 1;
+  }
+
+}
+
+@media(min-width: 1440px) {
+  .advantages {
+    padding: 15px 110px 27px;
+    margin: 0;
+    border: none;
+  }
+
+  .advantages__item {
+    width: 245px;
+  }
+
+  .advantages__item {
+    margin-bottom: 0;
+    &--leaf::after {
+      top: -40px;
+      right: 16px;
+    }
+
+    &--water::after {
+      top: -38px;
+      right: 0;
+    }
+
+    &--cutlery::after {
+      top: -38px;
+      right: 3px;
+    }
+
+    &--clock::after {
+      top: -40px;
+      right: -5px;
+    }
+  }
 }

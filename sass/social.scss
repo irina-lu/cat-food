@@ -3,7 +3,7 @@
 
 .social {
   width: 100%;
-  padding: 0 20px;  
+  padding: 0 20px;
 }
 
 .social__list {
@@ -17,4 +17,18 @@
 
 .social__item {
   margin-right: 38px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+@media(min-width: 768px) {
+  .social {
+    padding: 0;
+  }
+
+  .social__list {
+    border: none;
+    padding: 0;
+  }
 }

@@ -6,7 +6,10 @@
   background: linear-gradient(to bottom, $green 25%, $white 55%);
   background-image: url(../img/index-background-mobile.jpg);
   background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top right;
   margin-bottom: 22px;
+  padding: 0 20px;
   }
 
 .main-screen__title {
@@ -28,4 +31,85 @@
 .main-screen__image {
   display: block;
   margin: 0 auto;
+}
+
+.main-screen__image--tablet,
+.main-screen__image--desktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+
+  .main-screen {
+    position: relative;
+    background: none;
+    padding: 0 30px;
+    margin-bottom: 0;
+  }
+
+  .main-screen__image--tablet {
+    display: block;
+  }
+
+  .main-screen__image--mobile {
+    display: none;
+  }
+
+  .main-screen__title {
+    @include font(60px, 60px, 500);
+    color: $font-black;
+    text-align: left;
+    margin-left: 90px;
+    width: 425px;
+  }
+
+  .main-screen__phrase {
+    @include font(20px, 20px);
+    color: $font-black;
+    text-align: left;
+    margin-left: 90px;
+  }
+
+  .main-screen__link {
+    width: 245px;
+    padding: 16px 0;
+    position: absolute;
+    top: 245px;
+    left: 90px;
+  }
+}
+
+@media (min-width: 1440px) {
+
+  .main-screen {
+    padding: 0 110px;
+    min-height: 552px;
+    position: relative;
+    margin-bottom: 80px;
+  }
+
+  .main-screen__image--desktop {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 217px;
+  }
+
+  .main-screen__image--tablet {
+    display: none;
+  }
+
+  .main-screen__title {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+
+  .main-screen__phrase {
+    margin-bottom: 50px;
+  }
+
+  .main-screen__link {
+    position: static;
+    margin-left: 90px;
+  }
 }

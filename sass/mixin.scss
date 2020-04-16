@@ -14,3 +14,9 @@
   justify-content: $justify-content;
   align-items: $align-items;
 }
+
+@mixin undo-last-item-margin() {
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

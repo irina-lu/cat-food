@@ -4,12 +4,8 @@
 .before-after {
   background-color: $background-gray;
   color: $font-black;
-  padding-bottom: 35px;
-}
-
-.before-after__wrapper {
+  padding: 20px 20px 35px;
   width: 100%;
-  padding: 0 20px;
 }
 
 .before-after__flex-wrapper {
@@ -28,21 +24,22 @@
   @include font();
   font-family: "Arial";
   color: $font-gray;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
+  width: 99%;
 }
 
 .before-after__border-gray {
- display: inline-block;
- width: 124px;
- border: 1px solid  $border;
- border-radius: 5px;
- text-align: center;
- padding: 13px 0;
- max-height: 56px;
- }
+  display: inline-block;
+  width: 124px;
+  border: 1px solid $border;
+  border-radius: 5px;
+  text-align: center;
+  padding: 13px 0;
+  max-height: 56px;
+}
 
-.before-after__weight,
-.before-after__days {
+.before-after__days,
+.before-after__weight {
   @include font(24px, 24px);
   text-transform: uppercase;
 }
@@ -64,4 +61,203 @@
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 40px;
+}
+
+.before-after__image {
+  margin-bottom: 30px;
+}
+
+.before-after__image--slim-cat {
+  display: none;
+}
+
+.before-after__toggle-wrapper {
+  text-align: center;
+}
+
+.before-after__range-toggle {
+  position: relative;
+  display: inline-block;
+  width: 84px;
+  height: 14px;
+  background-color: $white;
+  border: 1px solid $border;
+  border-radius: 6px;
+  margin: 0 18px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    display: inline-block;
+    width: 35px;
+    height: 6px;
+    background-color: $green;
+    border-radius: 6px;
+  }
+}
+
+.before-after__toggle-left,
+.before-after__toggle-right {
+  @include zeroing();
+  @include font(16px, 20px);
+  font-family: inherit;
+  text-transform: uppercase;
+  color: $font-black;
+  border: none;
+  background-color: transparent;
+  display: inline-block;
+}
+@media(min-width: 768px) {
+  .before-after {
+    padding: 45px 30px 65px;
+    background-color: transparent;
+    background-image: url(../img/background-ea.jpg), url("../img/background-f2.jpg");
+    background-repeat: no-repeat, repeat-x;
+    background-position: right bottom, left bottom;
+  }
+
+  .before-after__title {
+    @include font(60px, 60px);
+    margin-bottom: 63px;
+  }
+
+  .before-after__phrase {
+    @include font(16px, 24px);
+    margin-bottom: 50px;
+  }
+
+  .before-after__cost-wrapper {
+    @include flex(space-between, center);
+    margin-bottom: 86px;
+  }
+
+  .before-after__flex-wrapper {
+    margin: 0;
+    min-width: 366px;
+  }
+
+  .before-after__border-gray {
+    width: 162px;
+    padding: 15px 0;
+    max-height: 72px;
+  }
+
+  .before-after__days,
+  .before-after__weight {
+    @include font(30px, 37px);
+  }
+
+  .before-after__days-phrase,
+  .before-after__weight-phrase {
+    @include font(14px, 14px);
+    background-color: $white;
+    padding: 11px 10px 0;
+    max-width: 147px;
+  }
+
+  .before-after__cost {
+    @include font(20px, 20px);
+    margin: 0;
+    width: 190px;
+    text-align: end;
+  }
+
+  .before-after__image {
+    margin-bottom: 13px;
+  }
+
+  .before-after__toggle-wrapper {
+    @include flex(center, center);
+  }
+
+  .before-after__toggle-left,
+  .before-after__toggle-right {
+    @include font(20px, 20px);
+    color: $font-black;
+    padding-bottom: 7px;
+    border-bottom: 1px dashed $border;
+  }
+
+  .before-after__range-toggle {
+    width: 428px;
+    height: 6px;
+    background-color: $background-range;
+    border: none;
+    border-radius: 3px;
+    margin: 0 22px;
+
+    &::before {
+      top: -13px;
+      left: 200px;
+      width: 34px;
+      height: 34px;
+      background-color: $white;
+      border: 1px solid $border;
+      border-radius: 50%;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background-color: $green;
+      top: 0;
+      left: 213px;
+      border-radius: 50%;
+    }
+  }
+}
+@media(min-width: 1440px) {
+  .before-after {
+    @include flex(space-between, flex-start);
+    background-size: 395px;
+    padding: 0 110px 68px;
+  }
+
+  .before-after__title {
+    padding-top: 55px;
+    margin-bottom: 145px;
+  }
+
+  .before-after__phrase {
+    width: 450px;
+    margin-bottom: 68px;
+  }
+
+  .before-after__cost-wrapper {
+    @include flex(space-between, flex-start);
+    flex-direction: column;
+    margin: 0;
+    width: 366px;
+  }
+
+  .before-after__flex-wrapper {
+    margin-bottom: 60px;
+  }
+
+  .before-after__days-phrase,
+  .before-after__weight-phrase {
+    background-color: $background-gray;
+  }
+
+  .before-after__cost {
+    text-align: start;
+    width: 366px;
+  }
+
+  .before-after__margin-left {
+    margin-left: 64px;
+  }
+
+  .before-after__image {
+    margin-bottom: 43px;
+  }
+
+  .before-after__toggle-wrapper {
+    justify-content: flex-end;
+  }
 }

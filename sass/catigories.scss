@@ -4,7 +4,6 @@
 .catigories {
   width: 100%;
   padding: 0 20px;
-  margin-bottom: 20px;
 }
 
 .catigories__list {
@@ -15,28 +14,41 @@
 
 .catigories__item {
   background-color: $background-gray;
-  padding-bottom: 17px;
-  & a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: $font-black;
-  }
-  &:first-child {
-    margin-bottom: 20px;
-  }
-}
-
-.catigories__title-wrapper {
-  @include flex(flex-start, center);
-  margin-bottom: 26px;
+  padding: 25px 20px 17px;
+  margin-bottom: 20px;
+  @include undo-last-item-margin();
 }
 
 .catigories__round {
+  position: relative;
+  display: inline-block;
   background-color: $green;
   width: 50px;
   height: 50px;
   border-radius: 50%;
   margin-right: 20px;
+  float: left;
+  &--slim::after {
+    content: "";
+    width: 35px;
+    height: 49px;
+    position: absolute;
+    background-image: url("../img/icon/logo-slim.svg");
+    background-size: cover;
+    left: 8px;
+    bottom: 4px;
+  }
+
+  &--pro::after {
+    content: "";
+    width: 67px;
+    height: 28px;
+    position: absolute;
+    background-image: url("../img/icon/logo-pro.svg");
+    background-size: cover;
+    left: -9px;
+    bottom: 11px;
+  }
 }
 
 .catigories__title {
@@ -44,18 +56,169 @@
   @include font(24px, 37px);
   color: $font-black;
   text-transform: uppercase;
-  }
+  margin-top: 7px;
+  margin-bottom: 26px;
+}
 
 .catigories__description {
   @include zeroing();
   @include font();
   font-family: "Arial";
   color: $font-gray;
-  padding-bottom: 20px;
-  margin-bottom: 17px;
+  padding-bottom: 23px;
+  margin-bottom: 16px;
   border-bottom: 1px solid $border-list;
 }
 
 .catigories__link {
+  position: relative;
   @include font(16px, 16px);
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $font-black;
+  &::after {
+    content: "";
+    width: 24px;
+    height: 11px;
+    position: absolute;
+    background-image: url("../img/icon/arrow.svg");
+    background-size: cover;
+    right: -36px;
+    bottom: 7px;
+  }
+}
+
+@media(min-width: 768px) {
+  .catigories {
+    padding: 0 30px;
+  }
+
+  .catigories__item {
+    min-height: 372px;
+    margin-bottom: 30px;
+    padding-left: 55px;
+    &:last-child .catigories__description {
+      width: 344px;
+    }
+  }
+
+  .catigories__round {
+    width: 200px;
+    height: 200px;
+    margin-top: 66px;
+    margin-right: 41px;
+    float: right;
+    &--slim::after {
+      content: "";
+      width: 140px;
+      height: 194px;
+      left: 30px;
+      bottom: 18px;
+    }
+
+    &--pro::after {
+      content: "";
+      width: 268px;
+      height: 112px;
+      left: -36px;
+      bottom: 44px;
+    }
+  }
+
+  .catigories__title {
+    @include font(36px, 37px);
+    margin-top: 50px;
+    margin-bottom: 28px;
+  }
+
+  .catigories__description {
+    @include font(16px, 24px);
+    border: 0;
+    padding-bottom: 0;
+    margin-bottom: 55px;
+    width: 375px;
+  }
+
+  .catigories__link {
+    @include font(20px, 20px);
+    &::after {
+      content: "";
+      width: 24px;
+      height: 11px;
+      right: -49px;
+      bottom: 9px;
+    }
+
+  }
+}
+
+@media(min-width: 1440px) {
+
+  .catigories {
+    padding: 0 110px;
+    margin-bottom: 56px;
+  }
+
+  .catigories__list {
+    @include flex(space-between, center);
+  }
+
+  .catigories__item {
+    width: 570px;
+    padding: 47px 35px 20px 52px;
+    margin-bottom: 0;
+    &:last-child .catigories__description {
+      width: 100%;
+    }
+  }
+
+  .catigories__round {
+    width: 100px;
+    height: 100px;
+    margin-top: 0;
+    margin-right: 54px;
+    float: left;
+    &--slim::after {
+      content: "";
+      width: 70px;
+      height: 97px;
+      left: 14px;
+      bottom: 9px;
+    }
+
+    &--pro::after {
+      content: "";
+      width: 134px;
+      height: 56px;
+      left: -18px;
+      bottom: 22px;
+    }
+  }
+
+  .catigories__title {
+    @include font(36px, 37px);
+    margin-top: 30px;
+    margin-bottom: 75px;
+  }
+
+  .catigories__description {
+    @include font(16px, 24px);
+    border: 0;
+    padding-bottom: 0;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  .catigories__link {
+    @include font(20px, 20px);
+    &::after {
+      content: "";
+      width: 24px;
+      height: 11px;
+      right: -49px;
+      bottom: 9px;
+    }
+
+  }
+
 }

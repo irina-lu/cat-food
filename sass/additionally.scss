@@ -16,9 +16,7 @@
 .additionally__input-wrapper {
   @include zeroing();
   margin-bottom: 13px;
-  &:last-child {
-    margin-bottom: 0;
-  }
+  @include undo-last-item-margin();
 }
 
 .additionally__checkbox {

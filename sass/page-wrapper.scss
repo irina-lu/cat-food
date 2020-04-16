@@ -4,3 +4,22 @@
   font-family: "Oswald", 'Arial', sans-serif;
   width: 100%;
 }
+
+@media (min-width: 768px) {
+  .page-wrapper {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .page-wrapper {
+    width: 1440px;
+    margin: 0 auto;
+  }
+
+  .page-wrapper--image-adding {
+    background-image: url("../img/index-background.jpg");
+    background-position: right top;
+    background-repeat: no-repeat;
+  }
+}
