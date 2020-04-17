@@ -1,10 +1,36 @@
 @import "color";
 @import "mixin";
 
+.show-more {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.show-more__plus {
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 2px;
+  margin: 0 auto;
+  background-color: $background-plus;
+  margin-bottom: 38px;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -14px;
+    left: 14px;
+    height: 30px;
+    width: 2px;
+    background-color: $background-plus;
+  }
+}
+
 .show-more__title {
   @include zeroing();
   @include font(16px, 20px);
   color: $font-black;
+  text-transform: uppercase;
+  margin-bottom: 9px;
 }
 
 .show-more__phrase {
@@ -13,4 +39,9 @@
   font-family: "Arial";
   color: $font-gray;
   margin-bottom: 18px;
+}
+
+.show-more__link {
+  color: $font-gray;
+  background-color: $background-gray;
 }
