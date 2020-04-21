@@ -42,6 +42,7 @@
 }
 
 .show-more__link {
+  @include font(16px, 20px);
   color: $font-gray;
   background-color: $background-gray;
 }
@@ -81,5 +82,16 @@
 
   .show-more__link {
     font-size: 16px;
+  }
+}
+
+
+@media(min-width: 1440px) {
+  .show-more__title {
+    padding: 0;
+  }
+
+  .show-more__phrase {
+    padding: 0;
   }
 }
