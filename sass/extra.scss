@@ -47,3 +47,40 @@
 .extra__link {
   @include font(16px, 20px);
 }
+
+
+@media(min-width: 768px) {
+  .extra__title {
+    @include font(36px, 36px);
+    padding: 65px 66px 80px;
+  }
+
+  .extra__list {
+    padding: 0 30px;
+    margin-bottom: 69px;
+  }
+
+  .extra__item {
+    @include flex(space-between, flex-start);
+    flex-wrap: wrap;
+    border: 1px solid $border;
+    border-bottom: none;
+    padding: 25px 36px 27px;
+  }
+
+  .extra__item-title {
+    @include font(20px, 20px);
+    margin-bottom: 10px;
+  }
+
+  .extra__table {
+    @include font(16px, 20px);
+    width: 287px;
+    margin-bottom: 18px;
+    text-align: right;
+  }
+
+  .extra__table-item:last-child {
+    width: 90px;
+  }
+}
