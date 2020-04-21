@@ -5,13 +5,13 @@
   @include zeroing();
   @include font(24px, 24px);
   color: $font-black;
-  padding-top: 28px;
-  padding-bottom: 33px;
+  padding: 28px 20px 33px;
 }
 
 .extra__list {
   @include zeroing();
   list-style: none;
+  padding: 0 20px;
   margin-bottom: 40px;
 }
 
@@ -28,7 +28,8 @@
   @include zeroing();
   @include font(16px, 16px);
   color: $font-light-black;
-  margin-bottom: 15px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .extra__table {
@@ -36,9 +37,13 @@
   font-family: "Arial";
   color: $font-gray;
   width: 100%;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
 .extra__table-item:last-child {
   text-align: right;
+}
+
+.extra__link {
+  @include font(16px, 20px);
 }

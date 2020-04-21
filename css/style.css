@@ -138,7 +138,7 @@ img {
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  padding: 11px 0;
+  padding: 10px 0;
   width: 100%; }
 
 @media (min-width: 768px) {
@@ -1087,8 +1087,7 @@ img {
 .catalog__button {
   font-size: 16px;
   line-height: 20px;
-  font-weight: 400;
-  padding: 10px 0; }
+  font-weight: 400; }
 
 @media (min-width: 768px) {
   .catalog__title {
@@ -1253,13 +1252,13 @@ img {
   line-height: 24px;
   font-weight: 400;
   color: #111111;
-  padding-top: 28px;
-  padding-bottom: 33px; }
+  padding: 28px 20px 33px; }
 
 .extra__list {
   margin: 0;
   padding: 0;
   list-style: none;
+  padding: 0 20px;
   margin-bottom: 40px; }
 
 .extra__item {
@@ -1276,7 +1275,8 @@ img {
   line-height: 16px;
   font-weight: 400;
   color: #222222;
-  margin-bottom: 15px; }
+  text-transform: uppercase;
+  margin-bottom: 10px; }
 
 .extra__table {
   font-size: 14px;
@@ -1285,10 +1285,15 @@ img {
   font-family: "Arial";
   color: #444444;
   width: 100%;
-  margin-bottom: 14px; }
+  margin-bottom: 12px; }
 
 .extra__table-item:last-child {
   text-align: right; }
+
+.extra__link {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400; }
 
 .gift {
   min-width: 280px;
