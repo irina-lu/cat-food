@@ -1089,6 +1089,63 @@ img {
   font-weight: 400;
   padding: 10px 0; }
 
+@media (min-width: 768px) {
+  .catalog__title {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+    padding: 28px 30px 165px; }
+  .catalog__list {
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; }
+  .catalog__item {
+    width: 324px;
+    height: 431px;
+    padding: 0 38px 40px;
+    background-image: url("../img/background-catalog-item.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    margin-bottom: 140px;
+    border: none; }
+    .catalog__item:nth-last-child(2) {
+      margin-bottom: 0; }
+    .catalog__item:last-child {
+      border: 1px solid #e6e6e6;
+      margin-bottom: 0; }
+  .catalog__link-image {
+    width: 248px;
+    height: 210px;
+    float: none;
+    margin-top: -85px; }
+  .catalog__image-small {
+    width: 161px;
+    padding-top: 35px; }
+  .catalog__image-big {
+    width: 195px;
+    padding: 0; }
+  .catalog__link-title {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    padding-top: 36px;
+    width: 115px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    text-align: center; }
+  .catalog__table {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    width: 100%;
+    margin-bottom: 33px; }
+  .catalog__table-item {
+    border-bottom: 1px solid #cdcdcd;
+    padding: 6px 0; } }
+
 .show-more {
   padding-top: 40px;
   text-align: center; }
@@ -1133,6 +1190,37 @@ img {
 .show-more__link {
   color: #444444;
   background-color: #f2f2f2; }
+
+@media (min-width: 768px) {
+  .show-more {
+    padding-top: 83px;
+    background-image: none; }
+  .show-more__plus {
+    width: 60px;
+    height: 2px;
+    background-color: #e6e6e6;
+    margin-bottom: 80px; }
+    .show-more__plus::after {
+      bottom: -29px;
+      left: 29px;
+      height: 60px;
+      width: 2px;
+      background-color: #e6e6e6; }
+  .show-more__title {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 0 35px;
+    margin-bottom: 27px; }
+  .show-more__phrase {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    padding: 0 30px;
+    margin-bottom: 83px; }
+  .show-more__link {
+    font-size: 16px; } }
 
 .extra__title {
   margin: 0;

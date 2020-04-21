@@ -45,3 +45,41 @@
   color: $font-gray;
   background-color: $background-gray;
 }
+
+@media(min-width: 768px) {
+  .show-more {
+    padding-top: 83px;
+    background-image: none;
+  }
+
+  .show-more__plus {
+    width: 60px;
+    height: 2px;
+    background-color: $plus-tablet;
+    margin-bottom: 80px;
+    &::after {
+      bottom: -29px;
+      left: 29px;
+      height: 60px;
+      width: 2px;
+      background-color: $plus-tablet;
+    }
+  }
+
+  .show-more__title {
+    @include font(20px, 20px);
+    text-transform: uppercase;
+    padding: 0 35px;
+    margin-bottom: 27px;
+  }
+
+  .show-more__phrase {
+    @include font(16px, 16px);
+    padding: 0 30px;
+    margin-bottom: 83px;
+  }
+
+  .show-more__link {
+    font-size: 16px;
+  }
+}
