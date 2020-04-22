@@ -1,6 +1,10 @@
 @import "color";
 @import "mixin";
 
+.extra {
+  padding-bottom: 35px;
+}
+
 .extra__title {
   @include zeroing();
   @include font(24px, 24px);
@@ -50,6 +54,11 @@
 
 
 @media(min-width: 768px) {
+
+  .extra {
+    padding-bottom: 76px;
+  }
+
   .extra__title {
     @include font(36px, 36px);
     padding: 65px 66px 80px;

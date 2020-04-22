@@ -2,12 +2,25 @@
 @import "mixin";
 
 .gift {
+  margin: 0 20px;
   min-width: 280px;
-  min-height: 290px;
+  height: 289px;
+  position: relative;
   background-color: $green;
-  background-image: url("../img/gift-background.jpg");
+  background-image: url("../img/gift-photo-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
+}
+
+.gift__icon {
+  position: absolute;
+  top: 65px;
+  left: 113px;
+  width: 55px;
+  height: 60px;
+  background-image: url("../img/icon/gift.svg");
+  background-size: cover;
 }
 
 .gift__phrase {
@@ -18,5 +31,27 @@
   text-align: center;
   width: 170px;
   margin: 0 auto;
-  padding-top: 185px;
+  padding: 185px 0 20px;
+}
+
+
+@media(min-width: 768px) {
+  .gift {
+    margin: 0 30px;
+    min-width: 708px;
+    height: 200px;
+    background-image: url("../img/gift-photo-tablet.jpg");
+  }
+
+  .gift__icon {
+    left: 90px;
+    width: 55px;
+    height: 60px;
+  }
+
+  .gift__phrase {
+    text-align: left;
+    margin-right: 115px;
+    padding: 70px 0 20px;
+  }
 }
