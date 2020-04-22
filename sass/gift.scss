@@ -3,7 +3,6 @@
 
 .gift {
   margin: 0 20px;
-  min-width: 280px;
   height: 289px;
   position: relative;
   background-color: $green;
@@ -38,7 +37,6 @@
 @media(min-width: 768px) {
   .gift {
     margin: 0 30px;
-    min-width: 708px;
     height: 200px;
     background-image: url("../img/gift-photo-tablet.jpg");
   }
@@ -53,5 +51,25 @@
     text-align: left;
     margin-right: 115px;
     padding: 70px 0 20px;
+  }
+}
+
+
+@media(min-width: 1440px) {
+  .gift {
+    margin: 0;
+    width: 245px;
+    min-height: 289px;
+    background-image: url("../img/gift-photo-desktop.jpg");
+  }
+
+  .gift__icon {
+    left: 96px;
+  }
+
+  .gift__phrase {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 187px;
   }
 }

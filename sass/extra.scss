@@ -54,7 +54,6 @@
 
 
 @media(min-width: 768px) {
-
   .extra {
     padding-bottom: 76px;
   }
@@ -92,4 +91,50 @@
   .extra__table-item:last-child {
     width: 90px;
   }
+}
+
+
+@media(min-width: 1440px) {
+  .extra {
+    padding-bottom: 86px;
+  }
+
+  .extra__flex-wrapper {
+    padding: 0 110px;
+    @include flex(space-between, center);
+  }
+
+  .extra__title {
+    padding: 75px 110px 80px;
+  }
+
+  .extra__list {
+    @include zeroing();
+  }
+
+  .extra__item {
+    @include flex(flex-start, center);
+    border: none;
+    border-top: 1px solid #cdcdcd;
+    padding: 15px 0;
+  }
+
+  .extra__item-title {
+    margin: 0;
+    display: inline-block;
+    min-width: 165px;
+    margin-right: 160px;
+  }
+
+  .extra__table {
+    margin: 0;
+    text-align: left;
+    margin-right: 38px;
+  }
+
+  .extra__link {
+    width: 245px;
+  }
+
+
 }

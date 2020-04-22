@@ -1332,9 +1332,40 @@ img {
   .extra__table-item:last-child {
     width: 90px; } }
 
+@media (min-width: 1440px) {
+  .extra {
+    padding-bottom: 86px; }
+  .extra__flex-wrapper {
+    padding: 0 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .extra__title {
+    padding: 75px 110px 80px; }
+  .extra__list {
+    margin: 0;
+    padding: 0; }
+  .extra__item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: none;
+    border-top: 1px solid #cdcdcd;
+    padding: 15px 0; }
+  .extra__item-title {
+    margin: 0;
+    display: inline-block;
+    min-width: 165px;
+    margin-right: 160px; }
+  .extra__table {
+    margin: 0;
+    text-align: left;
+    margin-right: 38px; }
+  .extra__link {
+    width: 245px; } }
+
 .gift {
   margin: 0 20px;
-  min-width: 280px;
   height: 289px;
   position: relative;
   background-color: #68b738;
@@ -1368,7 +1399,6 @@ img {
 @media (min-width: 768px) {
   .gift {
     margin: 0 30px;
-    min-width: 708px;
     height: 200px;
     background-image: url("../img/gift-photo-tablet.jpg"); }
   .gift__icon {
@@ -1379,6 +1409,19 @@ img {
     text-align: left;
     margin-right: 115px;
     padding: 70px 0 20px; } }
+
+@media (min-width: 1440px) {
+  .gift {
+    margin: 0;
+    width: 245px;
+    min-height: 289px;
+    background-image: url("../img/gift-photo-desktop.jpg"); }
+  .gift__icon {
+    left: 96px; }
+  .gift__phrase {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 187px; } }
 
 .form-block {
   padding: 31px 0; }
