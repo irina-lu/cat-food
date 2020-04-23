@@ -4,12 +4,14 @@
 .cat {
   @include zeroing();
   border: 0;
+  padding: 0 20px;
   padding-bottom: 23px;
   border-bottom: 1px solid $block-border;
 }
 
 .cat__input-wrapper {
   @include zeroing();
+  @include flex(flex-start, center);
   margin-bottom: 14px;
   @include undo-last-item-margin();
 }
@@ -26,6 +28,38 @@
   font-family: inherit;
   color: $font-gray;
   text-transform: uppercase;
+  width: 100%;
   border: 1px solid $border;
   padding: 12px 16px;
+}
+
+
+@media(min-width: 768px) {
+  .cat {
+    border: 0;
+    padding: 0 70px 72px;
+  }
+
+  .cat__input-wrapper {
+    margin-bottom: 20px;
+  }
+
+  .cat__label {
+    @include font(20px, 20px);
+  }
+
+  .cat__input {
+    @include font(20px, 20px);
+    padding: 10px 18px;
+  }
+}
+
+
+@media(min-width: 1440px) {
+  .cat {
+    border: 0;
+    padding: 0;
+    width: 570px;
+    padding-left: 0;
+  }
 }
