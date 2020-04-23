@@ -1,17 +1,21 @@
 @import "color";
 @import "mixin";
 
+.extra {
+  padding-bottom: 35px;
+}
+
 .extra__title {
   @include zeroing();
   @include font(24px, 24px);
   color: $font-black;
-  padding-top: 28px;
-  padding-bottom: 33px;
+  padding: 28px 20px 33px;
 }
 
 .extra__list {
   @include zeroing();
   list-style: none;
+  padding: 0 20px;
   margin-bottom: 40px;
 }
 
@@ -28,7 +32,8 @@
   @include zeroing();
   @include font(16px, 16px);
   color: $font-light-black;
-  margin-bottom: 15px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .extra__table {
@@ -36,9 +41,100 @@
   font-family: "Arial";
   color: $font-gray;
   width: 100%;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
 .extra__table-item:last-child {
   text-align: right;
+}
+
+.extra__link {
+  @include font(16px, 20px);
+}
+
+
+@media(min-width: 768px) {
+  .extra {
+    padding-bottom: 76px;
+  }
+
+  .extra__title {
+    @include font(36px, 36px);
+    padding: 65px 66px 80px;
+  }
+
+  .extra__list {
+    padding: 0 30px;
+    margin-bottom: 69px;
+  }
+
+  .extra__item {
+    @include flex(space-between, flex-start);
+    flex-wrap: wrap;
+    border: 1px solid $border;
+    border-bottom: none;
+    padding: 25px 36px 27px;
+  }
+
+  .extra__item-title {
+    @include font(20px, 20px);
+    margin-bottom: 10px;
+  }
+
+  .extra__table {
+    @include font(16px, 20px);
+    width: 287px;
+    margin-bottom: 18px;
+    text-align: right;
+  }
+
+  .extra__table-item:last-child {
+    width: 90px;
+  }
+}
+
+
+@media(min-width: 1440px) {
+  .extra {
+    padding-bottom: 86px;
+  }
+
+  .extra__flex-wrapper {
+    padding: 0 110px;
+    @include flex(space-between, center);
+  }
+
+  .extra__title {
+    padding: 75px 110px 80px;
+  }
+
+  .extra__list {
+    @include zeroing();
+  }
+
+  .extra__item {
+    @include flex(flex-start, center);
+    border: none;
+    border-top: 1px solid #cdcdcd;
+    padding: 15px 0;
+  }
+
+  .extra__item-title {
+    margin: 0;
+    display: inline-block;
+    min-width: 165px;
+    margin-right: 160px;
+  }
+
+  .extra__table {
+    margin: 0;
+    text-align: left;
+    margin-right: 38px;
+  }
+
+  .extra__link {
+    width: 245px;
+  }
+
+
 }

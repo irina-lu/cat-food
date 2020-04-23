@@ -1,10 +1,36 @@
 @import "color";
 @import "mixin";
 
+.show-more {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.show-more__plus {
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 2px;
+  margin: 0 auto;
+  background-color: $background-plus;
+  margin-bottom: 38px;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -14px;
+    left: 14px;
+    height: 30px;
+    width: 2px;
+    background-color: $background-plus;
+  }
+}
+
 .show-more__title {
   @include zeroing();
   @include font(16px, 20px);
   color: $font-black;
+  text-transform: uppercase;
+  margin-bottom: 9px;
 }
 
 .show-more__phrase {
@@ -13,4 +39,59 @@
   font-family: "Arial";
   color: $font-gray;
   margin-bottom: 18px;
+}
+
+.show-more__link {
+  @include font(16px, 20px);
+  color: $font-gray;
+  background-color: $background-gray;
+}
+
+@media(min-width: 768px) {
+  .show-more {
+    padding-top: 83px;
+    background-image: none;
+  }
+
+  .show-more__plus {
+    width: 60px;
+    height: 2px;
+    background-color: $plus-tablet;
+    margin-bottom: 80px;
+    &::after {
+      bottom: -29px;
+      left: 29px;
+      height: 60px;
+      width: 2px;
+      background-color: $plus-tablet;
+    }
+  }
+
+  .show-more__title {
+    @include font(20px, 20px);
+    text-transform: uppercase;
+    padding: 0 35px;
+    margin-bottom: 27px;
+  }
+
+  .show-more__phrase {
+    @include font(16px, 16px);
+    padding: 0 30px;
+    margin-bottom: 83px;
+  }
+
+  .show-more__link {
+    font-size: 16px;
+  }
+}
+
+
+@media(min-width: 1440px) {
+  .show-more__title {
+    padding: 0;
+  }
+
+  .show-more__phrase {
+    padding: 0;
+  }
 }
