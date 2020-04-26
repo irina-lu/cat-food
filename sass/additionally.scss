@@ -4,12 +4,14 @@
 .additionally {
   @include zeroing();
   border: 0;
+  padding: 0 20px;
 }
 
 .additionally__title {
   @include zeroing();
   @include font(24px, 24px);
   color: $font-black;
+  padding-top: 25px;
   margin-bottom: 28px;
 }
 
