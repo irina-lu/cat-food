@@ -16,10 +16,30 @@
 .comment__area {
   resize: none;
   width: 100%;
+  min-height: 150px;
   font-family: inherit;
   @include font(16px, 18px);
   color: $font-light-black;
   text-transform: uppercase;
   padding: 13px;
   border: 1px solid $border;
+}
+
+
+@media(min-width: 768px) {
+  .comment {
+    padding: 0 70px;
+    padding-top: 65px;
+  }
+
+  .comment__title {
+    @include font(36px, 36px);
+    margin-bottom: 75px;
+  }
+
+  .comment__area {
+    @include font(20px, 30px);
+    padding: 10px 20px;
+    min-height: 174px;
+  }
 }

@@ -22,24 +22,6 @@
   margin-bottom: 35px;
 }
 
-.form__button {
-  display: block;
-  @include font(16px, 20px);
-  font-family: inherit;
-  border: none;
-  width: 87.5%;
-  margin: 0 auto;
-}
-
-.form-block__legend {
-  @include zeroing();
-  @include font(14px, 16px);
-  font-family: "Arial";
-  color: $font-gray;
-  text-align: center;
-  width: 280px;
-  margin: 0 auto;
-}
 
 
 @media(min-width: 768px) {
@@ -59,7 +41,7 @@
     width: 415px;
     padding-left: 70px;
     margin-bottom: 65px;
-  }
+  }  
 }
 
 
@@ -77,10 +59,5 @@
     width: 460px;
     padding-left: 110px;
     margin-bottom: 65px;
-  }
-
-  .form__flex-wrapper {
-    padding: 0 110px;
-    @include flex(space-between, center);
   }
 }

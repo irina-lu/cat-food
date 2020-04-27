@@ -40,3 +40,31 @@
   border: 1px solid $border;
   padding: 12px 16px;
 }
+
+
+@media(min-width: 768px) {
+  .owner {
+    padding: 0 70px;
+  }
+
+  .owner__title {
+    @include font(36px, 36px);
+    padding-top: 75px;
+    width: 100%;
+    margin-bottom: 75px;
+  }
+
+  .owner__input-wrapper {
+    margin-bottom: 20px;
+  }
+
+  .owner__label {
+    @include font(20px, 20px);
+    margin-right: 17px;
+  }
+
+  .owner__input {
+    @include font(20px, 20px);
+    padding: 10px 20px;
+  }
+}
