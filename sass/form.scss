@@ -59,4 +59,18 @@
     padding: 0 110px;
     @include flex(space-between, center);
   }
+
+  .form__additionally {
+    margin-bottom: 60px;
+  }
+
+  .form__button-wrapper {
+    padding: 0 110px;
+  }
+
+  .form__button {
+    @include font(20px, 20px);
+    width: 570px;
+    margin-right: 80px;
+  }  
 }

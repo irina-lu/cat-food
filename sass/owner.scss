@@ -68,3 +68,23 @@
     padding: 10px 20px;
   }
 }
+
+
+@media(min-width: 1440px) {
+  .owner {
+    padding: 0 110px;
+  }
+
+  .owner__title {
+    padding-top: 70px;
+  }
+
+  .owner__flex-wrapper {
+    @include flex(space-between, center);
+  }
+
+  .owner__input-wrapper {
+    margin: 0;
+    width: 570px;
+  }
+}
