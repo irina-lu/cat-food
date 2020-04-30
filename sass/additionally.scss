@@ -52,8 +52,7 @@
   .additionally__input-wrapper {
     width: 283px;
     margin-bottom: 32px;
-    &:nth-child(1),
-    &:nth-child(3) {
+    &:nth-child(odd) {
       margin-right: 60px;
     }
     &:nth-last-child(2) {
@@ -79,8 +78,7 @@
   .additionally__input-wrapper {
     width: 245px;
     margin: 0;
-    &:nth-child(1),
-    &:nth-child(3) {
+    &:nth-child(odd) {
       margin: 0;
     }
   }

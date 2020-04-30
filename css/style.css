@@ -1761,7 +1761,7 @@ img {
   .additionally__input-wrapper {
     width: 283px;
     margin-bottom: 32px; }
-    .additionally__input-wrapper:nth-child(1), .additionally__input-wrapper:nth-child(3) {
+    .additionally__input-wrapper:nth-child(odd) {
       margin-right: 60px; }
     .additionally__input-wrapper:nth-last-child(2) {
       margin-bottom: 0; }
@@ -1778,7 +1778,7 @@ img {
   .additionally__input-wrapper {
     width: 245px;
     margin: 0; }
-    .additionally__input-wrapper:nth-child(1), .additionally__input-wrapper:nth-child(3) {
+    .additionally__input-wrapper:nth-child(odd) {
       margin: 0; } }
 
 .form__additionally {
