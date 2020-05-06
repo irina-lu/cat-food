@@ -45,9 +45,11 @@
       <section class="main-screen">
         <h1 class="main-screen__title">Функциональное питание для котов</h1>
         <p class="main-screen__phrase">Занялся собой? Займись котом!</p>
-        <img class="main-screen__image main-screen__image--mobile" src="img/index-food-mobile.png" width="" height=" " alt="Питание для котов" />
-        <img class="main-screen__image main-screen__image--tablet" src="img/index-food-tablet.png" width="" height=" " alt="Питание для котов" />
-        <img class="main-screen__image main-screen__image--desktop" src="img/index-food-desktop.png" width="" height=" " alt="Питание для котов" />
+        <picture class="main-screen__image">
+          <source media="(min-width: 1440px)" srcset="img/index-food-desktop.png">
+          <source media="(min-width: 768px)" srcset="img/index-food-tablet.png">
+          <img src="img/index-food-mobile.png" alt="Питание для котов" />
+        </picture>        
         <a class="main-screen__link button" href="form.html">Подобрать программу</a>
       </section>
 

@@ -52,6 +52,10 @@
   }
 }
 @media (min-width: 1440px) {
+  .site-list {
+    @include font(18px, 24px);
+  }
+
   .site-list__item--main {
     & a {
       color: $white;
