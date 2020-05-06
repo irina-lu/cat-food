@@ -4,12 +4,14 @@
 .additionally {
   @include zeroing();
   border: 0;
+  padding: 0 20px;
 }
 
 .additionally__title {
   @include zeroing();
   @include font(24px, 24px);
   color: $font-black;
+  padding-top: 25px;
   margin-bottom: 28px;
 }
 
@@ -28,4 +30,56 @@
   @include font(16px, 18px);
   color: $font-light-black;
   text-transform: uppercase;
+}
+
+
+@media(min-width: 768px) {
+  .additionally {
+    padding: 0 70px;
+  }
+
+  .additionally__title {
+    @include font(36px, 36px);
+    padding-top: 60px;
+    margin-bottom: 57px;
+  }
+
+  .additionally__flex-wrapper {
+    @include flex(flex-start, flex-start);
+    flex-wrap: wrap;
+  }
+
+  .additionally__input-wrapper {
+    width: 283px;
+    margin-bottom: 32px;
+    &:nth-child(odd) {
+      margin-right: 60px;
+    }
+    &:nth-last-child(2) {
+      margin-bottom: 0;
+    }
+  }
+
+  .additionally__label {
+    @include font(20px, 20px);
+  }
+}
+
+
+@media(min-width: 1440px) {
+  .additionally {
+    padding: 0 110px;
+  }
+
+  .additionally__flex-wrapper {
+    justify-content: space-between;
+  }
+
+  .additionally__input-wrapper {
+    width: 245px;
+    margin: 0;
+    &:nth-child(odd) {
+      margin: 0;
+    }
+  }
 }

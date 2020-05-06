@@ -4,7 +4,7 @@
 .programm {
   @include zeroing();
   border: 0;
-  padding: 22px 0;
+  padding: 22px 20px;
   border-bottom: 1px solid $block-border;
 }
 
@@ -22,5 +22,29 @@
   @include font(16px, 18px);
   color: $font-light-black;
   text-transform: uppercase;
-  margin-right: 15px;
+  margin-left: 15px;
+}
+
+
+
+@media(min-width: 768px) {
+  .programm {
+    width: 630px;
+    margin: 0 auto;
+    padding: 24px 27px;
+    border: 1px solid $border;
+  }
+
+  .programm__label {
+    @include font(20px, 20px);
+    margin-left: 20px;
+  }
+}
+
+
+@media(min-width: 1440px) {
+  .programm {
+    width: 570px;
+    margin: 0;
+  }
 }

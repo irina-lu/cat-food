@@ -3,24 +3,29 @@
 
 .owner {
   @include zeroing();
+  padding: 0 20px;
   border: 0;
 }
 
 .owner__title {
   @include zeroing();
   @include font(24px, 24px);
+  padding-top: 27px;
   color: $font-black;
-  padding: 25px 0;
+  width: 201px;
+  margin-bottom: 34px;
 }
 
 .owner__input-wrapper {
   @include zeroing();
+  @include flex(flex-start, center);
   margin-bottom: 14px;
   @include undo-last-item-margin();
 }
 
 .owner__label {
   @include font(16px, 18px);
+  flex-shrink: 0;
   color: $font-light-black;
   text-transform: uppercase;
   margin-right: 11px;
@@ -31,6 +36,55 @@
   font-family: inherit;
   color: $font-gray;
   text-transform: uppercase;
+  width: 100%;
   border: 1px solid $border;
   padding: 12px 16px;
+}
+
+
+@media(min-width: 768px) {
+  .owner {
+    padding: 0 70px;
+  }
+
+  .owner__title {
+    @include font(36px, 36px);
+    padding-top: 75px;
+    width: 100%;
+    margin-bottom: 75px;
+  }
+
+  .owner__input-wrapper {
+    margin-bottom: 20px;
+  }
+
+  .owner__label {
+    @include font(20px, 20px);
+    margin-right: 17px;
+  }
+
+  .owner__input {
+    @include font(20px, 20px);
+    padding: 10px 20px;
+  }
+}
+
+
+@media(min-width: 1440px) {
+  .owner {
+    padding: 0 110px;
+  }
+
+  .owner__title {
+    padding-top: 70px;
+  }
+
+  .owner__flex-wrapper {
+    @include flex(space-between, center);
+  }
+
+  .owner__input-wrapper {
+    margin: 0;
+    width: 570px;
+  }
 }

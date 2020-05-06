@@ -2,14 +2,15 @@
 @import "mixin";
 
 .form-block {
-  padding: 31px 0;
+  padding: 15px 0 32px;
 }
 
 .form-block__title {
   @include zeroing();
   @include font(36px, 60px);
   color: $font-black;
-  margin-bottom: 20px;
+  padding: 0 20px;
+  margin-bottom: 23px;
 }
 
 .form-block__appeal {
@@ -17,12 +18,46 @@
   @include font(15px, 18px);
   color: $font-black;
   text-transform: uppercase;
+  padding: 0 20px;
   margin-bottom: 35px;
 }
 
-.form-block__legend {
-  @include zeroing();
-  @include font(14px, 16px);
-  font-family: "Arial";
-  color: $font-gray;
+
+
+@media(min-width: 768px) {
+  .form-block {
+    padding: 30px 0 72px;
+  }
+
+  .form-block__title {
+    @include font(60px, 60px);
+    padding: 0 30px;
+    margin-bottom: 55px;
+  }
+
+  .form-block__appeal {
+    @include font(20px, 30px);
+    display: inline-block;
+    width: 415px;
+    padding-left: 70px;
+    margin-bottom: 65px;
+  }  
+}
+
+
+@media(min-width: 1440px) {
+  .form-block {
+    padding: 45px 0 82px;
+  }
+
+  .form-block__title {
+    padding: 0 110px;
+    margin-bottom: 55px;
+  }
+
+  .form-block__appeal {
+    width: 460px;
+    padding-left: 110px;
+    margin-bottom: 65px;
+  }
 }
