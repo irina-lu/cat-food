@@ -20,3 +20,23 @@
     margin-bottom: 0;
   }
 }
+
+@mixin link-status() {
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@mixin logo-status() {
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.6;
+  }
+}

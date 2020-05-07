@@ -16,6 +16,7 @@
   & a {
     color: $font-black;
     text-decoration: none;
+    @include link-status();
   }
 }
 

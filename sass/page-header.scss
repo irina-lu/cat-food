@@ -11,8 +11,13 @@
   padding: 11px 20px;
 }
 
+.page-header__logo {
+  @include logo-status();
+}
+
 .page-header__logo-title {
   padding-top: 5px;
+  @include logo-status();
 }
 
 .page-header__toggle--closed {
