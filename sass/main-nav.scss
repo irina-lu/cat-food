@@ -1,0 +1,17 @@
+@import "color";
+@import "mixin";
+
+.main-nav--closed {
+  display: none;
+}
+
+.main-nav--opened,
+.main-nav--nojs {
+  display: block;
+}
+
+@media(min-width: 768px) {
+  .main-nav--closed {
+    display: block;
+  }
+}

@@ -15,7 +15,7 @@
 .main-screen__title {
   @include zeroing();
   @include font(36px, 36px, 500);
-  padding-top: 25px;
+  padding-top: 28px;
   padding-bottom: 20px;
   text-align: center;
 }

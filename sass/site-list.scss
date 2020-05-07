@@ -17,11 +17,9 @@
     color: $font-black;
     text-decoration: none;
   }
-
-  &:last-child {
-    border-bottom: 1px solid $border-list;
-  }
 }
+
+
 @media (min-width: 768px) {
   .site-list {
     @include flex(space-between, center);
