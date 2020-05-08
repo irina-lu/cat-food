@@ -209,6 +209,14 @@ img {
   text-align: center;
   padding: 10px 0;
   width: 100%; }
+  .button:hover, .button:focus {
+    background-color: #5eaa2f; }
+  .button:active {
+    color: rgba(225, 225, 225, 0.3); }
+  .button--gray:hover, .button--gray:focus {
+    background-color: #ebebeb; }
+  .button--gray:active {
+    color: rgba(68, 68, 68, 0.3); }
 
 @media (min-width: 768px) {
   .button {
@@ -746,7 +754,8 @@ img {
   color: #111111;
   border: none;
   background-color: transparent;
-  display: inline-block; }
+  display: inline-block;
+  cursor: pointer; }
 
 @media (min-width: 768px) {
   .before-after {
@@ -811,6 +820,13 @@ img {
     color: #111111;
     padding-bottom: 7px;
     border-bottom: 1px dashed #cdcdcd; }
+    .before-after__toggle-left:hover, .before-after__toggle-left:focus,
+    .before-after__toggle-right:hover,
+    .before-after__toggle-right:focus {
+      border-bottom: 1px solid #cdcdcd; }
+    .before-after__toggle-left:active,
+    .before-after__toggle-right:active {
+      border-bottom: none; }
   .before-after__range-toggle {
     width: 428px;
     height: 6px;
@@ -827,6 +843,8 @@ img {
       border: 1px solid #cdcdcd;
       border-radius: 50%;
       box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15); }
+      .before-after__range-toggle::before:hover {
+        box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.25); }
     .before-after__range-toggle::after {
       content: "";
       position: absolute;
@@ -1016,6 +1034,10 @@ img {
   width: 129px;
   height: 26px;
   margin-bottom: 25px; }
+  .page-footer__logo-title:hover, .page-footer__logo-title:focus {
+    opacity: 0.8; }
+  .page-footer__logo-title:active {
+    opacity: 0.6; }
 
 @media (min-width: 768px) {
   .page-footer {
