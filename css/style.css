@@ -1657,13 +1657,9 @@ img {
 .programm__input-wrapper {
   margin: 0;
   padding: 0;
-  margin-bottom: 13px; }
+  margin-bottom: 20px; }
   .programm__input-wrapper:last-child {
     margin-bottom: 0; }
-
-.programm__radio {
-  margin: 0;
-  padding: 0; }
 
 .programm__label {
   font-size: 16px;
@@ -1671,7 +1667,32 @@ img {
   font-weight: 400;
   color: #222222;
   text-transform: uppercase;
-  margin-left: 15px; }
+  padding-left: 45px;
+  position: relative;
+  cursor: pointer; }
+  .programm__label::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #cdcdcd; }
+  .programm__label:hover::before, .programm__label:focus::before {
+    border-color: #bababa; }
+  .programm__label:active {
+    opacity: 0.3; }
+
+.programm__radio:checked + .programm__label::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 9px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #68b738; }
 
 @media (min-width: 768px) {
   .programm {
@@ -1839,21 +1860,42 @@ img {
 .additionally__input-wrapper {
   margin: 0;
   padding: 0;
-  margin-bottom: 13px; }
+  margin-bottom: 20px; }
   .additionally__input-wrapper:last-child {
     margin-bottom: 0; }
-
-.additionally__checkbox {
-  margin: 0;
-  padding: 0;
-  margin-right: 16px; }
 
 .additionally__label {
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
   color: #222222;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  padding-left: 45px;
+  position: relative;
+  cursor: pointer; }
+  .additionally__label:before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #cdcdcd; }
+  .additionally__label:hover::before, .additionally__label:focus::before {
+    border-color: #bababa; }
+  .additionally__label:active {
+    opacity: 0.3; }
+
+.additionally__checkbox:checked + .additionally__label::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 5px;
+  width: 21px;
+  height: 16px;
+  background-image: url("../img/icon/tick.svg");
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 @media (min-width: 768px) {
   .additionally {

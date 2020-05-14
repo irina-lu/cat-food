@@ -17,19 +17,47 @@
 
 .additionally__input-wrapper {
   @include zeroing();
-  margin-bottom: 13px;
+  margin-bottom: 20px;
   @include undo-last-item-margin();
-}
-
-.additionally__checkbox {
-  @include zeroing();
-  margin-right: 16px;
 }
 
 .additionally__label {
   @include font(16px, 18px);
   color: $font-light-black;
   text-transform: uppercase;
+  padding-left: 45px;
+  position: relative;
+  cursor: pointer;
+  &:before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $border;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    border-color: #bababa;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.additionally__checkbox:checked + .additionally__label::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 5px;
+  width: 21px;
+  height: 16px;
+  background-image: url("../img/icon/tick.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 

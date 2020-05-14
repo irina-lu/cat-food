@@ -10,21 +10,48 @@
 
 .programm__input-wrapper {
   @include zeroing ();
-  margin-bottom: 13px;
+  margin-bottom: 20px;
   @include undo-last-item-margin();
-}
-
-.programm__radio {
-  @include zeroing ();
 }
 
 .programm__label {
   @include font(16px, 18px);
   color: $font-light-black;
   text-transform: uppercase;
-  margin-left: 15px;
+  padding-left: 45px;
+  position: relative;
+  cursor: pointer;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid $border;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    border-color: #bababa;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
+.programm__radio:checked + .programm__label::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 9px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: $green;
+}
 
 
 @media(min-width: 768px) {
