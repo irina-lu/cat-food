@@ -5,6 +5,16 @@
   @include zeroing();
   border: 0;
   padding: 0 20px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 39px;
+    width: 100%;
+    height: 3px;
+    background-color: $green;
+    z-index: 0;
+  }
 }
 
 .additionally__title {
@@ -13,6 +23,10 @@
   color: $font-black;
   padding-top: 25px;
   margin-bottom: 28px;
+  width: 164px;
+  background-color: $white;
+  position: relative;
+  z-index: 1;
 }
 
 .additionally__input-wrapper {
