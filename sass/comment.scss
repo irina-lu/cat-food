@@ -22,7 +22,9 @@
   color: $font-light-black;
   text-transform: uppercase;
   padding: 13px;
-  border: 1px solid $border;
+  border: 1px solid $input-border;
+
+  @include input-status();
 }
 
 

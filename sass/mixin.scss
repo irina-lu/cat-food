@@ -60,3 +60,15 @@
     color: rgba(68, 68, 68, 0.3);
   }
 }
+
+@mixin input-status() {
+  &:hover {
+    border-color: $border;
+  }
+
+  &:focus,
+  &:active {
+    border-color: $font-gray;
+    outline: 2px solid $font-gray;
+  }
+}
