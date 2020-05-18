@@ -1703,13 +1703,25 @@ img {
   .programm {
     width: 630px;
     margin: 0 auto;
-    padding: 24px 27px;
+    padding: 31px 27px;
     border: 1px solid #cdcdcd; }
+  .programm__input-wrapper {
+    margin-bottom: 28px; }
   .programm__label {
     font-size: 20px;
     line-height: 20px;
     font-weight: 400;
-    margin-left: 20px; } }
+    padding-left: 60px; }
+    .programm__label::before {
+      top: -4px;
+      left: 0;
+      width: 40px;
+      height: 40px; }
+  .programm__radio:checked + .programm__label::after {
+    top: 7px;
+    left: 11px;
+    width: 18px;
+    height: 18px; } }
 
 @media (min-width: 1440px) {
   .programm {
@@ -1812,7 +1824,11 @@ img {
     font-size: 20px;
     line-height: 20px;
     font-weight: 400;
-    padding: 10px 20px; } }
+    padding: 10px 20px; }
+  .owner__input-wrapper svg {
+    right: 20px; }
+  .owner__input-wrapper--phone svg {
+    right: 17px; } }
 
 @media (min-width: 1440px) {
   .owner {
@@ -1985,11 +2001,18 @@ img {
   .additionally__label {
     font-size: 20px;
     line-height: 20px;
-    font-weight: 400; } }
+    font-weight: 400;
+    padding-left: 60px; }
+    .additionally__label:before {
+      top: -4px;
+      left: 0;
+      width: 40px;
+      height: 40px; }
+  .additionally__checkbox:checked + .additionally__label::after {
+    top: 8px;
+    left: 9px; } }
 
-@media (min-width: 1440px) {
-  .additionally {
-    padding: 0 110px; }
+@media (min-width: 1120px) {
   .additionally__flex-wrapper {
     justify-content: space-between; }
   .additionally__input-wrapper {
@@ -1997,6 +2020,10 @@ img {
     margin: 0; }
     .additionally__input-wrapper:nth-child(odd) {
       margin: 0; } }
+
+@media (min-width: 1440px) {
+  .additionally {
+    padding: 0 110px; } }
 
 .form__additionally {
   margin-bottom: 31px; }

@@ -96,6 +96,14 @@
     @include font(20px, 20px);
     padding: 10px 20px;
   }
+
+  .owner__input-wrapper svg {
+    right: 20px;
+  }
+
+  .owner__input-wrapper--phone svg {
+    right: 17px;
+  }
 }
 
 

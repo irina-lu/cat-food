@@ -104,15 +104,23 @@
 
   .additionally__label {
     @include font(20px, 20px);
+    padding-left: 60px;
+    &:before {
+      top: -4px;
+      left: 0;
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .additionally__checkbox:checked + .additionally__label::after {
+    top: 8px;
+    left: 9px;
   }
 }
 
 
-@media(min-width: 1440px) {
-  .additionally {
-    padding: 0 110px;
-  }
-
+@media(min-width: 1120px) {
   .additionally__flex-wrapper {
     justify-content: space-between;
   }
@@ -123,5 +131,12 @@
     &:nth-child(odd) {
       margin: 0;
     }
+  }
+}
+
+
+@media(min-width: 1440px) {
+  .additionally {
+    padding: 0 110px;
   }
 }

@@ -58,13 +58,30 @@
   .programm {
     width: 630px;
     margin: 0 auto;
-    padding: 24px 27px;
+    padding: 31px 27px;
     border: 1px solid $border;
+  }
+
+  .programm__input-wrapper {
+    margin-bottom: 28px;
   }
 
   .programm__label {
     @include font(20px, 20px);
-    margin-left: 20px;
+    padding-left: 60px;
+    &::before {
+      top: -4px;
+      left: 0;
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .programm__radio:checked + .programm__label::after {
+    top: 7px;
+    left: 11px;
+    width: 18px;
+    height: 18px;
   }
 }
 
