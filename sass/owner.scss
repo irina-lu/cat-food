@@ -74,13 +74,19 @@
 @media(min-width: 768px) {
   .owner {
     padding: 0 70px;
+    &::before {
+      top: 95px;
+      right: 0;
   }
+}
 
   .owner__title {
     @include font(36px, 36px);
     padding-top: 75px;
-    width: 100%;
+    width: 593px;
     margin-bottom: 75px;
+    margin-left: -30px;
+    padding-left: 30px;
   }
 
   .owner__input-wrapper {
@@ -110,10 +116,16 @@
 @media(min-width: 1440px) {
   .owner {
     padding: 0 110px;
+    &::before {
+      top: 90px;
+      right: 0;
+    }
   }
 
   .owner__title {
     padding-top: 70px;
+    margin-left: -40px;
+    padding-left: 40px;
   }
 
   .owner__flex-wrapper {

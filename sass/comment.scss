@@ -46,11 +46,18 @@
   .comment {
     padding: 0 70px;
     padding-top: 65px;
+    &::before {
+      top: 85px;
+      right: 0;
+    }
   }
 
   .comment__title {
     @include font(36px, 36px);
     margin-bottom: 75px;
+    margin-left: -30px;
+    width: 259px;
+    padding-left: 30px;
   }
 
   .comment__area {
@@ -65,5 +72,10 @@
   .comment {
     padding: 0 110px;
     padding-top: 65px;
+  }
+
+  .comment__title {
+    margin-left: -40px;
+    padding-left: 40px;
   }
 }

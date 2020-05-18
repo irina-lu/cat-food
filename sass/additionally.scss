@@ -78,12 +78,19 @@
 @media(min-width: 768px) {
   .additionally {
     padding: 0 70px;
+    &::before {
+      top: 80px;
+      right: 0;
+    }
   }
 
   .additionally__title {
     @include font(36px, 36px);
     padding-top: 60px;
+    padding-left: 30px;
     margin-bottom: 57px;
+    margin-left: -30px;
+    width: 292px;
   }
 
   .additionally__flex-wrapper {
@@ -138,5 +145,10 @@
 @media(min-width: 1440px) {
   .additionally {
     padding: 0 110px;
+  }
+
+  .additionally__title {
+    padding-left: 40px;
+    margin-left: -40px;
   }
 }

@@ -1806,13 +1806,18 @@ img {
 @media (min-width: 768px) {
   .owner {
     padding: 0 70px; }
+    .owner::before {
+      top: 95px;
+      right: 0; }
   .owner__title {
     font-size: 36px;
     line-height: 36px;
     font-weight: 400;
     padding-top: 75px;
-    width: 100%;
-    margin-bottom: 75px; }
+    width: 593px;
+    margin-bottom: 75px;
+    margin-left: -30px;
+    padding-left: 30px; }
   .owner__input-wrapper {
     margin-bottom: 20px; }
   .owner__label {
@@ -1833,8 +1838,13 @@ img {
 @media (min-width: 1440px) {
   .owner {
     padding: 0 110px; }
+    .owner::before {
+      top: 90px;
+      right: 0; }
   .owner__title {
-    padding-top: 70px; }
+    padding-top: 70px;
+    margin-left: -40px;
+    padding-left: 40px; }
   .owner__flex-wrapper {
     display: flex;
     justify-content: space-between;
@@ -1891,11 +1901,17 @@ img {
   .comment {
     padding: 0 70px;
     padding-top: 65px; }
+    .comment::before {
+      top: 85px;
+      right: 0; }
   .comment__title {
     font-size: 36px;
     line-height: 36px;
     font-weight: 400;
-    margin-bottom: 75px; }
+    margin-bottom: 75px;
+    margin-left: -30px;
+    width: 259px;
+    padding-left: 30px; }
   .comment__area {
     font-size: 20px;
     line-height: 30px;
@@ -1906,7 +1922,10 @@ img {
 @media (min-width: 1440px) {
   .comment {
     padding: 0 110px;
-    padding-top: 65px; } }
+    padding-top: 65px; }
+  .comment__title {
+    margin-left: -40px;
+    padding-left: 40px; } }
 
 .additionally {
   margin: 0;
@@ -1980,12 +1999,18 @@ img {
 @media (min-width: 768px) {
   .additionally {
     padding: 0 70px; }
+    .additionally::before {
+      top: 80px;
+      right: 0; }
   .additionally__title {
     font-size: 36px;
     line-height: 36px;
     font-weight: 400;
     padding-top: 60px;
-    margin-bottom: 57px; }
+    padding-left: 30px;
+    margin-bottom: 57px;
+    margin-left: -30px;
+    width: 292px; }
   .additionally__flex-wrapper {
     display: flex;
     justify-content: flex-start;
@@ -2023,7 +2048,10 @@ img {
 
 @media (min-width: 1440px) {
   .additionally {
-    padding: 0 110px; } }
+    padding: 0 110px; }
+  .additionally__title {
+    padding-left: 40px;
+    margin-left: -40px; } }
 
 .form__additionally {
   margin-bottom: 31px; }
