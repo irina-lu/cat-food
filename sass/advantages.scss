@@ -31,25 +31,19 @@
   width: 60px;
   height: 60px;
   margin-right: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
   &--leaf {
     background-image: url("../img/leaf.png");
-    background-position: center;
-    background-repeat: no-repeat;
   }
   &--water {
     background-image: url("../img/water.png");
-    background-position: center;
-    background-repeat: no-repeat;
   }
   &--cutlery {
     background-image: url("../img/cutlery.png");
-    background-position: center;
-    background-repeat: no-repeat;
   }
   &--clock {
     background-image: url("../img/clock.png");
-    background-position: center;
-    background-repeat: no-repeat;
   }
 }
 
