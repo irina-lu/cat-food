@@ -108,7 +108,10 @@
   border: none;
   background-color: transparent;
   display: inline-block;
+  cursor: pointer;
 }
+
+
 @media(min-width: 768px) {
   .before-after {
     padding: 45px 30px 65px;
@@ -178,6 +181,13 @@
     color: $font-black;
     padding-bottom: 7px;
     border-bottom: 1px dashed $border;
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid $border;
+    }
+    &:active {
+      border-bottom: none;
+    }
   }
 
   .before-after__range-toggle {
@@ -198,7 +208,6 @@
       border-radius: 50%;
       box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
     }
-
     &::after {
       content: "";
       position: absolute;
@@ -211,6 +220,8 @@
     }
   }
 }
+
+
 @media(min-width: 1440px) {
   .before-after {
     @include flex(space-between, flex-start);

@@ -31,6 +31,20 @@
   width: 60px;
   height: 60px;
   margin-right: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  &--leaf {
+    background-image: url("../img/leaf.png");
+  }
+  &--water {
+    background-image: url("../img/water.png");
+  }
+  &--cutlery {
+    background-image: url("../img/cutlery.png");
+  }
+  &--clock {
+    background-image: url("../img/clock.png");
+  }
 }
 
 .advantages__phrase {

@@ -12,22 +12,21 @@
   <div class="page-wrapper page-wrapper--image-adding">
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a class="page-header__logo page-header__logo--img">
-          <!--TODO: вставить значения ширины и высоты во все теги img -->
-          <img class="page-header__logo-image" src="img/icon/logo.svg" width="34" height="38" alt="Cat Energy" />
+        <a class="page-header__logo">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/icon/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/icon/logo-tablet.svg">
+            <img class="page-header__logo-image" src="img/icon/logo.svg" width="34" height="38" alt="Cat Energy" />
+          </picture>
         </a>
-        <a class="page-header__logo page-header__logo--title">
+        <a>
           <img class="page-header__logo-title" src="img/icon/logo-text.svg" width="101" height="18" alt="Cat Energy" />
         </a>
-        <a class="page-header__logo-tablet">
-          <img src="img/icon/logo-tablet.svg" width="173" height="58" alt="Cat Energy" />
-        </a>
-        <a class="page-header__logo-desktop">
-          <img src="img/icon/logo-desktop.svg" width="202" height="59" alt="Cat Energy" />
-        </a>
-        <button class="page-header__toggle" type="button">x</button>
+        <button class="page-header__toggle page-header__toggle--closed" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
       </div>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active site-list__item--main site-list__item--border-white">
@@ -48,9 +47,11 @@
       <section class="main-screen">
         <h1 class="main-screen__title">Функциональное питание для котов</h1>
         <p class="main-screen__phrase">Занялся собой? Займись котом!</p>
-        <img class="main-screen__image main-screen__image--mobile" src="img/index-food-mobile.png" width="" height=" " alt="Питание для котов" />
-        <img class="main-screen__image main-screen__image--tablet" src="img/index-food-tablet.png" width="" height=" " alt="Питание для котов" />
-        <img class="main-screen__image main-screen__image--desktop" src="img/index-food-desktop.png" width="" height=" " alt="Питание для котов" />
+        <picture class="main-screen__image">
+          <source media="(min-width: 1440px)" srcset="img/index-food-desktop.png">
+          <source media="(min-width: 768px)" srcset="img/index-food-tablet.png">
+          <img src="img/index-food-mobile.png" alt="Питание для котов" />
+        </picture>
         <a class="main-screen__link button" href="form.html">Подобрать программу</a>
       </section>
 
@@ -147,39 +148,143 @@
           <b class="contacts__invitation">Приглашаем к сотрудничеству дилеров!</b>
           <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 <span class="contacts__adress-margin">Санкт-Петербург<span></p>
         </div>
-          <!--TODO: сделать красивую и правильную реализацию карты -->
+        <!--TODO: сделать красивую и правильную реализацию карты -->
         <div class="contacts__map-container"></div>
         <!-- <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/-/CKe3UKkE"></iframe> -->
       </section>
     </main>
 
     <footer class="page-footer">
-      <img class="page-footer__logo-title logo-title" src="img/icon/logo-text.svg" width="#" height="#" alt="Cat Energy" />
+      <div class="page-footer__logo-title-wrapper">
+        <img class="page-footer__logo-title logo-title" src="img/icon/logo-text.svg" width="#" height="#" alt="Cat Energy" />
+      </div>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social_link--vkontakte" href="https://vk.com/htmlacademy">
-              Мы в Вконтакте</a>
+              <span class="visually-hidden">Мы в Вконтакте</span>
+              <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 40.003998 21.011598" height="20" width="30" xml:space="preserve" id="svg2" version="1.1">
+                <metadata id="metadata8">
+                  <rdf:RDF>
+                    <cc:Work rdf:about="">
+                      <dc:format>image/svg+xml</dc:format>
+                      <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                    </cc:Work>
+                  </rdf:RDF>
+                </metadata>
+                <defs id="defs6">
+                  <clipPath id="clipPath18" clipPathUnits="userSpaceOnUse">
+                    <path id="path16" d="M 0,15.759 H 30.003 V 0 H 0 Z" />
+                  </clipPath>
+                </defs>
+                <g transform="matrix(1.3333333,0,0,-1.3333333,0,21.011599)" id="g10">
+                  <g id="g12">
+                    <g clip-path="url(#clipPath18)" id="g14">
+                      <g transform="translate(18.6314,4.8397)" id="g20">
+                        <path id="path22" style="fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                          d="m 0,0 c 0.899,0 1.683,-0.786 2.511,-1.618 0.497,-0.5 1.011,-1.016 1.496,-1.307 0.727,-0.439 1.316,-0.421 1.398,-0.412 l 0.103,0.009 3.805,0.048 c 0.171,0.011 0.412,0.072 0.537,0.135 -0.019,0.04 -0.049,0.094 -0.099,0.167 C 9.302,-2.26 8.363,-1.318 7.065,-0.26 5.881,0.703 5.264,1.205 5.2,1.984 5.134,2.789 5.693,3.423 6.808,4.687 7.087,5.005 7.411,5.372 7.774,5.796 9.333,7.617 9.731,8.437 9.832,8.752 9.662,8.781 9.185,8.773 9.154,8.771 L 4.793,8.742 C 4.603,8.741 4.544,8.708 4.544,8.706 4.368,8.292 3.732,6.895 2.9,5.656 1.005,2.836 0.115,2.456 -0.507,2.455 c -0.204,0 -0.396,0.05 -0.569,0.149 C -2.079,3.172 -2.039,4.437 -2.01,5.36 -2.005,5.509 -2,5.655 -2,5.792 c 0,0.645 0.025,1.207 0.048,1.688 0.076,1.68 0.016,1.692 -0.379,1.776 -0.409,0.086 -0.705,0.147 -1.856,0.16 L -4.88,9.42 c -0.624,0 -1.343,-0.014 -1.906,-0.098 0.092,-0.073 0.18,-0.156 0.259,-0.251 0.588,-0.704 0.604,-1.951 0.601,-2.194 0.13,-1.646 0.061,-3.796 -1.018,-4.313 -0.191,-0.092 -0.392,-0.137 -0.597,-0.137 -0.926,0 -1.854,0.886 -3.425,3.267 -0.895,1.354 -1.56,2.824 -1.587,2.888 -0.011,0.021 -0.054,0.076 -0.075,0.093 -0.083,0.054 -0.233,0.097 -0.32,0.117 l -4.001,-0.025 c -0.021,-10e-4 -0.045,-0.002 -0.07,-0.005 0.591,-1.189 3.426,-6.592 6.519,-9.418 2.74,-2.503 5.826,-2.63 6.417,-2.63 l 1.852,0.004 c 0.045,0.01 0.217,0.061 0.268,0.099 -0.018,-0.018 -0.01,0.053 -0.01,0.097 -0.003,0.266 0.012,2.596 1.578,3.034 C -0.269,-0.018 -0.136,0 0,0 m 5.308,-4.84 c -0.387,0 -1.171,0.082 -2.076,0.632 -0.642,0.386 -1.223,0.969 -1.784,1.532 -0.438,0.441 -1.171,1.177 -1.447,1.177 -0.268,-0.074 -0.48,-0.921 -0.476,-1.568 0.004,-0.114 -0.001,-0.775 -0.467,-1.213 -0.426,-0.401 -1.089,-0.486 -1.217,-0.498 l -1.926,-0.008 c -0.967,0 -4.358,0.219 -7.429,3.021 -3.674,3.359 -6.835,9.798 -6.968,10.07 -0.197,0.462 -0.248,1.066 0.152,1.482 0.392,0.413 1.081,0.472 1.359,0.479 l 4.083,0.025 0.115,-0.009 c 0.091,-0.014 0.567,-0.094 0.957,-0.349 0.388,-0.246 0.59,-0.651 0.626,-0.73 0.01,-0.021 0.649,-1.432 1.475,-2.683 1.312,-1.991 1.896,-2.456 2.103,-2.562 0.188,0.417 0.277,1.699 0.187,2.87 10e-4,0.493 -0.101,1.098 -0.252,1.278 C -7.789,8.24 -8.103,8.359 -8.455,8.4 l -0.722,0.691 c -0.096,0.659 0.635,1.226 1.149,1.446 0.737,0.317 1.792,0.382 3.147,0.382 l 0.71,-0.005 c 1.235,-0.012 1.622,-0.081 2.15,-0.191 C -0.32,10.362 -0.382,8.994 -0.455,7.411 -0.476,6.947 -0.501,6.41 -0.501,5.791 -0.501,5.639 -0.506,5.479 -0.512,5.312 -0.523,4.931 -0.544,4.273 -0.419,4.007 -0.2,4.152 0.434,4.672 1.653,6.49 2.437,7.655 3.053,9.029 3.17,9.293 l 10e-4,0.001 c 0.183,0.43 0.608,0.941 1.613,0.946 l 4.275,0.024 c 0.011,0.003 0.171,0.016 0.377,0.016 0.979,0 1.596,-0.287 1.832,-0.854 C 11.536,8.776 11.437,7.77 8.913,4.821 8.543,4.389 8.216,4.017 7.931,3.694 7.333,3.016 6.715,2.315 6.694,2.099 6.747,1.931 7.356,1.435 7.946,0.954 9.477,-0.293 10.475,-1.31 10.979,-2.119 11.501,-2.878 11.408,-3.448 11.237,-3.796 10.813,-4.66 9.6,-4.769 9.36,-4.78 L 5.57,-4.828 C 5.516,-4.834 5.425,-4.84 5.308,-4.84" />
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </a>
           </li>
           <li class="social__item">
             <a class="social__link social_link--instagram" href="https://www.instagram.com/htmlacademy">
-              Мы в Инстаграме</a>
+              <span class="visually-hidden">Мы в Инстаграме</span>
+              <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 21.333332 21.345333" height="20" width="20" xml:space="preserve" id="svg2" version="1.1">
+                <metadata id="metadata8">
+                  <rdf:RDF>
+                    <cc:Work rdf:about="">
+                      <dc:format>image/svg+xml</dc:format>
+                      <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                    </cc:Work>
+                  </rdf:RDF>
+                </metadata>
+                <defs id="defs6">
+                  <clipPath id="clipPath18" clipPathUnits="userSpaceOnUse">
+                    <path id="path16" d="M 0,16.009 H 16 V 0 H 0 Z" />
+                  </clipPath>
+                </defs>
+                <g transform="matrix(1.3333333,0,0,-1.3333333,0,21.345333)" id="g10">
+                  <g id="g12">
+                    <g clip-path="url(#clipPath18)" id="g14">
+                      <g transform="translate(11.8252,16.0092)" id="g20">
+                        <path id="path22" style="fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                          d="m 0,0 h -7.651 c -2.297,0 -4.174,-1.879 -4.174,-4.176 v -7.657 c 0,-2.296 1.877,-4.176 4.174,-4.176 h 7.653 c 2.294,0 4.173,1.88 4.173,4.177 v 7.656 C 4.175,-1.879 2.296,0 0,0 m 0,-1.043 c 1.727,0 3.131,-1.407 3.131,-3.133 v -7.657 c 0,-1.727 -1.404,-3.132 -3.131,-3.132 h -7.651 c -1.726,0 -3.131,1.405 -3.131,3.132 v 7.657 c 0,1.726 1.405,3.132 3.131,3.132 H 0" />
+                      </g>
+                      <g transform="translate(7.9995,12.1264)" id="g24">
+                        <path id="path26" style="fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                          d="m 0,0 c -2.278,0 -4.126,-1.847 -4.126,-4.126 0,-2.279 1.847,-4.125 4.126,-4.125 2.279,0 4.125,1.846 4.125,4.125 C 4.125,-1.847 2.279,0 0,0 m 0,-1.044 c 1.699,0 3.083,-1.382 3.083,-3.082 0,-1.698 -1.384,-3.083 -3.083,-3.083 -1.7,0 -3.082,1.384 -3.082,3.083 0,1.7 1.382,3.082 3.082,3.082" />
+                      </g>
+                      <g transform="translate(12.2734,13.1986)" id="g28">
+                        <path id="path30" style="fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                          d="m 0,0 c 0.516,0 0.934,-0.418 0.934,-0.934 0,-0.515 -0.418,-0.933 -0.934,-0.933 -0.516,0 -0.934,0.418 -0.934,0.933 C -0.934,-0.418 -0.516,0 0,0" />
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </a>
           </li>
           <li class="social__item">
             <a class="social__link social_link--facebook" href="https://www.facebook.com/htmlacademy">
-              Мы в Фейсбуке</a>
+              <span class="visually-hidden">Мы в Фейсбуке</span>
+              <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="20" height="20" viewBox="0 0 792 792" style="fill:#666666";
+                xml:space="preserve">
+                <g>
+                  <g id="facebook">
+                    <g>
+                      <path d="M614.582,0.128L494.197,0.184c0,0-2.439-0.184-6.826-0.184C462.67,0,337.754,6.863,303.768,140.809
+			                	c-0.532,1.486-11.965,35.014-12.148,112.988h-114.2c-10.129,0-18.351,8.221-18.351,18.351v105.226
+			                	c0,10.13,8.222,18.351,18.351,18.351h124.898v377.924c0,10.13,8.221,18.352,18.351,18.352H463.68
+			                	c10.129,0,18.352-8.222,18.352-18.352V396.109h125.301c10.131,0,18.352-8.221,18.352-18.351V272.148
+			                	c0-10.13-8.221-18.351-18.352-18.351H482.287v-45.163c0-30.078,19.086-62.21,72.672-62.21h59.623
+			                	c10.129,0,18.35-8.221,18.35-18.351V18.479C632.932,8.35,624.729,0.128,614.582,0.128z M596.23,109.722h-41.271
+			                	c-75.553,0-109.373,49.677-109.373,98.913v63.514c0,10.13,8.221,18.351,18.35,18.351H588.98v68.909H463.68
+			                	c-10.131,0-18.352,8.221-18.352,18.351v377.539H339.02V377.374c0-10.13-8.221-18.351-18.351-18.351H195.771v-68.523h114.346
+			                	c4.936,0,9.652-1.982,13.103-5.505s5.34-8.276,5.249-13.213c-1.633-83.461,9.836-118.604,10.387-120.384
+			                	C365.923,44.979,459.385,36.702,487.371,36.702c2.551,0,4.074,0.074,5.561,0.129H596.23V109.722L596.23,109.722z" />
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru">HTML Academy</a>
-        <a href="https://htmlacademy.ru">
-          <img class="copyright__link-image" src="img/icon/html-logo.svg" alt="HTML Academy"/>
+        <a class="copyright__link" href="https://htmlacademy.ru">
+          <span class="copyright__link-text">HTML Academy</span>
+          <span class="copyright__link-image">
+            <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 35.926666 45.453331" height="34" width="27" xml:space="preserve" id="svg2" version="1.1">
+            <metadata id="metadata8">
+              <rdf:RDF>
+                <cc:Work rdf:about="">
+                  <dc:format>image/svg+xml</dc:format>
+                  <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                </cc:Work>
+              </rdf:RDF>
+            </metadata>
+            <defs id="defs6" />
+            <g transform="matrix(1.3333333,0,0,-1.3333333,0,45.453599)" id="g10">
+              <g transform="translate(13.473,34.0902)" id="g12">
+                <path id="path14" style="fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                  d="m 0,0 -13.473,-1.412 v -24.662 l 13.474,-8.016 13.43,7.99 0.041,0.024 V -1.412 L 0.147,-0.017 Z m -11.548,-3.147 11.549,1.212 11.547,-1.212 v -8.98 H 11.546 L 0.022,-5.334 0.021,-5.23 -0.066,-5.28 -0.154,-5.224 v -0.109 l -11.394,-6.785 z m 0.109,-10.475 11.371,6.834 11.518,-6.712 -4.479,-2.641 -7.093,4.221 -0.014,-1.414 5.904,-3.513 -0.86,-0.508 -5.03,2.993 -0.014,-1.415 3.827,-2.275 -0.782,-0.524 -3.031,1.787 -0.014,-1.413 1.853,-1.09 -1.8,-1.081 z m 19.582,-8.549 -0.011,5.177 3.416,2.037 V -24.979 L 0,-31.85 l -11.548,6.871 v 9.852 l 11.411,-6.792 0.016,-1.044 -7.942,4.728 -0.015,-1.416 7.979,-4.795 0.019,-1.076 -7.974,4.74 -0.013,-1.414 8.021,-4.822 0.047,-0.024 z" />
+              </g>
+            </g>
+          </svg>
+        </span>
         </a>
       </div>
     </footer>
   </div>
-
+  <script type="" src="../js/script.js"></script>
 </body>
 
 </html>

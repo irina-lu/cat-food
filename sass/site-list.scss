@@ -16,12 +16,11 @@
   & a {
     color: $font-black;
     text-decoration: none;
-  }
-
-  &:last-child {
-    border-bottom: 1px solid $border-list;
+    @include link-status();
   }
 }
+
+
 @media (min-width: 768px) {
   .site-list {
     @include flex(space-between, center);
@@ -52,6 +51,10 @@
   }
 }
 @media (min-width: 1440px) {
+  .site-list {
+    @include font(18px, 24px);
+  }
+
   .site-list__item--main {
     & a {
       color: $white;

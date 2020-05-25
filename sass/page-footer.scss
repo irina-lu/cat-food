@@ -11,7 +11,9 @@
   width: 129px;
   height: 26px;
   margin-bottom: 25px;
+  @include logo-status();
 }
+
 
 @media(min-width: 768px) {
   .page-footer {
@@ -19,11 +21,18 @@
     padding: 58px 30px 55px;
   }
 
+  .page-footer__logo-title-wrapper {
+    width: 162px;
+    flex-shrink: 0;
+    text-align: start;
+  }
+
   .page-footer__logo-title {
     @include zeroing();
-
+    padding-top: 3px;
   }
 }
+
 
 @media(min-width: 1440px) {
   .page-footer {

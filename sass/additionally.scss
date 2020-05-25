@@ -5,6 +5,16 @@
   @include zeroing();
   border: 0;
   padding: 0 20px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 39px;
+    width: 100%;
+    height: 3px;
+    background-color: $green;
+    z-index: 0;
+  }
 }
 
 .additionally__title {
@@ -13,35 +23,74 @@
   color: $font-black;
   padding-top: 25px;
   margin-bottom: 28px;
+  width: 164px;
+  background-color: $white;
+  position: relative;
+  z-index: 1;
 }
 
 .additionally__input-wrapper {
   @include zeroing();
-  margin-bottom: 13px;
+  margin-bottom: 20px;
   @include undo-last-item-margin();
-}
-
-.additionally__checkbox {
-  @include zeroing();
-  margin-right: 16px;
 }
 
 .additionally__label {
   @include font(16px, 18px);
   color: $font-light-black;
   text-transform: uppercase;
+  padding-left: 45px;
+  position: relative;
+  cursor: pointer;
+  &:before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $border;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    border-color: #bababa;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.additionally__checkbox:checked + .additionally__label::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 5px;
+  width: 21px;
+  height: 16px;
+  background-image: url("../img/icon/tick.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
 @media(min-width: 768px) {
   .additionally {
     padding: 0 70px;
+    &::before {
+      top: 80px;
+      right: 0;
+    }
   }
 
   .additionally__title {
     @include font(36px, 36px);
     padding-top: 60px;
+    padding-left: 30px;
     margin-bottom: 57px;
+    margin-left: -30px;
+    width: 292px;
   }
 
   .additionally__flex-wrapper {
@@ -62,15 +111,23 @@
 
   .additionally__label {
     @include font(20px, 20px);
+    padding-left: 60px;
+    &:before {
+      top: -4px;
+      left: 0;
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .additionally__checkbox:checked + .additionally__label::after {
+    top: 8px;
+    left: 9px;
   }
 }
 
 
-@media(min-width: 1440px) {
-  .additionally {
-    padding: 0 110px;
-  }
-
+@media(min-width: 1120px) {
   .additionally__flex-wrapper {
     justify-content: space-between;
   }
@@ -81,5 +138,17 @@
     &:nth-child(odd) {
       margin: 0;
     }
+  }
+}
+
+
+@media(min-width: 1440px) {
+  .additionally {
+    padding: 0 110px;
+  }
+
+  .additionally__title {
+    padding-left: 40px;
+    margin-left: -40px;
   }
 }

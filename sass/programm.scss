@@ -10,34 +10,78 @@
 
 .programm__input-wrapper {
   @include zeroing ();
-  margin-bottom: 13px;
+  margin-bottom: 20px;
   @include undo-last-item-margin();
-}
-
-.programm__radio {
-  @include zeroing ();
 }
 
 .programm__label {
   @include font(16px, 18px);
   color: $font-light-black;
   text-transform: uppercase;
-  margin-left: 15px;
+  padding-left: 45px;
+  position: relative;
+  cursor: pointer;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid $border;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    border-color: #bababa;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
+.programm__radio:checked + .programm__label::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 9px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: $green;
+}
 
 
 @media(min-width: 768px) {
   .programm {
     width: 630px;
     margin: 0 auto;
-    padding: 24px 27px;
+    padding: 31px 27px;
     border: 1px solid $border;
+  }
+
+  .programm__input-wrapper {
+    margin-bottom: 28px;
   }
 
   .programm__label {
     @include font(20px, 20px);
-    margin-left: 20px;
+    padding-left: 60px;
+    &::before {
+      top: -4px;
+      left: 0;
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .programm__radio:checked + .programm__label::after {
+    top: 7px;
+    left: 11px;
+    width: 18px;
+    height: 18px;
   }
 }
 

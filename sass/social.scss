@@ -12,15 +12,34 @@
   list-style: none;
   border-top: 1px solid $border-list;
   border-bottom: 1px solid $border-list;
-  padding: 24px 0;
+  padding: 21px 0;
 }
 
 .social__item {
-  margin-right: 38px;
+  margin-right: 32px;
+
   &:last-child {
     margin-right: 0;
   }
 }
+
+.social__link {
+  margin: auto 0;
+
+  & svg {
+    display: block;
+  }
+
+  &:focus svg path,
+  &:hover svg path {
+    fill: $green !important;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
+}
+
 
 @media(min-width: 768px) {
   .social {
@@ -31,4 +50,20 @@
     border: none;
     padding: 0;
   }
+
+  .social__item {
+    margin-right: 20px;
+    &:first-child {
+      margin-right: 23px;
+    }
+  }
+
+  .social__link svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .social_link--vkontakte svg {
+      width: 40px;
+    }
 }

@@ -20,3 +20,55 @@
     margin-bottom: 0;
   }
 }
+
+@mixin link-status() {
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@mixin logo-status() {
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+@mixin button-status() {
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+  }
+  &:active {
+    color: rgba(225, 225, 225, 0.3);
+  }
+}
+
+@mixin button-gray-status() {
+  &:hover,
+  &:focus {
+    background-color: #ebebeb;
+  }
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
+}
+
+@mixin input-status() {
+  &:hover {
+    border-color: $border;
+  }
+
+  &:focus,
+  &:active {
+    border-color: $font-gray;
+    outline: 2px solid $font-gray;
+  }
+}
