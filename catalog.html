@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Каталог</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=7416dfab-4527-4644-a4e3-fb378a0c5c33&lang=ru_RU" type="text/javascript">
+  </script>
 </head>
 
 <body>
@@ -275,7 +277,8 @@
           <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 <span class="contacts__adress-margin">Санкт-Петербург<span></p>
         </div>
         <!--TODO: сделать красивую и правильную реализацию карты -->
-        <div class="contacts__map-container"></div>
+        <div id="map" class="contacts__map-container"></div>
+        <!-- <div class="contacts__map-container"></div> -->
         <!-- <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/-/CKe3UKkE"></iframe> -->
       </section>
     </main>
