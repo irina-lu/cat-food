@@ -18,7 +18,7 @@ navToggle.addEventListener('click', function() {
 });
 
 
-
+//карта
 let pinWidth = 55;
 let pinHeight = 53;
 
@@ -28,12 +28,11 @@ let pinLeft = -30;
 let centerLatitude = 59.93861646;
 let centerLongitude = 30.32318612;
 
-
 if (window.matchMedia("(min-width: 768px)").matches) {
   pinWidth = 113;
   pinHeight = 106;
-  pinTop = -90;
   pinLeft = -50;
+  pinTop = -90;
 }
 
 if (window.matchMedia("(min-width: 1440px)").matches) {
@@ -46,46 +45,15 @@ ymaps.ready(init);
 function init() {
   window.addEventListener("resize", function() {
     let widthScreen = innerWidth;
-    if (widthScreen >= 1440) {
-      centerLatitude = 59.93861646;
-      centerLongitude = 30.32149404;
-      myMap.setCenter([centerLatitude, centerLongitude]);
-    } else {
-      centerLatitude = 59.93861646;
-      centerLongitude = 30.32318612;
-      myMap.setCenter([centerLatitude, centerLongitude]);
-    }
+    widthScreen >= 1440 ? setCenterCordinate([59.93861646, 30.32149404]) : setCenterCordinate([59.93861646, 30.32318612]);
 
-    if (widthScreen >= 768) {
-      pinWidth = 113;
-      pinHeight = 106;
-      pinTop = -90;
-      pinLeft = -50;
-
-      myPlacemark.options._options.iconImageSize[0] = pinWidth;
-      myPlacemark.options._options.iconImageSize[1] = pinHeight;
-      myPlacemark.options._options.iconImageOffset[0] = pinLeft;
-      myPlacemark.options._options.iconImageOffset[1] = pinTop;
-    } else {
-      pinWidth = 55;
-      pinHeight = 53;
-      pinTop = -40;
-      pinLeft = -30;
-
-      myPlacemark.options._options.iconImageSize[0] = pinWidth;
-      myPlacemark.options._options.iconImageSize[1] = pinHeight;
-      myPlacemark.options._options.iconImageOffset[0] = pinLeft;
-      myPlacemark.options._options.iconImageOffset[1] = pinTop;
-    }
-  }, false);
+    widthScreen >= 768 ? setPlacemarkParams({width: 113, height: 106, left: -50, top: -90}) :
+                         setPlacemarkParams({width: 55, height: 53, left: -30, top: -40});
+    }, false);
 
   // Создание карты.
   let myMap = new ymaps.Map("map", {
-      // Координаты центра карты.
-      // Порядок по умолчанию: «широта, долгота».
       center: [centerLatitude, centerLongitude],
-      // Уровень масштабирования. Допустимые значения:
-      // от 0 (весь мир) до 19.
       zoom: 18
     }),
 
@@ -93,12 +61,9 @@ function init() {
       // Опции.
       // Необходимо указать данный тип макета.
       iconLayout: 'default#image',
-      // Своё изображение иконки метки.
       iconImageHref: 'http://127.0.0.1:3000/img/map-pin.png',
-      // Размеры метки.
       iconImageSize: [pinWidth, pinHeight],
-      // Смещение левого верхнего угла иконки относительно
-      // её "ножки" (точки привязки).
+      // Смещение левого верхнего угла иконки относительно её "ножки" (точки привязки).
       iconImageOffset: [pinLeft, pinTop]
     });
 
@@ -110,4 +75,26 @@ function init() {
     .remove('geolocationControl')
     .remove('typeSelector')
     .remove('zoomControl');
+
+  function setCenterCordinate(array) {
+    [centerLatitude, centerLongitude] = array;
+    return myMap.setCenter([centerLatitude, centerLongitude]);
+  }
+
+  function setPlacemarkParams(obj) {
+    pinWidth = obj.width;
+    pinHeight = obj.height;
+    pinLeft = obj.left;
+    pinTop = obj.top;
+
+    myPlacemark.options._options.iconImageSize[0] = pinWidth;
+    myPlacemark.options._options.iconImageSize[1] = pinHeight;
+    myPlacemark.options._options.iconImageOffset[0] = pinLeft;
+    myPlacemark.options._options.iconImageOffset[1] = pinTop;
+  }
 }
+
+//ползунок
+// function pictureRange() {
+//
+// }

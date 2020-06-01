@@ -38,23 +38,6 @@
 .contacts__map-container {
   width: 100%;
   height: 362px;
-  // background-image: url("../img/map.jpg");
-  // background-repeat: no-repeat;
-  // background-position: -771px -195px;
-  // position: relative;
-  // background-size: 422%;
-  //
-  // &::after {
-  //   content: "";
-  //   width: 57px;
-  //   height: 53px;
-  //   background-image: url("../img/map-pin.png");
-  //   background-repeat: no-repeat;
-  //   background-size: contain;
-  //   position: absolute;
-  //   top: 140px;
-  //   left: 135px;
-  // }
 }
 
 @media(min-width: 768px) {
@@ -90,14 +73,6 @@
   .contacts__map-container {
     width: 100%;
     height: 396px;
-    // background-position: -1195px -415px;
-    // background-size: 300%;
-    // &::after {
-    //   width: 113px;
-    //   height: 106px;
-    //   top: 145px;
-    //   left: 345px;
-    // }
   }
 }
 
@@ -142,13 +117,5 @@
   .contacts__map-container {
     width: 100%;
     height: 400px;
-    // background-position: -35px -200px;
-    // background-size: 110%;
-    // &::after {
-    //   width: 113px;
-    //   height: 106px;
-    //   top: 150px;
-    //   left: 1005px;
-    // }
   }
 }
