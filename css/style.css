@@ -733,6 +733,7 @@ img {
   text-align: center; }
 
 .before-after__range-toggle {
+  -webkit-appearance: none;
   position: relative;
   display: inline-block;
   width: 84px;
@@ -741,16 +742,13 @@ img {
   border: 1px solid #cdcdcd;
   border-radius: 6px;
   margin: 0 18px; }
-  .before-after__range-toggle::before {
-    content: "";
-    position: absolute;
-    top: 3px;
-    left: 5px;
-    display: inline-block;
-    width: 35px;
-    height: 6px;
-    background-color: #68b738;
-    border-radius: 6px; }
+
+.before-after__range-toggle::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 35px;
+  height: 6px;
+  background-color: #68b738;
+  border-radius: 6px; }
 
 .before-after__toggle-left,
 .before-after__toggle-right {
@@ -844,24 +842,22 @@ img {
     border: none;
     border-radius: 3px;
     margin: 0 22px; }
-    .before-after__range-toggle::before {
-      top: -13px;
-      left: 200px;
-      width: 34px;
-      height: 34px;
-      background-color: #ffffff;
-      border: 1px solid #cdcdcd;
-      border-radius: 50%;
-      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15); }
-    .before-after__range-toggle::after {
-      content: "";
-      position: absolute;
-      width: 8px;
-      height: 8px;
-      background-color: #68b738;
-      top: 0;
-      left: 213px;
-      border-radius: 50%; } }
+    .before-after__range-toggle:focus {
+      outline: none; }
+  .before-after__range-toggle::-webkit-slider-thumb {
+    width: 34px;
+    height: 34px;
+    background: radial-gradient(circle closest-side, #68b738 4px, #ffffff 5px);
+    border-radius: 50%;
+    border: 1px solid #cdcdcd;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: .1s; }
+    .before-after__range-toggle::-webkit-slider-thumb:hover {
+      box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.25); }
+    .before-after__range-toggle::-webkit-slider-thumb:active {
+      border: none;
+      box-shadow: 0 0 0 2px #68b738 inset, 0px 4px 5px 0px rgba(0, 0, 0, 0.3); } }
 
 @media (min-width: 1440px) {
   .before-after {
