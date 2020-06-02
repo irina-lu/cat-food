@@ -17,6 +17,15 @@ navToggle.addEventListener('click', function() {
   }
 });
 
+//ползунок
+let inputRange = document.querySelector('.before-after__range-toggle');
+let buttonLeft = document.querySelector('.before-after__toggle-left');
+let buttonRight = document.querySelector('.before-after__toggle-right');
+function pictureRange() {
+  
+}
+
+
 
 //карта
 let pinWidth = 55;
@@ -93,8 +102,3 @@ function init() {
     myPlacemark.options._options.iconImageOffset[1] = pinTop;
   }
 }
-
-//ползунок
-// function pictureRange() {
-//
-// }
