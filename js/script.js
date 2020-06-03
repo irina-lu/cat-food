@@ -21,8 +21,21 @@ navToggle.addEventListener('click', function() {
 let inputRange = document.querySelector('.before-after__range-toggle');
 let buttonLeft = document.querySelector('.before-after__toggle-left');
 let buttonRight = document.querySelector('.before-after__toggle-right');
+let value = document.querySelector('.before-after__range-toggle').value;
+let fatCatWrapper = document.querySelector('.before-after__fat-cat-wrapper');
+let slimCatWrapper = document.querySelector('.before-after__slim-cat-wrapper');
+
 function pictureRange() {
-  
+  //  debugger;
+  let fullWidth = 570;
+  value = document.querySelector('.before-after__range-toggle').value;
+  //fatCatWrapper.offsetWidth = parseInt(value);
+  let fatCatWidth = (fullWidth * value) / 100;
+  let slimCatWidth = fullWidth - (fullWidth * value) / 100;
+  //let width = (fullWidth * fatCatWrapper.offsetWidth) / 100;
+  //let width = (fatCatWrapper.offsetWidth * 100) / fullWidth;
+  fatCatWrapper.style.width = `${fatCatWidth}px`;
+  slimCatWrapper.style.width = `${slimCatWidth}px`;
 }
 
 
