@@ -1,5 +1,22 @@
+//менюшка
 let navMain = document.querySelector('.main-nav');
 let navToggle = document.querySelector('.page-header__toggle');
+//ползунок
+let inputRange = document.querySelector('.before-after__range-toggle');
+let buttonBefore = document.querySelector('.before-after__toggle-left');
+let buttonAfter = document.querySelector('.before-after__toggle-right');
+let fatCatWrapper = document.querySelector('.before-after__fat-cat-wrapper');
+let slimCatWrapper = document.querySelector('.before-after__slim-cat-wrapper');
+//карта
+let pinWidth = 55;
+let pinHeight = 53;
+
+let pinTop = -40;
+let pinLeft = -30;
+
+let centerLatitude = 59.93861646;
+let centerLongitude = 30.32318612;
+
 
 navMain.classList.remove('main-nav--nojs');
 
@@ -17,18 +34,10 @@ navToggle.addEventListener('click', function() {
   }
 });
 
-//ползунок
-let inputRange = document.querySelector('.before-after__range-toggle');
-let buttonLeft = document.querySelector('.before-after__toggle-left');
-let buttonRight = document.querySelector('.before-after__toggle-right');
-let value = document.querySelector('.before-after__range-toggle').value;
-let fatCatWrapper = document.querySelector('.before-after__fat-cat-wrapper');
-let slimCatWrapper = document.querySelector('.before-after__slim-cat-wrapper');
-
 function pictureRange() {
   //  debugger;
   let fullWidth = 570;
-  value = document.querySelector('.before-after__range-toggle').value;
+  let value = document.querySelector('.before-after__range-toggle').value;
   //fatCatWrapper.offsetWidth = parseInt(value);
   let fatCatWidth = (fullWidth * value) / 100;
   let slimCatWidth = fullWidth - (fullWidth * value) / 100;
@@ -38,17 +47,21 @@ function pictureRange() {
   slimCatWrapper.style.width = `${slimCatWidth}px`;
 }
 
+if (window.matchMedia("(max-width: 767px)").matches) {
+  document.querySelector('.before-after__range-toggle').value = 8;
+  document.querySelector('.before-after__range-toggle').disabled = true;
+  buttonBefore.addEventListener('click', function() {
+    fatCatWrapper.classList.remove('before-after__fat-cat-wrapper--display-none');
+    slimCatWrapper.classList.add('before-after__slim-cat-wrapper--display-none');
+    document.querySelector('.before-after__range-toggle').value = 8;
+  });
 
-
-//карта
-let pinWidth = 55;
-let pinHeight = 53;
-
-let pinTop = -40;
-let pinLeft = -30;
-
-let centerLatitude = 59.93861646;
-let centerLongitude = 30.32318612;
+  buttonAfter.addEventListener('click', function() {
+    slimCatWrapper.classList.remove('before-after__slim-cat-wrapper--display-none');
+    fatCatWrapper.classList.add('before-after__fat-cat-wrapper--display-none');
+    document.querySelector('.before-after__range-toggle').value = 92;
+  });
+}
 
 if (window.matchMedia("(min-width: 768px)").matches) {
   pinWidth = 113;
@@ -69,9 +82,19 @@ function init() {
     let widthScreen = innerWidth;
     widthScreen >= 1440 ? setCenterCordinate([59.93861646, 30.32149404]) : setCenterCordinate([59.93861646, 30.32318612]);
 
-    widthScreen >= 768 ? setPlacemarkParams({width: 113, height: 106, left: -50, top: -90}) :
-                         setPlacemarkParams({width: 55, height: 53, left: -30, top: -40});
-    }, false);
+    widthScreen >= 768 ? setPlacemarkParams({
+        width: 113,
+        height: 106,
+        left: -50,
+        top: -90
+      }) :
+      setPlacemarkParams({
+        width: 55,
+        height: 53,
+        left: -30,
+        top: -40
+      });
+  }, false);
 
   // Создание карты.
   let myMap = new ymaps.Map("map", {

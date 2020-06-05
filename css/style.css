@@ -664,6 +664,8 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
+  width: 280px;
   margin-bottom: 35px; }
 
 .before-after__title {
@@ -726,17 +728,24 @@ img {
 .before-after__image-wrapper {
   position: relative;
   margin: 0 auto;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  height: 262px;
+  width: 280px; }
 
-.before-after__image--fat-cat {
+.before-after__fat-cat-wrapper {
   position: absolute;
-  max-width: 120%;
-  bottom: 3px;
-  right: -45px; }
+  bottom: 0px; }
 
-.before-after__image--slim-cat {
-  display: block;
-  margin: 0 auto; }
+.before-after__slim-cat-wrapper {
+  position: absolute;
+  bottom: 0px; }
+
+.before-after__image-slim-cat {
+  display: block; }
+
+.before-after__fat-cat-wrapper--display-none,
+.before-after__slim-cat-wrapper--display-none {
+  display: none; }
 
 .before-after__toggle-wrapper {
   text-align: center; }
@@ -827,29 +836,22 @@ img {
   .before-after__image-wrapper {
     width: 570px;
     height: 517px;
-    margin: 0 auto;
     margin-bottom: 13px; }
   .before-after__fat-cat-wrapper {
     width: 50%;
     display: block;
     height: auto;
-    position: absolute;
-    bottom: 0px;
     left: 0px;
     overflow: hidden; }
   .before-after__slim-cat-wrapper {
-    position: absolute;
     height: auto;
     overflow: hidden;
     width: 50%;
     direction: rtl;
-    bottom: 0px;
     right: 0px; }
-  .before-after__image--fat-cat {
-    position: static;
+  .before-after__image-fat-cat {
     max-width: 545px; }
-  .before-after__image--slim-cat {
-    margin: 0;
+  .before-after__image-slim-cat {
     max-width: 545px; }
   .before-after__toggle-wrapper {
     display: flex;
