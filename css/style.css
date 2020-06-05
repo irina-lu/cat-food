@@ -727,25 +727,31 @@ img {
 
 .before-after__image-wrapper {
   position: relative;
+  overflow: hidden;
   margin: 0 auto;
   margin-bottom: 15px;
-  height: 262px;
+  height: 266px;
   width: 280px; }
 
 .before-after__fat-cat-wrapper {
   position: absolute;
-  bottom: 0px; }
+  width: 280px;
+  bottom: 0px;
+  transition-duration: 1s; }
 
 .before-after__slim-cat-wrapper {
   position: absolute;
-  bottom: 0px; }
+  width: 280px;
+  bottom: 0px;
+  right: -280px;
+  transition-duration: 1s; }
 
 .before-after__image-slim-cat {
   display: block; }
 
-.before-after__fat-cat-wrapper--display-none,
-.before-after__slim-cat-wrapper--display-none {
-  display: none; }
+.before-after__cat-wrapper--translate-left {
+  transform: translateX(-280px);
+  transition-duration: 1s; }
 
 .before-after__toggle-wrapper {
   text-align: center; }
@@ -766,7 +772,8 @@ img {
   width: 35px;
   height: 6px;
   background-color: #68b738;
-  border-radius: 6px; }
+  border-radius: 6px;
+  transition-duration: 1s; }
 
 .before-after__toggle-left,
 .before-after__toggle-right {

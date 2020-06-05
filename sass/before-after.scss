@@ -70,30 +70,32 @@
   overflow: hidden;
   margin: 0 auto;
   margin-bottom: 15px;
-  height: 262px;
+  height: 266px;
   width: 280px;
-  border: 1px solid red;
 }
 
 .before-after__fat-cat-wrapper {
   position: absolute;
+  width: 280px;
   bottom: 0px;
-  border: 1px solid green;
+  transition-duration: 1s;
 }
 
 .before-after__slim-cat-wrapper {
   position: absolute;
+  width: 280px;
   bottom: 0px;
-  border: 1px solid blue;
+  right: -280px;
+  transition-duration: 1s;
 }
 
 .before-after__image-slim-cat {
   display: block;
 }
 
-.before-after__fat-cat-wrapper--display-none,
-.before-after__slim-cat-wrapper--display-none {
-  display: none;
+.before-after__cat-wrapper--translate-left {
+  transform: translateX(-280px);
+  transition-duration: 1s;
 }
 
 .before-after__toggle-wrapper {
@@ -118,6 +120,7 @@
   height: 6px;
   background-color: $green;
   border-radius: 6px;
+  transition-duration: 1s;
 }
 
 .before-after__toggle-left,
