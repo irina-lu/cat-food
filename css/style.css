@@ -227,10 +227,9 @@ img {
 .main-screen {
   color: #ffffff;
   background: linear-gradient(to bottom, #68b738 25%, #ffffff 55%);
-  background-image: url(../img/index-background-mobile.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: top right;
+  background-image: url("../img/index-background-mobile.jpg"), url("../img/green-background.jpg");
+  background-repeat: no-repeat, repeat-x;
+  background-position: top right, top;
   margin-bottom: 22px;
   padding: 0 20px; }
 
