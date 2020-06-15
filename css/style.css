@@ -227,10 +227,9 @@ img {
 .main-screen {
   color: #ffffff;
   background: linear-gradient(to bottom, #68b738 25%, #ffffff 55%);
-  background-image: url(../img/index-background-mobile.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: top right;
+  background-image: url("../img/index-background-mobile.jpg"), url("../img/green-background.jpg");
+  background-repeat: no-repeat, repeat-x;
+  background-position: top right, top;
   margin-bottom: 22px;
   padding: 0 20px; }
 
@@ -950,6 +949,9 @@ img {
     background-color: #f2f2f2; }
 
 .contacts__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   padding: 0 20px; }
 
 .contacts__invitation {
@@ -983,9 +985,6 @@ img {
   .contacts {
     padding-top: 65px; }
   .contacts__wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
     padding: 0 30px; }
   .contacts__invitation {
     font-size: 20px;
