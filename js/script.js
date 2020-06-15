@@ -1,5 +1,16 @@
+//менюшка
 let navMain = document.querySelector('.main-nav');
 let navToggle = document.querySelector('.page-header__toggle');
+//карта
+let pinWidth = 55;
+let pinHeight = 53;
+
+let pinTop = -40;
+let pinLeft = -30;
+
+let centerLatitude = 59.93861646;
+let centerLongitude = 30.32318612;
+
 
 navMain.classList.remove('main-nav--nojs');
 
@@ -17,16 +28,6 @@ navToggle.addEventListener('click', function() {
   }
 });
 
-
-//карта
-let pinWidth = 55;
-let pinHeight = 53;
-
-let pinTop = -40;
-let pinLeft = -30;
-
-let centerLatitude = 59.93861646;
-let centerLongitude = 30.32318612;
 
 if (window.matchMedia("(min-width: 768px)").matches) {
   pinWidth = 113;
@@ -47,9 +48,19 @@ function init() {
     let widthScreen = innerWidth;
     widthScreen >= 1440 ? setCenterCordinate([59.93861646, 30.32149404]) : setCenterCordinate([59.93861646, 30.32318612]);
 
-    widthScreen >= 768 ? setPlacemarkParams({width: 113, height: 106, left: -50, top: -90}) :
-                         setPlacemarkParams({width: 55, height: 53, left: -30, top: -40});
-    }, false);
+    widthScreen >= 768 ? setPlacemarkParams({
+        width: 113,
+        height: 106,
+        left: -50,
+        top: -90
+      }) :
+      setPlacemarkParams({
+        width: 55,
+        height: 53,
+        left: -30,
+        top: -40
+      });
+  }, false);
 
   // Создание карты.
   let myMap = new ymaps.Map("map", {
@@ -93,8 +104,3 @@ function init() {
     myPlacemark.options._options.iconImageOffset[1] = pinTop;
   }
 }
-
-//ползунок
-// function pictureRange() {
-//
-// }

@@ -134,11 +134,17 @@
           </div>
         </div>
         <div class="before-after__desktop-wrapper">
-          <img class="before-after__image before-after__image--fat-cat" src="img/before-desktop.png" width="" height="" alt="Толстый Борис" />
-          <img class="before-after__image before-after__image--slim-cat" src="img/after-desktop.png" width="" height="" alt="Худой Борис" />
+          <div class="before-after__image-wrapper">
+            <div class="before-after__fat-cat-wrapper">
+              <img class="before-after__image-fat-cat" src="img/before-desktop.png" width="" height="" alt="Толстый Борис" />
+            </div>
+            <div class="before-after__slim-cat-wrapper">
+              <img class="before-after__image-slim-cat" src="img/after-desktop.png" width="" height="" alt="Худой Борис" />
+            </div>
+          </div>
           <div class="before-after__toggle-wrapper">
             <button class="before-after__toggle-left">Было</button>
-            <span class="before-after__range-toggle"></span>
+            <input class="before-after__range-toggle" type="range" min="0" max="100" id="line" oninput="pictureRange()" value="50">
             <button class="before-after__toggle-right">Стало</button>
           </div>
         </div>
@@ -150,10 +156,7 @@
           <b class="contacts__invitation">Приглашаем к сотрудничеству дилеров!</b>
           <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 <span class="contacts__adress-margin">Санкт-Петербург<span></p>
         </div>
-        <!--TODO: сделать красивую и правильную реализацию карты -->
-        <!-- <div class="contacts__map-container"></div> -->
         <div id="map" class="contacts__map-container"></div>
-        <!-- <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/-/CKe3UKkE"></iframe> -->
       </section>
     </main>
 
@@ -237,8 +240,7 @@
             <a class="social__link social_link--facebook" href="https://www.facebook.com/htmlacademy">
               <span class="visually-hidden">Мы в Фейсбуке</span>
               <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    width="20" height="20" viewBox="0 0 792 792" style="fill:#666666";
-                xml:space="preserve">
+                   width="20" height="20" viewBox="0 0 792 792" style="fill:#666666" ; xml:space="preserve">
                 <g>
                   <g id="facebook">
                     <g>
@@ -265,29 +267,30 @@
           <span class="copyright__link-text">HTML Academy</span>
           <span class="copyright__link-image">
             <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 35.926666 45.453331" height="34" width="27" xml:space="preserve" id="svg2" version="1.1">
-            <metadata id="metadata8">
-              <rdf:RDF>
-                <cc:Work rdf:about="">
-                  <dc:format>image/svg+xml</dc:format>
-                  <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-                </cc:Work>
-              </rdf:RDF>
-            </metadata>
-            <defs id="defs6" />
-            <g transform="matrix(1.3333333,0,0,-1.3333333,0,45.453599)" id="g10">
-              <g transform="translate(13.473,34.0902)" id="g12">
-                <path id="path14" style="fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:none"
-                  d="m 0,0 -13.473,-1.412 v -24.662 l 13.474,-8.016 13.43,7.99 0.041,0.024 V -1.412 L 0.147,-0.017 Z m -11.548,-3.147 11.549,1.212 11.547,-1.212 v -8.98 H 11.546 L 0.022,-5.334 0.021,-5.23 -0.066,-5.28 -0.154,-5.224 v -0.109 l -11.394,-6.785 z m 0.109,-10.475 11.371,6.834 11.518,-6.712 -4.479,-2.641 -7.093,4.221 -0.014,-1.414 5.904,-3.513 -0.86,-0.508 -5.03,2.993 -0.014,-1.415 3.827,-2.275 -0.782,-0.524 -3.031,1.787 -0.014,-1.413 1.853,-1.09 -1.8,-1.081 z m 19.582,-8.549 -0.011,5.177 3.416,2.037 V -24.979 L 0,-31.85 l -11.548,6.871 v 9.852 l 11.411,-6.792 0.016,-1.044 -7.942,4.728 -0.015,-1.416 7.979,-4.795 0.019,-1.076 -7.974,4.74 -0.013,-1.414 8.021,-4.822 0.047,-0.024 z" />
+              viewBox="0 0 35.926666 45.453331" height="34" width="27" xml:space="preserve" id="svg2" version="1.1">
+              <metadata id="metadata8">
+                <rdf:RDF>
+                  <cc:Work rdf:about="">
+                    <dc:format>image/svg+xml</dc:format>
+                    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                  </cc:Work>
+                </rdf:RDF>
+              </metadata>
+              <defs id="defs6" />
+              <g transform="matrix(1.3333333,0,0,-1.3333333,0,45.453599)" id="g10">
+                <g transform="translate(13.473,34.0902)" id="g12">
+                  <path id="path14" style="fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                    d="m 0,0 -13.473,-1.412 v -24.662 l 13.474,-8.016 13.43,7.99 0.041,0.024 V -1.412 L 0.147,-0.017 Z m -11.548,-3.147 11.549,1.212 11.547,-1.212 v -8.98 H 11.546 L 0.022,-5.334 0.021,-5.23 -0.066,-5.28 -0.154,-5.224 v -0.109 l -11.394,-6.785 z m 0.109,-10.475 11.371,6.834 11.518,-6.712 -4.479,-2.641 -7.093,4.221 -0.014,-1.414 5.904,-3.513 -0.86,-0.508 -5.03,2.993 -0.014,-1.415 3.827,-2.275 -0.782,-0.524 -3.031,1.787 -0.014,-1.413 1.853,-1.09 -1.8,-1.081 z m 19.582,-8.549 -0.011,5.177 3.416,2.037 V -24.979 L 0,-31.85 l -11.548,6.871 v 9.852 l 11.411,-6.792 0.016,-1.044 -7.942,4.728 -0.015,-1.416 7.979,-4.795 0.019,-1.076 -7.974,4.74 -0.013,-1.414 8.021,-4.822 0.047,-0.024 z" />
+                </g>
               </g>
-            </g>
-          </svg>
-        </span>
+            </svg>
+          </span>
         </a>
       </div>
     </footer>
   </div>
   <script type="" src="../js/script.js"></script>
+  <script type="" src="../js/slider.js"></script>
 </body>
 
 </html>

@@ -664,6 +664,8 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
+  width: 280px;
   margin-bottom: 35px; }
 
 .before-after__title {
@@ -721,18 +723,41 @@ img {
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 40px; }
-
-.before-after__image {
   margin-bottom: 30px; }
 
-.before-after__image--slim-cat {
-  display: none; }
+.before-after__image-wrapper {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  height: 266px;
+  width: 280px; }
+
+.before-after__fat-cat-wrapper {
+  position: absolute;
+  width: 280px;
+  bottom: 0px;
+  transition-duration: 1s; }
+
+.before-after__slim-cat-wrapper {
+  position: absolute;
+  width: 280px;
+  bottom: 0px;
+  right: -280px;
+  transition-duration: 1s; }
+
+.before-after__image-slim-cat {
+  display: block; }
+
+.before-after__cat-wrapper--translate-left {
+  transform: translateX(-280px);
+  transition-duration: 1s; }
 
 .before-after__toggle-wrapper {
   text-align: center; }
 
 .before-after__range-toggle {
+  -webkit-appearance: none;
   position: relative;
   display: inline-block;
   width: 84px;
@@ -741,16 +766,14 @@ img {
   border: 1px solid #cdcdcd;
   border-radius: 6px;
   margin: 0 18px; }
-  .before-after__range-toggle::before {
-    content: "";
-    position: absolute;
-    top: 3px;
-    left: 5px;
-    display: inline-block;
-    width: 35px;
-    height: 6px;
-    background-color: #68b738;
-    border-radius: 6px; }
+
+.before-after__range-toggle::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 35px;
+  height: 6px;
+  background-color: #68b738;
+  border-radius: 6px;
+  transition-duration: 1s; }
 
 .before-after__toggle-left,
 .before-after__toggle-right {
@@ -773,7 +796,8 @@ img {
     background-color: transparent;
     background-image: url(../img/background-ea.jpg), url("../img/background-f2.jpg");
     background-repeat: no-repeat, repeat-x;
-    background-position: right bottom, left bottom; }
+    background-position: right bottom, left bottom;
+    background-size: 50% 462px, 100% 462px; }
   .before-after__title {
     font-size: 60px;
     line-height: 60px;
@@ -816,8 +840,26 @@ img {
     margin: 0;
     width: 190px;
     text-align: end; }
-  .before-after__image {
+  .before-after__image-wrapper {
+    width: 570px;
+    height: 517px;
     margin-bottom: 13px; }
+  .before-after__fat-cat-wrapper {
+    width: 50%;
+    display: block;
+    height: auto;
+    left: 0px;
+    overflow: hidden; }
+  .before-after__slim-cat-wrapper {
+    height: auto;
+    overflow: hidden;
+    width: 50%;
+    direction: rtl;
+    right: 0px; }
+  .before-after__image-fat-cat {
+    max-width: 545px; }
+  .before-after__image-slim-cat {
+    max-width: 545px; }
   .before-after__toggle-wrapper {
     display: flex;
     justify-content: center;
@@ -844,24 +886,22 @@ img {
     border: none;
     border-radius: 3px;
     margin: 0 22px; }
-    .before-after__range-toggle::before {
-      top: -13px;
-      left: 200px;
-      width: 34px;
-      height: 34px;
-      background-color: #ffffff;
-      border: 1px solid #cdcdcd;
-      border-radius: 50%;
-      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15); }
-    .before-after__range-toggle::after {
-      content: "";
-      position: absolute;
-      width: 8px;
-      height: 8px;
-      background-color: #68b738;
-      top: 0;
-      left: 213px;
-      border-radius: 50%; } }
+    .before-after__range-toggle:focus {
+      outline: none; }
+  .before-after__range-toggle::-webkit-slider-thumb {
+    width: 34px;
+    height: 34px;
+    background: radial-gradient(circle closest-side, #68b738 4px, #ffffff 5px);
+    border-radius: 50%;
+    border: 1px solid #cdcdcd;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: .1s; }
+    .before-after__range-toggle::-webkit-slider-thumb:hover {
+      box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.25); }
+    .before-after__range-toggle::-webkit-slider-thumb:active {
+      border: none;
+      box-shadow: 0 0 0 2px #68b738 inset, 0px 4px 5px 0px rgba(0, 0, 0, 0.3); } }
 
 @media (min-width: 1440px) {
   .before-after {
@@ -893,8 +933,11 @@ img {
     width: 366px; }
   .before-after__margin-left {
     margin-left: 64px; }
-  .before-after__image {
+  .before-after__image-wrapper {
+    width: 570px;
     margin-bottom: 43px; }
+  .before-after__image--fat-cat {
+    right: -40px; }
   .before-after__toggle-wrapper {
     justify-content: flex-end; } }
 
