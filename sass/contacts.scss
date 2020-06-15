@@ -13,6 +13,7 @@
 }
 
 .contacts__wrapper {
+  @include flex(space-between, flex-start);
   padding: 0 20px;
 }
 
@@ -46,7 +47,6 @@
   }
 
   .contacts__wrapper {
-    @include flex(space-between, flex-start);
     padding: 0 30px;
   }
 
