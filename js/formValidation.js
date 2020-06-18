@@ -10,22 +10,22 @@ let inputArray = [inputName, inputWeigth, inputEmail, inputTel];
 
 form.addEventListener('submit', function(e) {
   let isFirstErrorInput = false;
-  inputArray.forEach(function(i) {
-    if (!i.value) {
+  inputArray.forEach(function(item) {
+    if (!item.value) {
       e.preventDefault();
-      i.classList.add("input--error");
+      item.classList.add("input--error");
       if (!isFirstErrorInput) {
-        i.scrollIntoView({block: "center", behavior: 'smooth'});
+        item.scrollIntoView({block: "center", behavior: 'smooth'});
         isFirstErrorInput = true;
       }
     }
   });
 });
 
-inputName.onchange = isNull;
-inputWeigth.onchange = isNull;
-inputEmail.onchange = isNull;
-inputTel.onchange = isNull;
+inputName.addEventListener('change', isNull);
+inputWeigth.addEventListener('change', isNull);
+inputEmail.addEventListener('change', isNull);
+inputTel.addEventListener('change', isNull);
 
 function isNull() {
   if (this.value) {
