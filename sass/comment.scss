@@ -39,6 +39,9 @@
   border: 1px solid $input-border;
 
   @include input-status();
+  &::-webkit-input-placeholder {
+    color: $placeholder-color;
+  }
 }
 
 
