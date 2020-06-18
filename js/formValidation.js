@@ -4,6 +4,8 @@ let inputEmail = document.querySelector("#owner-email");
 let inputTel = document.querySelector("#owner-tel");
 let form = document.querySelector(".form");
 
+$(".owner__input--tel").mask("9 (999) 999-99-99");
+
 let inputArray = [inputName, inputWeigth, inputEmail, inputTel];
 
 form.addEventListener('submit', function(e) {
