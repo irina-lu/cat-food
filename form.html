@@ -56,15 +56,16 @@
               <legend class="visually-hidden">Информация о коте</legend>
               <p class="cat__input-wrapper">
                 <label class="cat__label" for="cat-name">Имя:*</label>
-                <input class="cat__input" id="cat-name" type="text" name="cat-name" placeholder="Барсик" required />
+                <input class="cat__input input" id="cat-name" type="text" name="cat-name" placeholder="Барсик"/>
               </p>
+
               <p class="cat__input-wrapper">
                 <label class="cat__label" for="cat-weight">Вес(кг):*</label>
-                <input class="cat__input" id="cat-weight" type="text" name="cat-weight" placeholder="7" required />
+                <input class="cat__input input" id="cat-weight" type="text" name="cat-weight" placeholder="7"/>
               </p>
               <p class="cat__input-wrapper">
                 <label class="cat__label" for="cat-age">Возраст(лет):</label>
-                <input class="cat__input" id="cat-age" type="text" name="cat-age" placeholder="7" />
+                <input class="cat__input input" id="cat-age" type="text" name="cat-age" placeholder="7" />
               </p>
             </fieldset>
             <fieldset class="form__programm programm">
@@ -88,7 +89,7 @@
             <div class="owner__flex-wrapper">
               <p class="owner__input-wrapper owner__input-wrapper--email">
                 <label class="owner__label" for="owner-email">E-mail:*</label>
-                <input class="owner__input owner__input--email" id="owner-email" type="email" name="owner-email" placeholder="kuklachev@gmail.com" required />
+                <input class="owner__input owner__input--email input" id="owner-email" type="email" name="owner-email" placeholder="kuklachev@gmail.com"/>
                 <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 22.666668 17.333332" height="13" width="17" xml:space="preserve" id="svg2" version="1.1">
                   <metadata id="metadata8">
@@ -110,7 +111,7 @@
               </p>
               <p class="owner__input-wrapper owner__input-wrapper--phone">
                 <label class="owner__label" for="owner-tel">Телефон:*</label>
-                <input class="owner__input owner__input--tel" id="owner-tel" type="tel" name="owner-tel" placeholder="8 (960) 900-60-90" required />
+                <input class="owner__input owner__input--tel input" id="owner-tel" type="tel" name="owner-tel" placeholder="8 (960) 900-60-90"/>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="width: 20px; height: 21px">
                   <defs>
                     <style>
@@ -307,7 +308,10 @@
       </div>
     </footer>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.js" type="text/javascript"></script>
   <script type="" src="../js/script.js"></script>
+  <script type="" src="../js/formValidation.js"></script>
 </body>
 
 </html>
