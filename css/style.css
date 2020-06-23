@@ -16,6 +16,20 @@ img {
   src: url(../fonts/Oswald-VariableFont_wght.ttf);
   /* Путь к файлу со шрифтом */ }
 
+@keyframes input-animation {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes move-block {
+  from {
+    transform: translateY(50px);
+    opacity: 0; }
+  to {
+    transform: translateY(0px);
+    opacity: 1; } }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -304,6 +318,20 @@ img {
     position: static;
     margin-left: 90px; } }
 
+@keyframes input-animation {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes move-block {
+  from {
+    transform: translateY(50px);
+    opacity: 0; }
+  to {
+    transform: translateY(0px);
+    opacity: 1; } }
+
 .catigories {
   width: 100%;
   padding: 0 20px; }
@@ -317,7 +345,8 @@ img {
 .catigories__item {
   background-color: #f2f2f2;
   padding: 25px 20px 17px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  animation: move-block 1s; }
   .catigories__item:last-child {
     margin-bottom: 0; }
 
@@ -1654,6 +1683,20 @@ img {
     width: 570px;
     padding-left: 0; } }
 
+@keyframes input-animation {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes move-block {
+  from {
+    transform: translateY(50px);
+    opacity: 0; }
+  to {
+    transform: translateY(0px);
+    opacity: 1; } }
+
 .programm {
   margin: 0;
   padding: 0;
@@ -1699,7 +1742,8 @@ img {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #68b738; }
+  background-color: #68b738;
+  animation: input-animation 0.5s alternate; }
 
 @media (min-width: 768px) {
   .programm {
@@ -1978,7 +2022,8 @@ img {
   height: 16px;
   background-image: url("../img/icon/tick.svg");
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  animation: input-animation 0.5s alternate; }
 
 @media (min-width: 768px) {
   .additionally {

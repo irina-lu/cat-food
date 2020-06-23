@@ -15,7 +15,10 @@ form.addEventListener('submit', function(e) {
       e.preventDefault();
       item.classList.add("input--error");
       if (!isFirstErrorInput) {
-        item.scrollIntoView({block: "center", behavior: 'smooth'});
+        item.scrollIntoView({
+          block: "center",
+          behavior: 'smooth'
+        });
         isFirstErrorInput = true;
       }
     }

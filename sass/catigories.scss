@@ -1,5 +1,6 @@
 @import "color";
 @import "mixin";
+@import "animation";
 
 .catigories {
   width: 100%;
@@ -17,6 +18,7 @@
   padding: 25px 20px 17px;
   margin-bottom: 20px;
   @include undo-last-item-margin();
+  animation: move-block 1s;
 }
 
 .catigories__round {

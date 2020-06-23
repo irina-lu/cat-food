@@ -1,5 +1,6 @@
 @import "color";
 @import "mixin";
+@import "animation";
 
 .programm {
   @include zeroing();
@@ -51,6 +52,7 @@
   height: 12px;
   border-radius: 50%;
   background-color: $green;
+  animation: input-animation 0.5s alternate;
 }
 
 
