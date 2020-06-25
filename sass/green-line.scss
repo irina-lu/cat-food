@@ -1,0 +1,10 @@
+@import "color";
+@import "mixin";
+
+.green-line {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: $green;
+  z-index: 0;
+}
