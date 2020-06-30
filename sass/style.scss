@@ -20,6 +20,7 @@ src: url(../fonts/Oswald-VariableFont_wght.ttf); /* Путь к файлу со 
 
 @import "color";
 @import "mixin";
+@import "animation";
 @import "visually-hidden";
 @import "page-wrapper";
 @import "page-header";
@@ -46,3 +47,4 @@ src: url(../fonts/Oswald-VariableFont_wght.ttf); /* Путь к файлу со 
 @import "additionally";
 @import "form";
 @import "input";
+@import "green-line";

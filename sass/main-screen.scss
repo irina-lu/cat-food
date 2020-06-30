@@ -31,6 +31,7 @@
 .main-screen__image img{
   display: block;
   margin: 0 auto;
+  --animate-delay: 0.7s;
 }
 
 
@@ -49,6 +50,7 @@
     text-align: left;
     margin-left: 90px;
     width: 425px;
+    --animate-delay: 0.7s;
   }
 
   .main-screen__phrase {
@@ -56,6 +58,7 @@
     color: $font-black;
     text-align: left;
     margin-left: 90px;
+    --animate-delay: 0.9s;
   }
 
   .main-screen__link {

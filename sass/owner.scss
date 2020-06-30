@@ -6,16 +6,11 @@
   padding: 0 20px;
   border: 0;
   position: relative;
-  &::before {
-    content: "";
-    position: absolute;
-    top: 42px;
-    width: 100%;
-    height: 3px;
-    background-color: $green;
-    z-index: 0;
-  }
 }
+
+.owner__green-line {
+  top: 42px;
+  }
 
 .owner__title {
   @include zeroing();
@@ -65,11 +60,12 @@
 @media(min-width: 768px) {
   .owner {
     padding: 0 70px;
-    &::before {
-      top: 95px;
-      right: 0;
   }
-}
+
+  .owner__green-line {
+    top: 95px;
+    right: 0;
+  }
 
   .owner__title {
     @include font(36px, 36px);
@@ -102,10 +98,11 @@
 @media(min-width: 1440px) {
   .owner {
     padding: 0 110px;
-    &::before {
-      top: 90px;
-      right: 0;
-    }
+  }
+
+  .owner__green-line {
+    top: 90px;
+    right: 0;
   }
 
   .owner__title {

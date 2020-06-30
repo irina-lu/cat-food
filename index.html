@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cat Energy</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animate.css">
   <script src="https://api-maps.yandex.ru/2.1/?apikey=7416dfab-4527-4644-a4e3-fb378a0c5c33&lang=ru_RU" type="text/javascript">
   </script>
 </head>
@@ -47,12 +48,12 @@
 
     <main class="page-main">
       <section class="main-screen">
-        <h1 class="main-screen__title">Функциональное питание для котов</h1>
-        <p class="main-screen__phrase">Занялся собой? Займись котом!</p>
+        <h1 class="main-screen__title wow animate__animated animate__fadeInLeft animate__delay-1s">Функциональное питание для котов</h1>
+        <p class="main-screen__phrase animate__animated animate__fadeInLeft animate__delay-1s">Занялся собой? Займись котом!</p>
         <picture class="main-screen__image">
           <source media="(min-width: 1440px)" srcset="img/index-food-desktop.png">
           <source media="(min-width: 768px)" srcset="img/index-food-tablet.png">
-          <img src="img/index-food-mobile.png" alt="Питание для котов" />
+          <img class = "wow animate__animated animate__fadeInRight animate__delay-1s" src="img/index-food-mobile.png" alt="Питание для котов" />
         </picture>
         <a class="main-screen__link button" href="form.html">Подобрать программу</a>
       </section>
@@ -60,7 +61,7 @@
       <section class="catigories">
         <h2 class="visually-hidden">Категории программ питания</h2>
         <ul class="catigories__list">
-          <li class="catigories__item">
+          <li class="catigories__item wow animate__animated animate__fadeInUp">
             <span class="catigories__round catigories__round--slim"></span>
             <h3 class="catigories__title">Похудение</h3>
             <p class="catigories__description">Ваш кот весит больше собаки и почти
@@ -69,7 +70,7 @@
             </p>
             <a class="catigories__link" href="#">Каталог slim</a>
           </li>
-          <li class="catigories__item">
+          <li class="catigories__item wow animate__animated animate__fadeInUp">
             <span class="catigories__round catigories__round--pro"></span>
             <h3 class="catigories__title">Набор массы</h3>
             <p class="catigories__description">Заработать авторитет среди дворовых
@@ -82,8 +83,8 @@
       </section>
 
       <section class="advantages">
-        <h2 class="advantages__title">Как это работает</h2>
-        <ul class="advantages__list">
+        <h2 class="advantages__title wow animate__animated animate__fadeInUp">Как это работает</h2>
+        <ul class="advantages__list wow animate__animated animate__fadeInUp">
           <li class="advantages__item advantages__item--leaf">
             <span class="advantages__image advantages__image--leaf"></span>
             <p class="advantages__phrase">Функциональное питание содержит только
@@ -112,7 +113,7 @@
       </section>
 
       <section class="before-after">
-        <div class="before-after__desktop-wrapper">
+        <div class="before-after__desktop-wrapper wow animate__animated animate__fadeInUp">
           <h2 class="before-after__title">Живой пример</h2>
           <p class="before-after__phrase">Борис сбросил 5 кг за 2 месяца, просто
             заменив свой обычный корм на Cat Energy Slim. Отличный результат без
@@ -133,7 +134,7 @@
             <p class="before-after__cost">Затраты на питание: <span class="before-after__margin-left">15 000 руб.</span></p>
           </div>
         </div>
-        <div class="before-after__desktop-wrapper">
+        <div class="before-after__desktop-wrapper wow animate__animated animate__fadeInUp">
           <div class="before-after__image-wrapper">
             <div class="before-after__fat-cat-wrapper">
               <img class="before-after__image-fat-cat" src="img/before-desktop.png" width="" height="" alt="Толстый Борис" />
@@ -289,8 +290,10 @@
       </div>
     </footer>
   </div>
-  <script type="" src="../js/script.js"></script>
-  <script type="" src="../js/slider.js"></script>
+  <script src="../js/script.js"></script>
+  <script src="../js/slider.js"></script>
+  <script src="../js/wow.min.js"></script>
+  <script src="../js/wowScript.js"></script>
 </body>
 
 </html>

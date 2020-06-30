@@ -6,15 +6,10 @@
   border: 0;
   padding: 0 20px;
   position: relative;
-  &::before {
-    content: "";
-    position: absolute;
-    top: 39px;
-    width: 100%;
-    height: 3px;
-    background-color: $green;
-    z-index: 0;
-  }
+}
+
+.additionally__green-line {
+  top: 39px;
 }
 
 .additionally__title {
@@ -72,16 +67,18 @@
   background-image: url("../img/icon/tick.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  animation: input-animation 0.5s alternate;
 }
 
 
 @media(min-width: 768px) {
   .additionally {
     padding: 0 70px;
-    &::before {
-      top: 80px;
-      right: 0;
-    }
+  }
+
+  .additionally__green-line {
+    top: 80px;
+    right: 0;
   }
 
   .additionally__title {

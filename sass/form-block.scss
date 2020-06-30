@@ -11,6 +11,7 @@
   color: $font-black;
   padding: 0 20px;
   margin-bottom: 23px;
+  --animate-delay: 0.5s;
 }
 
 .form-block__appeal {
@@ -20,6 +21,7 @@
   text-transform: uppercase;
   padding: 0 20px;
   margin-bottom: 35px;
+  --animate-delay: 0.8s;
 }
 
 
@@ -41,7 +43,7 @@
     width: 415px;
     padding-left: 70px;
     margin-bottom: 65px;
-  }  
+  }
 }
 
 
