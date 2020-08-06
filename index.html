@@ -5,8 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cat Energy</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
   <script src="https://api-maps.yandex.ru/2.1/?apikey=7416dfab-4527-4644-a4e3-fb378a0c5c33&lang=ru_RU" type="text/javascript">
   </script>
 </head>
@@ -51,6 +52,10 @@
         <h1 class="main-screen__title wow animate__animated animate__fadeInLeft animate__delay-1s">Функциональное питание для котов</h1>
         <p class="main-screen__phrase animate__animated animate__fadeInLeft animate__delay-1s">Занялся собой? Займись котом!</p>
         <picture class="main-screen__image">
+          <source type="image/webp" media="(min-width: 1440px)" srcset="img/webp/index-food-desktop.webp">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/index-food-tablet.webp">
+          <source type="image/webp" srcset="img/webp/index-food-mobile.webp">
+
           <source media="(min-width: 1440px)" srcset="img/index-food-desktop.png">
           <source media="(min-width: 768px)" srcset="img/index-food-tablet.png">
           <img class = "wow animate__animated animate__fadeInRight animate__delay-1s" src="img/index-food-mobile.png" alt="Питание для котов" />
@@ -136,12 +141,14 @@
         </div>
         <div class="before-after__desktop-wrapper wow animate__animated animate__fadeInUp">
           <div class="before-after__image-wrapper">
-            <div class="before-after__fat-cat-wrapper">
+            <picture class="before-after__fat-cat-wrapper">
+              <source type="image/webp" srcset="img/webp/before-desktop.webp">
               <img class="before-after__image-fat-cat" src="img/before-desktop.png" width="" height="" alt="Толстый Борис" />
-            </div>
-            <div class="before-after__slim-cat-wrapper">
+            </picture>
+            <picture class="before-after__slim-cat-wrapper">
+              <source type="image/webp" srcset="img/webp/after-desktop.webp">
               <img class="before-after__image-slim-cat" src="img/after-desktop.png" width="" height="" alt="Худой Борис" />
-            </div>
+            </picture>
           </div>
           <div class="before-after__toggle-wrapper">
             <button class="before-after__toggle-left">Было</button>
